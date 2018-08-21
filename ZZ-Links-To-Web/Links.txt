@@ -7,4 +7,20 @@ These include
 Quizlet
 	https://quizlet.com/AlexLundin
 
+Books
+	AI
+	AandD
+	DB
+	OS
+		Lectures
+		http://www.ostep.org
+		Projects
+		https://pdos.csail.mit.edu/6.828/2017/xv6/book-rev10.pdf
+	RE
 
+Classes
+	AI
+	AandD
+	DB
+	OS
+	RE	
