@@ -9,15 +9,18 @@ Quizlet
 
 Books
 	AI
+		ordered
 	AandD
+		ordered
 	DB
-	OS
+		waiting
+	OS	
 		Lectures
 		http://www.ostep.org
 		Projects
 		https://pdos.csail.mit.edu/6.828/2017/xv6/book-rev10.pdf
 	RE
-
+		Not needed
 Classes
 	AI
 	AandD
