@@ -62,6 +62,8 @@
 				Disk I/O
 				Special x86 instructions
 				
+			What happens if process violate the permissions?
+				Gets killed
 		Problem 2
 		Problem 3
 			Pros
