@@ -1,0 +1,68 @@
+02-Virtualization CPU
+
+	Fork
+		Explanation of system call
+		
+		Demonstration showed:
+			Fork duplicates a process
+			Each process has it's own variable space
+			
+	Virtualization
+		Fills the need of sharing CPU between processes
+		
+		Used for;
+			Sharing
+				Distribute resource to processes
+				
+			Isolation
+				Protects data from processes
+				
+	Performance
+		Direct execution
+			Pros
+				Full control of CPU
+			Cons
+				Sharing is gone
+					One process could run forever
+					
+				Isolation is gone	
+					One process could Read or write other processes data
+				
+				Process could be slow
+				
+		Solution: Limited Direct Execution
+		
+
+				
+		Problem 1: How to restrict process
+			Rings of access
+				User (restricted)
+					Check address space
+					Process runs in this level
+				Kernel (unrestricted)
+					All
+					OS runs in this level
+				System call	
+					process can request the OS, through sys_call
+					
+				OS has functions that live in it's address space
+					Kernel Space:
+					sys_read()
+						this can not be directly called from the user level
+			
+					Use hardware to indirectly call
+						hardware instruction (int/trap)
+						Each hardware interupt/trap has a corresponding software handler
+						
+			Explanation of limted direct execution
+				note that the jump to main and jump to PC
+					
+			User Restrictions
+				General memory
+				Disk I/O
+				Special x86 instructions
+				
+		Problem 2
+		Problem 3
+			Pros
+				Restricts processes
