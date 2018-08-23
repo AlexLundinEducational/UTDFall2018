@@ -13,3 +13,17 @@ Project
 	Phase II
 		II.1 Interim
 		II.2 Final (Present)
+		
+	Project plan
+		Thin document
+		bare minimum (1 to 3 pages)
+		
+	http://www.utdallas.edu/~AML140830
+		looks for 
+		http://www.utdallas.edu/~AML140830/index.html
+		http://www.utdallas.edu/~AML140830/index.htm
+		http://www.utdallas.edu/~AML140830/index.xml
+		
+		to create
+		mkdir public_html
+		index.htm
