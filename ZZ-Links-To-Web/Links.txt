@@ -13,7 +13,7 @@ Books
 	AandD
 		ordered
 	DB
-		waiting
+		ordered
 	OS	
 		Lectures
 		http://www.ostep.org
@@ -26,4 +26,5 @@ Classes
 	AandD
 	DB
 	OS
+		https://utdallas.box.com/s/htnvogaxwdv3o9gflkag9vlitkgnizci
 	RE	
