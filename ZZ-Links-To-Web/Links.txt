@@ -28,3 +28,4 @@ Classes
 	OS
 		https://utdallas.box.com/s/htnvogaxwdv3o9gflkag9vlitkgnizci
 	RE	
+		http://www.utdallas.edu/~chung/CS4351/syllabus.htm

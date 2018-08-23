@@ -1,0 +1,15 @@
+Project
+	Phase I
+		I.1 Interim (Present)
+			Start mockup
+		I.2 Final
+			Mockup is ok, to represent the product without code
+			Write some codes, but no need to write all codes
+				Atleast icon must appear
+				Maybe a few screens must work
+				Bonus points for more functionality
+					Use acceleromitor
+					Object and distance detection
+	Phase II
+		II.1 Interim
+		II.2 Final (Present)
