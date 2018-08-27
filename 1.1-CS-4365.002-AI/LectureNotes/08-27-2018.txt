@@ -11,10 +11,33 @@ Omniscience, Learning, and Autonomy
 			4 Sensors
 		
 		Properties
-			Fully observable vs Partially observable
-			Single Agent vs Multiagent
-			Deterministic vs Stochastic
-			Episodic vs Sequential
-			Static vs Dynamic
-			Discrete vs Continuous
-			Known vs Unknown
+			1 Fully observable vs Partially observable
+				Notes:
+					Knowledge of the environment is not the same thing
+					as having observations from sensors.
+					Brute Force Learning a layout by moving repetativley is not observations
+					from a sensor. 
+					Example in class
+					-(4 quadrant cicle with star and circle symbol)
+					-(circles goal is to land in quadrant with star, atleast once)
+					-(move into all 4 squares atleast once, then goal is achieved)
+					-(no sensory actions needed at all)
+				Defintion:
+					An agents sensors give it access to the complete state
+					of the environment
+				Reasons:
+					Noisy, inaccurate sensors
+					Non trivial, large environment
+					*Environment is non observable AND agent has NO sensors
+					
+			2 Single Agent vs Multiagent
+			
+			3 Deterministic vs Stochastic
+			
+			4 Episodic vs Sequential
+			
+			5 Static vs Dynamic
+			
+			6 Discrete vs Continuous
+			
+			7 Known vs Unknown
