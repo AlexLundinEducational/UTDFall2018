@@ -58,21 +58,43 @@ Omniscience, Learning, and Autonomy
 			4 Episodic vs Sequential
 				Notes:
 				Definition:
-					
 				Reasons:
 							
 			5 Static vs Dynamic
 				Notes:
 				Definition:
+					Dynamic			- environment changes with time
+					Static			- environment stays the same
+					Semi dynamic	- environment does not change with time
+									- environment changes with agents actions
 				Reasons:
 							
 			6 Discrete vs Continuous
 				Notes:
+					applies to state of the environment
+					considers how time is handled
+					percepts and actions of the agent
+				Example:
+					Chess (not speed chess, moves are not timed)
+						finite number of states
+						discrete set of percepts and actions
+					Taxi
+						continuos state
+						continuous time
 				Definition:
 				Reasons:
 							
 			7 Known vs Unknown
 				Notes:
+					This referes to the:
+						designer's knowledge about the "laws of physics"
+						about the environment
+						
 				Definition:
+					Known
+						Agent has the outcomes of the environment accounted for
+							probabilities
+					Unknown	
+						Agent will have to learn
 				Reasons:
 				
