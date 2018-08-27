@@ -99,6 +99,9 @@ Omniscience, Learning, and Autonomy
 				Reasons:
 				
 			Task Environment Assesment
+				*These are not ranked in order of importance
+				*They are task dependent
+				
 				Hardest
 					Partially Observable
 					Multiagent
@@ -107,3 +110,6 @@ Omniscience, Learning, and Autonomy
 					Dynamic
 					Continuous
 					Uknown
+					
+
+				
