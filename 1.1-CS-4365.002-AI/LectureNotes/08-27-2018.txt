@@ -98,3 +98,12 @@ Omniscience, Learning, and Autonomy
 						Agent will have to learn
 				Reasons:
 				
+			Task Environment Assesment
+				Hardest
+					Partially Observable
+					Multiagent
+					Stochastic
+					Sequential
+					Dynamic
+					Continuous
+					Uknown
