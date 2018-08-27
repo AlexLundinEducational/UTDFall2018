@@ -1,1 +1,20 @@
 Chapter 2
+Omniscience, Learning, and Autonomy
+	
+	1.3 Nature of Environments
+		Example in class of vaccum moving between 2 squares
+		
+		Task Environment represented by PEAS
+			1 Performance
+			2 Environment
+			3 Actuators
+			4 Sensors
+		
+		Properties
+			Fully observable vs Partially observable
+			Single Agent vs Multiagent
+			Deterministic vs Stochastic
+			Episodic vs Sequential
+			Static vs Dynamic
+			Discrete vs Continuous
+			Known vs Unknown
