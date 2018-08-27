@@ -22,7 +22,7 @@ Omniscience, Learning, and Autonomy
 					-(circles goal is to land in quadrant with star, atleast once)
 					-(move into all 4 squares atleast once, then goal is achieved)
 					-(no sensory actions needed at all)
-				Defintion:
+				Definition:
 					An agents sensors give it access to the complete state
 					of the environment
 				Reasons:
@@ -31,13 +31,48 @@ Omniscience, Learning, and Autonomy
 					*Environment is non observable AND agent has NO sensors
 					
 			2 Single Agent vs Multiagent
-			
+				Notes:
+					We don't know exactly, how the other agent makes decisions
+					We can assume the other agents goals, by evaluating performace measures
+					
+				Definition:
+					Agent			- makes decisions
+					Entity 			- obstacle in the environment 
+									- does not make decisions
+									- not always predictable (weather patterns)
+					Zero sum game 	- only one winner
+				Reasons:
+				
 			3 Deterministic vs Stochastic
-			
+				Notes:
+				Definition:
+					Deterministic	- next state is always predictable by
+									- the current state AND the agents actions
+					Stochastic		- stat is randomnly determined
+						- Nondeterministic
+							actions are characterized by possible outcomes.
+							no probability attached.
+						- Uncertain
+				Reasons:
+				
 			4 Episodic vs Sequential
-			
+				Notes:
+				Definition:
+					
+				Reasons:
+							
 			5 Static vs Dynamic
-			
+				Notes:
+				Definition:
+				Reasons:
+							
 			6 Discrete vs Continuous
-			
+				Notes:
+				Definition:
+				Reasons:
+							
 			7 Known vs Unknown
+				Notes:
+				Definition:
+				Reasons:
+				
