@@ -1,0 +1,10 @@
+03-Scheduling
+
+	How to share the CPU
+	Policy and Design must be separated
+	
+	Context Switching
+		Pointers
+		Registers
+		Stack Pointer
+		Processor Status Registers(PSR)
