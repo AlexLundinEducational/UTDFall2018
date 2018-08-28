@@ -29,4 +29,32 @@ Module 2
 	What architecture is not
 		box and line diagrams do not suffice, these are assumptions
 
+	Relations
+		many to many
+		1 to 1
+		1 to many
 		
+	Patterns
+		composed to solve particular problems
+		knowledge reuse
+		
+	Generic layer architecture
+		Example:
+			UI
+			UI management / authentication / authorization
+			Core business logic / application functionality / utilities
+			system support / OS / database
+			
+		Qualities:
+			lower layer provides service to upper layers
+			strict layering - each layer can only talk to adjacent
+			loose layering - layer can bypass intermediate layers and go directly to who it needs to talk to
+		Pros:
+			Simple
+			Organized
+			Easy to understand
+			Easy to add layers to top
+			
+		Cons:
+			Latency with more layers
+			Hard to add layers to the bottom
