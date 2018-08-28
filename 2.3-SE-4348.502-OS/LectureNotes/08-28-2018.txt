@@ -39,3 +39,19 @@
 		These are key to understanding the problem
 		**understand the question before solving the problem
 		**understand the optomization metrics (how will the solution be evaluated?)
+		
+	Turnaround time
+		time waiting to get CPU is included in addition to the time to complete
+		
+	FIFO
+		First in First Out
+		Pros
+			Fair, unbiased
+		Cons
+			Convoy Effect
+	Shortest Job First
+		Small runtime gets priority
+		Pros
+			Reduces turnaround time
+		Cons
+			Bias
