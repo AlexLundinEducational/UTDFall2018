@@ -1,0 +1,32 @@
+Module 2
+
+	Structures
+		this is the design
+		documented in terms of views
+		
+	Views
+		more detailed represenation of a structure
+		used by stakeholder
+		
+	Architectural Style
+	1) Modules
+		static
+		implementation units
+		
+	2) C & C
+		Component and connector
+		runtime extension
+		
+	3) Allocation Structures
+		Deploy/execute
+		Map S/W to H/W
+	
+	What architecture is
+		software elements and relations between them
+		tames complexity with abstraction
+		includes behavior
+		
+	What architecture is not
+		box and line diagrams do not suffice, these are assumptions
+
+		
