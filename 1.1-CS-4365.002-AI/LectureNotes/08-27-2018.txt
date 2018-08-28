@@ -109,7 +109,10 @@ Omniscience, Learning, and Autonomy
 					Sequential
 					Dynamic
 					Continuous
-					Uknown
+					Unknown
+					
+				**Learn figure 2.6
+				**Task Environment Assesment
 					
 
 				
