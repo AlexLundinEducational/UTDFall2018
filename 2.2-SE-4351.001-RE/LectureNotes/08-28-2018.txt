@@ -41,5 +41,16 @@ Project
 	Introduction.pdf (starting on page 2)
 		Review from 3354
 			Software Lifecycle
-			System Engineering produces the System Specification
+			1 System Engineering produces the System Specification
 				Determining how hardware will function in world, with control from software
+				Must understand people and stakeholders and problems
+				Must understand hardware
+				Must unuderstand softwares that will interact with the deliverable
+			2
+			3
+			4
+			5
+			6
+			7
+			8
+			
