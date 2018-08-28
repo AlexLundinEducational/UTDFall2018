@@ -22,5 +22,10 @@
 			PID
 			
 	Process State Transition
-	
+	Process List
+		each processes ID by PID
+		Ready queue - contains all ready processes
+		Event queue - one logical queue per event
+			disk I/O and locks
+			contains all PIDs waiting for event
 03-Scheduling
