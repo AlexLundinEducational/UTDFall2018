@@ -49,9 +49,20 @@
 			Fair, unbiased
 		Cons
 			Convoy Effect
-	Shortest Job First
+	SJF
+		Shortest Job First
 		Small runtime gets priority
 		Pros
 			Reduces turnaround time
+			Gain alot by moving the shortest to the front
 		Cons
 			Bias
+			Not much is gained, by moving the longest to the end
+			
+	STCF
+		Shortest Time to completion first
+		Pros
+			Allows jobs to arrive at random time
+		Cons
+			Bias
+			Context switch overhead
