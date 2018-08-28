@@ -29,3 +29,13 @@
 			disk I/O and locks
 			contains all PIDs waiting for event
 03-Scheduling
+	Mechanism - dispatcher
+		how to switch between processes
+		
+	Policy - scheduler
+		which process to switch to
+		
+	Workload assupmtions
+		These are key to understanding the problem
+		**understand the question before solving the problem
+		**understand the optomization metrics (how will the solution be evaluated?)
