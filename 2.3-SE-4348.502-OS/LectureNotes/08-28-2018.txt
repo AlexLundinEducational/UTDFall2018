@@ -8,3 +8,6 @@
 		Registers
 		Stack Pointer
 		Processor Status Registers(PSR)
+		
+		Process Control Block (PCB)
+			proc struct
