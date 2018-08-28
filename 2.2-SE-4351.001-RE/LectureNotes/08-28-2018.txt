@@ -37,3 +37,9 @@ Project
 			Issues:
 			1 There was a lack of communication between
 			2 SCIC chose to build a new system from scratch rather than modify the existing one
+	
+	Introduction.pdf (starting on page 2)
+		Review from 3354
+			Software Lifecycle
+			System Engineering produces the System Specification
+				Determining how hardware will function in world, with control from software
