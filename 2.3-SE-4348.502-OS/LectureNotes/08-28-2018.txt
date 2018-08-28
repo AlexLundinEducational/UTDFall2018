@@ -1,5 +1,11 @@
-03-Scheduling
-
+02-Virtualization CPU 
+	continued from problem 1 of direct execution
+	
+	Direct Execution
+		Problem 2
+		Problem 3
+			Pros
+				Restricts processes
 	How to share the CPU
 	Policy and Design must be separated
 	
@@ -11,3 +17,10 @@
 		
 		Process Control Block (PCB)
 			proc struct
+			
+			Contents:
+			PID
+			
+	Process State Transition
+	
+03-Scheduling
