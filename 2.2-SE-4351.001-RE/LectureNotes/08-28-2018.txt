@@ -4,3 +4,36 @@ Project
 		bare minimum (1 to 3 pages)
 		
 	Project1.pdf
+	Overview
+		II.1
+			Rely on other peoples help, in close proximity
+			
+		II.2
+			Use "shall" in the first stage of defining
+			Define each requirement by saying "the system"
+			
+		III
+			World Requirements Specification
+				This describes the real world problem that the software solves
+				for real world people.
+				
+				People are everything.
+				
+		Brief demo of human guidance system in class
+			One person was blind
+			One person was guiding the blind
+			
+		Article
+			There will be 1 - 3 questions on this article on the exam
+			https://www.techdirt.com/articles/20060818/1613226.shtml
+			
+			SAIC
+				defined what the FBI system
+				(it would have been ok, if the SAIC was the end user)
+
+			FBI
+				end user of the SAIC product
+				
+			Issues:
+			1 There was a lack of communication between
+			2 SCIC chose to build a new system from scratch rather than modify the existing one
