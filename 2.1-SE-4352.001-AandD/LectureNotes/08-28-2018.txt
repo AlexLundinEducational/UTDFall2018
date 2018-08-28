@@ -58,3 +58,78 @@ Module 2
 		Cons:
 			Latency with more layers
 			Hard to add layers to the bottom
+			
+			
+	Repository
+		Example:
+			IDE
+						UML editor/code generator/java editor
+							^^^^^^^^^^^^^^^^^^^
+			other stuff <<<< project repository >>>>> python
+							\/   \/   \/ \/   \/ 
+								more stuff
+		Qualities:
+			All features stem from a central hub
+		Pros:
+			Used for data driven systems
+			Data accessable to all components
+		Cons:
+			Security
+			Single point of failure
+
+	Client-server
+		Example:
+			client 1 / client 2 / client 3
+					^^^^^^^^^^^^
+					  Internet
+					\/   \/   \/
+			catalog server / video server / picture server
+			
+		Qualities:
+			Distributed network system
+			
+		Pros:
+			Speed
+			Well defined roles
+			
+		Cons:
+			Single point of failure (internet)
+	
+	Pipe and Filter
+		Example:
+			Invoice system	
+			Language assembler
+		Qualities:
+			Used for data flow
+			
+		Pros:
+			Good for serial processing
+			Each filter defines functionality so there is little or no overlap
+		Cons:
+			Filter going down can cause a bottleneck
+			
+		
+	Type
+		Example:
+
+		Qualities:
+
+		Pros:
+			
+		Cons:
+		
+	What makes a good architecture?
+		No such thing as good of bad
+		
+		Fit is used to evaluate the design choices
+		
+		Rules of thumb:
+			1 should be the product of a single, or small group with a single identified learder
+				technical consistency
+				strong connection between architect and developers
+			2 based on prioritized list of well specified quality attribute requirements
+			3 documented in terms of views
+			4 evaluated by ability to deliver important quality attributes
+				should occur early to allow for changes
+			5 should be created in an incremental approach
+				skeletal prototype with extensions during each iteration
