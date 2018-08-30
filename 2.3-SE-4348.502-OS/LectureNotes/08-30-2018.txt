@@ -37,3 +37,11 @@
 		So 
 		1 run interactive first
 		2 then run shorter jobs before longer
+		
+		Multi leve feedback queue (MLFQ)
+			top level has highest prio
+			every level is it's own queue
+			
+			rule 1: if A > B then A wins
+			rule 2: if A = B then A & B run in RR
+			
