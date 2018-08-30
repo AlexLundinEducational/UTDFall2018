@@ -73,3 +73,5 @@
 				eliminates starvating of long running jobs during many short and interactive 
 			cons
 				game the scheduler by only useing 99% of time slice
+				
+			rule 4: edit, once a job has used up its time allotment then reduce prio
