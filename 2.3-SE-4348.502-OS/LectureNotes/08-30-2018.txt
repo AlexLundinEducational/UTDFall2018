@@ -1,0 +1,24 @@
+03-Scheduling (slide 19)
+	Not I/O aware
+	
+	New Metric, response time
+		interactive jobs
+			FCFS, SJF and STCF are not good
+			
+	Round Robin Scheduler
+		fixed-length time slice
+		time-quantum
+		
+		Length of time slice is critical
+			Shorter
+				better response time
+				too many context switches
+			Longer
+				fewer context switches
+				poorer response time
+		Pros
+			response time is speedy
+		Cons
+			turnaround time takes a dump
+				
+	RR vs SJF
