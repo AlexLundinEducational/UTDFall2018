@@ -45,3 +45,16 @@
 			rule 1: if A > B then A wins
 			rule 2: if A = B then A & B run in RR
 			
+			How to set prio
+				typically jobs alternate between CPU and I/O bursts
+				use history to predict future CPU bursts
+				
+				a new job should get high prio if:
+					it's interactive
+					it's short
+				
+			rule 3: when job enters, place at high prio
+			rule 4: if job uses entire time slice, reduce prio
+			
+			mimics SJF
+			
