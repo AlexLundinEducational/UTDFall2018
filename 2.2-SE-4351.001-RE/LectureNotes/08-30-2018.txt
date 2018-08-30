@@ -17,6 +17,8 @@ Project
 			the problems turn into requirements specification
 			incomplete "as-is" results in crappy requirements
 			
+		think about this project from blind persons perspective
+			have 1 person role play, as them, continuosly
 			
 	Why are we building this app?
 		To help people
