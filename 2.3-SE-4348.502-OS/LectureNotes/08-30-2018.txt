@@ -1,4 +1,9 @@
 03-Scheduling (slide 19)
+	Definitions:
+		Priority   - restricting cpu access by criteria
+		Aging      - time since last cpu access
+		Starvation - long time between cpu access
+		
 	Not I/O aware
 	
 	New Metric, response time
@@ -56,5 +61,15 @@
 			rule 3: when job enters, place at high prio
 			rule 4: if job uses entire time slice, reduce prio
 			
-			mimics SJF
+			Pros
+				mimics SJF
+				interactive job never uses the whole slice, so stays in top prio
+			Cons	
+				many short and interactive jobs starve long jobs of cpu time
+				
+			rule 5: after some time period s, move all jobs to top queue
 			
+			pros
+				eliminates starvating of long running jobs during many short and interactive 
+			cons
+				game the scheduler by only useing 99% of time slice
