@@ -18,7 +18,22 @@
 				poorer response time
 		Pros
 			response time is speedy
+			does not care about duration of job
+				job that runs to infinity is ok
 		Cons
 			turnaround time takes a dump
 				
-	RR vs SJF
+	Summary
+		Turnaround
+			SJF
+		Reponse
+			RR
+	
+	General Purpose Scheduling
+		must support two types of jobs
+			interactive jobs
+			batch jobs
+			
+		So 
+		1 run interactive first
+		2 then run shorter jobs before longer
