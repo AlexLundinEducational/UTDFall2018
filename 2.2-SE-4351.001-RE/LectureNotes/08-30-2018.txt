@@ -1,25 +1,21 @@
+Review
+	3 kinds of wares
+		Hardware
+		Software
+		Peopleware
+		
+	People are everything
+	
+Main concepts from this Lecture
+	we have to include atleast 1 slide, illustrating "as-is" scenario
+		list the problems
+		the problems turn into requirements specification
+		incomplete "as-is" results in crappy requirements
+		
+	think about this project from blind persons perspective
+		have 1 person role play, as them, continuosly
+		
 Project
-	Project plan
-		Thin document
-		bare minimum (1 to 3 pages)
-		
-	Review
-		3 kinds of wares
-			Hardware
-			Software
-			Peopleware
-			
-		People are everything
-		
-	Main concepts from this Lecture
-		we have to include atleast 1 slide, illustrating "as-is" scenario
-			list the problems
-			the problems turn into requirements specification
-			incomplete "as-is" results in crappy requirements
-			
-		think about this project from blind persons perspective
-			have 1 person role play, as them, continuosly
-			
 	Why are we building this app?
 		To help people
 		
@@ -44,3 +40,41 @@ Project
 			his dad has memory loss
 			
 		solutions
+
+Slide Deck
+	Software Lifecycle
+		SW - software
+		PW - peopleware
+		HW - hardware
+		
+		system Engineering -> System specification
+		 ||
+		 \/
+		requirements specification -> SRS
+		 ||
+		 \/
+		 SW architecture design -> SAS
+		 ||
+		 \/
+		 
+		 ||
+		 \/
+		 
+		 ||
+		 \/
+		 
+		 ||
+		 \/
+		 
+		 ||
+		 \/
+		 
+		 ||
+		 \/
+		 
+		 ||
+		 \/
+		 
+		 ||
+		 \/
+		
