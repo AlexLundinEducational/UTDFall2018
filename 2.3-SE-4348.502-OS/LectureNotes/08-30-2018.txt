@@ -75,3 +75,18 @@
 				game the scheduler by only useing 99% of time slice
 				
 			rule 4: edit, once a job has used up its time allotment then reduce prio
+			
+			Tunning MLFQ
+				high prio queue - short slice
+				low prio queue	- long slice
+			
+		Lottery Scheduling
+			Proportional (fair) share
+				each job gets a certain percentage
+				
+			Outline
+				allocate each job its share of tickets
+				high prio gets more tickets
+				whoever wins lottery runs
+			
+			Very simple to implement
