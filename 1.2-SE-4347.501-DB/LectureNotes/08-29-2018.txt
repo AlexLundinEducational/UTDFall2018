@@ -1,0 +1,6 @@
+Chapter 2
+	Definitions:
+	Database Schema 	- description of database
+	Schema Diagram 		- illustration which displays MOST of a schema
+	Schema Construct 	- component of schema
+	Database state		- data stored at a particular moment in time, snapshot

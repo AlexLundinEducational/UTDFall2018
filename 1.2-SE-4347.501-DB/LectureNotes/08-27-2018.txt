@@ -1,0 +1,18 @@
+Chapter 1
+	Definitions:
+	Database - collection of related data
+	Miniworld - some aspect of the real world, modeled by the database
+	
+	data record - entry in a database
+	data element - individual pieces of each record
+	data type	- kind of information stored in a element
+	meta data	- describes the structure of a database
+	self describing data - data item and data names stored together, in one structure
+	
+	
+	Database vs file storeage
+		self-describing nature of database system
+		insulation between programs, data and data abstraction
+		supports multiple views of data
+		sharing of data and multiuser processing
+	
