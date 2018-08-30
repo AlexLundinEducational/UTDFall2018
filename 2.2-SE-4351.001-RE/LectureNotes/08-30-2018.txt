@@ -14,7 +14,9 @@ Main concepts from this Lecture
 		
 	think about this project from blind persons perspective
 		have 1 person role play, as them, continuosly
-		
+	
+	Requirements Translation
+		tree image, image 2 to 3 is the translation step
 Project
 	Why are we building this app?
 		To help people
@@ -47,17 +49,19 @@ Slide Deck
 		PW - peopleware
 		HW - hardware
 		
-		system Engineering -> System specification
+		system Engineering -> System specification (system testing)
 		 ||
 		 \/
-		requirements specification -> SRS
+		requirements specification -> SRS (validation testing)
 		 ||
 		 \/
-		 SW architecture design -> SAS
+		 SW architecture design -> SAS (integration testing)
+			integration testing
 			high level design
 		 ||
 		 \/
-		 Data structures and algorithims 
+		 Data structures and algorithims (unit testing)
+			unit testing
 			low level design
 		 ||
 		 \/
@@ -65,18 +69,66 @@ Slide Deck
 		 ||
 		 \/
 		 Testing ->
-		 ||
-		 \/
-		 
-		 ||
-		 \/
-		 
-		 ||
-		 \/
-		 
-		 ||
-		 \/
-		 
-		 ||
-		 \/
+
+	Error Propogation
+		
+		
+	Case Studies
+		3 Types of Defects (we've talked about so far)
+			Requirements
+			Design
+			Implementation
+			
+		Bell Labs
+			80% of all defects are introduced during design
+		USAF
+			36% in requirements translation
+		Voyager
+			of 197 significant software faults only 3 were programming errors
+	
+		Factor pie chart
+			Standish group, Chaos report
+			28% success
+			49% overran
+			23% cancelled
+			
+			Most important items
+				Incomplete requirements
+				
+			Chaos Ten for Success
+			1 Executive Mangement Support (success)
+			2 User involvement (success)
+			3 Experienced Proect Mangement
+			4 Clear Business objectives (success)
+			5 Minimized Scope (success)
+			6 Standard Software Infastructure
+			7 Firm Basic Requirements
+			8 Formal Methodology
+			9 Reliable Estimates
+			10 Other
+			
+			Chaos Ten for Challanged Projects
+			
+			1 Lack of User involvement 
+			2 Incomplete requirements
+			3 Changing requirements
+			4 Lack of Executive Mangement Support
+			5 Tech incompetence
+			6 Lack of resources
+			7 Unrealistic expectations
+			8 Unclear object
+			9 Unrealistic time frames
+			10 New tech
+
+			Chaos Ten for Impairment
+			1 
+			2
+			3 
+			4 
+			5 
+			6 
+			7 
+			8
+			9 
+			10 
 		
