@@ -8,11 +8,81 @@ Chapter 1
 	data type	- kind of information stored in a element
 	meta data	- describes the structure of a database
 	self describing data - data item and data names stored together, in one structure
-	
-	
+	operation
+		1 interface / signature
+		2 implementation
+		
+	data abstraction 			- yields program and data independence
+	conceptual representation	- details of how data is stored
+	data model					- type of data abstraction that provides conceptual representation
+	concurency control - ensures several users can access DB at same time
+	transaction			- executing program or process that includes one or more database accesses
+	isolation			- each transaction is independent
+	atomicity			- all or none
+	1.3
 	Database vs file storeage
 		self-describing nature of database system
 		insulation between programs, data and data abstraction
 		supports multiple views of data
 		sharing of data and multiuser processing
+		
+	1.4 Actors and the Scene
+	Definitions:
+	DBA					- authorize users, chief admin responsible for managing resources
+	DB designer			- id the data stored, use appropriate structures, develop views
+	End Users			- jobs require access
+		Casual			- middle to high level managers
+		Naive			- revolves around queries
+		Sophisticated	- engineers, framiliarize themselves with facilities of DBMS to implement their own apps
+		Standalone		-	maintain personel DB, use ready made packages, menu bars
+	System Analysts		- determine requirements of end users
+	Application programmers	- implement specifications from analysts
+	SE					- framiliar with full range of capablilties of DBMS to accomplish their tasks
+
+	1.5 Workers behind the scene
+	Definitions:
+	DBMS system designers and implementers
+						- design and implement modules
+	Modules				- component
+	Tool devs			- write tools to improve performance of DBMS
+	Operators and maintenece personel
+						- system admins
+						
+	1.6 Advantanges of DB approach
+	1 Controlling Redundancy
+		Controlled Redundancy	-storing same data multiple times to improve performance
+		data normalization 		- storing each piece of information, only once
+		data denormalization	- including new data, in addition to adjacent data which may be necessary to pair with the new
+	2 Restricting unauthorized access
+		security				- accounts
+		previledge software		- provides extended features, of core software, to certain users
+	3 Persistent Storage
+	4 Storage structures, search techniques and Query Processing
+		indexes					- auxiliary files to disk searches
+		buffering				- maintains part of DB in main memory
+		query processing		- responsible for choosing efficient queries
+	5 Backup and Recovery
+	6 Multiple User Interface
+	7 Represent complex relationships
+	8 Enforce Integrity Constraints
+		Business rules
+	9 Rules and Triggers
+		Rule					- defines states or conditions that arise from data
+		Triggers				- form of a rule, engaged when updating the table
+	10 Additional
+	
+	
+	1.7
+	
+	1.8 When NOT to use DBMS
+	When any of these costs becomes to high
+		high initial cost
+		defining and processing data
+		overhead for security, concurrency and recovery
+	Conditions
+		simple, well defined database applications are not expected to changes
+		stringent, real time requirements
+		embedded systems
+		no multiple user access
+	1.9
 	
