@@ -90,3 +90,5 @@
 				whoever wins lottery runs
 			
 			Very simple to implement
+			
+			Chapter 9 in the book
