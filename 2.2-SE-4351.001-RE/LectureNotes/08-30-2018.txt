@@ -95,6 +95,10 @@ Slide Deck
 			Most important items
 				Incomplete requirements
 				
+			No need to memorize these below 
+			||
+			\/
+			
 			Chaos Ten for Success
 			1 Executive Mangement Support (success)
 			2 User involvement (success)
