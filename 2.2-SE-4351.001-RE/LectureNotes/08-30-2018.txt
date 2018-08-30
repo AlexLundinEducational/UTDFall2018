@@ -54,15 +54,17 @@ Slide Deck
 		 ||
 		 \/
 		 SW architecture design -> SAS
+			high level design
 		 ||
 		 \/
-		 
+		 Data structures and algorithims 
+			low level design
 		 ||
 		 \/
-		 
+		 Implementation -> program specification
 		 ||
 		 \/
-		 
+		 Testing ->
 		 ||
 		 \/
 		 
