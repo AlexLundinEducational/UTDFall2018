@@ -1,0 +1,19 @@
+Project
+	Project plan
+		Thin document
+		bare minimum (1 to 3 pages)
+		
+	Why are we building this app?
+		To help people
+		
+		Starting point for everyone project
+		Translate requirements from As-is -> To-be
+		
+		1) Clearly ID what the problems are:
+			What are the problems this system will solve?
+			"As-is"
+			
+		2) Clearly ID what the solutions are:
+			What are the solutions?
+			"To-be"
+		
