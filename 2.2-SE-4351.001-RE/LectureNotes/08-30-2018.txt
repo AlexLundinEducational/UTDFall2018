@@ -3,6 +3,21 @@ Project
 		Thin document
 		bare minimum (1 to 3 pages)
 		
+	Review
+		3 kinds of wares
+			Hardware
+			Software
+			Peopleware
+			
+		People are everything
+		
+	Main concepts from this Lecture
+		we have to include atleast 1 slide, illustrating "as-is" scenario
+			list the problems
+			the problems turn into requirements specification
+			incomplete "as-is" results in crappy requirements
+			
+			
 	Why are we building this app?
 		To help people
 		
@@ -16,4 +31,14 @@ Project
 		2) Clearly ID what the solutions are:
 			What are the solutions?
 			"To-be"
-		
+	
+	In class example of instructor and his parents
+		hearing loss	
+			mom doesn't like wearing hearing aid
+			feels weird
+			we percieve her as no capable
+			she is concerned with how she is percieved
+		memory loss
+			his dad has memory loss
+			
+		solutions
