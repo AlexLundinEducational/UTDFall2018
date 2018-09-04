@@ -64,8 +64,12 @@ Slide Deck
 				depends on the symatics of the language
 			
 			Customer-Driven Requirements
+				Closed knowledge base, simple to know who to talk to
 			
 			Market-Driven Requirements
-			
+				Open ended market research
+				
+		How
+			King and Wizard, Rain to Snow example
 			
 	Requirements Engineering Process
