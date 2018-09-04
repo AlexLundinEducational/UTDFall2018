@@ -1,4 +1,7 @@
-Module 3 (from slid 19)
+	QAW
+		quality attribute workshop
+		
+Module 3 (from slide 19)
 	ASR
 	
 	Utility Tree
@@ -7,3 +10,13 @@ Module 3 (from slid 19)
 		establish priority of ASRs
 		Root of tree is called utility
 		Second level contains QA categories
+		Leaves are the ASR's
+		(business value, architecture importance) <- parenthesis to rank importance in terms of business and architecture
+		H - high
+		M - medium
+		L - low
+		(H,L) 
+		values are determined by voting from stakeholders
+		
+	Utility Tree Example in Class
+		
