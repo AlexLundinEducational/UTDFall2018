@@ -49,12 +49,16 @@ Slide Deck
 			Verification
 				proves absense of errors
 				proofs with 1st order logic
+				did we build the system right?
 				
 			Validation
-			
+				did we build the right thing?
+				
 			Testing 
 				proves precense of errors
 				
-				
+			Formal Languages
+				every programming language is formal
+				depends on the symatics of the language
 			
 	Requirements Engineering Process
