@@ -1,6 +1,11 @@
 Review
-
-	
+	Software Lifecylce diagram
+	Factors that contribute to Project Failure
+		Getting requirements right, leads to higher probability of success
+		many statistics show that we are good programmers, but our faults in requirements analysis
+			cause the majority of problems that slow projects
+		the standish group found that INCOMPLETE REQUIREMENTS are the biggest factor
+		
 Main concepts from this Lecture
 	We covered test format
 		Mostly material from the lectures
@@ -18,6 +23,6 @@ Project
 
 Slide Deck
 	Introduction module 
-		(Why, What and How)
+		(Why, What and How) Slide 8 to the end
 	
 	Requirements Engineering Process
