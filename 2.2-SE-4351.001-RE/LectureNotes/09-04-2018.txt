@@ -23,19 +23,38 @@ Project
 
 Slide Deck
 	Introduction module 
-		(Why, What and How) Slide 8 to the end
-		Success rate is dependent on project size
-			bigger projects are more likely to fail
-			bigger project have more communication channels, increasing errors
+	(Why, What and How) Slide 8 to the end
+		Why do RE?
+			Success rate is dependent on project size
+				bigger projects are more likely to fail
+				bigger project have more communication channels, increasing errors
+				
+			How costly are RE errors?
+				100X more costly than programming (implementation and design) errors
 			
-		How costly are RE errors?
-			100X more costly than programming (implementation and design) errors
-		
-		Formal Inspection
-			takes place in top notch organizations on a weekly basis
-			more effective than testing
-				can be done on ANY kind of document 
-				testing is only related to programs
+			Formal Inspection
+				takes place in top notch organizations on a weekly basis
+				more effective than testing
+					can be done on ANY kind of document 
+					testing is only related to programs
 			
+		What is RE?
+			Requirements Engineering is a Branch of Systems Engineering
+			
+			System Engineering -> System Doc -> 3 Kinds of Wares
+				1 Goals ( )
+				2 Services (UML use case with actor)
+				3 Constraints ( )
+				
+			Verification
+				proves absense of errors
+				proofs with 1st order logic
+				
+			Validation
+			
+			Testing 
+				proves precense of errors
+				
+				
 			
 	Requirements Engineering Process
