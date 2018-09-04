@@ -19,4 +19,7 @@ Module 3 (from slide 19)
 		values are determined by voting from stakeholders
 		
 	Utility Tree Example in Class
+		Feedback
+			Make sure there is a intermediate refinement between the quality attribute and the (H,L) rank
+			Make sure there are numbers on the metric for rank, like time for latency
 		
