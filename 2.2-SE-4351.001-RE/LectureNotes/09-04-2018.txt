@@ -19,7 +19,9 @@ Main concepts from this Lecture
 			Drawing questions
 			
 Project
-
+	Include
+		As-is scenarios
+		To-be scenarios (there can be infinity of these, we must choose what to pursue)
 
 Slide Deck
 	Introduction module 
@@ -60,5 +62,10 @@ Slide Deck
 			Formal Languages
 				every programming language is formal
 				depends on the symatics of the language
+			
+			Customer-Driven Requirements
+			
+			Market-Driven Requirements
+			
 			
 	Requirements Engineering Process
