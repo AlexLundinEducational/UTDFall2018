@@ -24,5 +24,18 @@ Project
 Slide Deck
 	Introduction module 
 		(Why, What and How) Slide 8 to the end
-	
+		Success rate is dependent on project size
+			bigger projects are more likely to fail
+			bigger project have more communication channels, increasing errors
+			
+		How costly are RE errors?
+			100X more costly than programming (implementation and design) errors
+		
+		Formal Inspection
+			takes place in top notch organizations on a weekly basis
+			more effective than testing
+				can be done on ANY kind of document 
+				testing is only related to programs
+			
+			
 	Requirements Engineering Process
