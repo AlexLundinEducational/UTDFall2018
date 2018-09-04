@@ -1,1 +1,19 @@
 Missed
+
+	4 Agent Types
+	
+	1 Simple reflex agents﻿﻿
+		Select actions based on current percept
+		ignores remainder of percept history﻿﻿﻿﻿﻿﻿﻿﻿﻿
+		
+	2 Model based reflex agents
+		Most effective way to handle PARTIAL OBSERVABILITY
+		Contains an internal state, that reflects the percept history﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿
+		
+	3 ﻿﻿﻿Goal based agents
+		Adds searching and planning to model based reflex agents﻿﻿﻿﻿﻿﻿﻿﻿
+		Chooses action sequences to move towards a desirable outcome﻿﻿﻿﻿﻿﻿﻿﻿
+		
+	4 Utility based agents﻿﻿﻿﻿
+		Creates high quality behavior
+		Uses a CRUDE binary distinction between happy and unhappy states
