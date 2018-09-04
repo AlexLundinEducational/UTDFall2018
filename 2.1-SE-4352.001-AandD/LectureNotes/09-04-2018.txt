@@ -1,24 +1,9 @@
-Module 2 (Slide 27)
-
-	ATM
-		Client Server Patterns
-			Real time
-			User wants transactions fast
-
-Module 3
-	Architects do:
-		1) Engage with stakeholders
-		2) Design architecture
-		3) Have domain knowledge
-		4) Experience -> SE principles (5-8 years)
-		5) Estimate costs
-		6) Risk Management
-		7) Document Artifacts
-		
-	Skillsets:
-		1) Communication skills
-		2) Patient -> resolve conflicts
-		3) Technical skills
-		4) Business skills
-		5) Leadership skills -> influence
-		6) Management skills
+Module 3 (from slid 19)
+	ASR
+	
+	Utility Tree
+		this identifiers, prioritizes and refines the most important quality attributes
+		record all ASR in one place
+		establish priority of ASRs
+		Root of tree is called utility
+		Second level contains QA categories
