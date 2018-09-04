@@ -17,3 +17,7 @@ Project
 
 
 Slide Deck
+	Introduction module 
+		(Why, What and How)
+	
+	Requirements Engineering Process
