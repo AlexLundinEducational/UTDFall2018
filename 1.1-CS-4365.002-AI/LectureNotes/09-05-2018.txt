@@ -22,3 +22,5 @@ Slide 9
 			completness
 			optimality
 			time complexity
+			space complexity
+Slide 45
