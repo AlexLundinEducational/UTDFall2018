@@ -1,0 +1,18 @@
+Chapter 3
+Slide 9
+	Problem Solving Agents
+		Performance Measures
+		
+		Problem Solving agent
+		1.) Figure out what the problem is
+		2.) Figure out the best way to search that problem space
+		
+		Well defined problems have 5 parts:
+		1.) initial state
+		2.) set of actions
+		3.) transistion model, describing those actions
+		4.) goal test function
+		5.) path cost function
+		
+		state space - environment of the test problem
+		solution - path through state space, from problem to goal
