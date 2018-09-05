@@ -16,3 +16,9 @@ Slide 9
 		
 		state space - environment of the test problem
 		solution - path through state space, from problem to goal
+		
+	Searching
+		Metrics for evaluation
+			completness
+			optimality
+			time complexity
