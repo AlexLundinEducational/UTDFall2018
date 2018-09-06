@@ -63,4 +63,4 @@ Elicitation
 			3) Is it portable and customizable to multiple locations and feature sets?
 			4) Is it adaptable?
 			5) Are the customer satisfied? Is the system user friendly?
-			6) Whole app must look like it's all in house (portals to other serivces is ok)
+			6) Whole app must look like it's all in house (portals to other services is ok)
