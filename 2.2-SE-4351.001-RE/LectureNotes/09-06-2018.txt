@@ -1,0 +1,30 @@
+	
+Project
+	Phase I
+		The focus is on product
+		No formal notation or semiformal notation, required
+		All of this is information specification such as mockup, and verbal description
+		
+		Deliverables:
+		Process Specification
+			Describe how the work will be done
+			Task breakdown
+		Powerpoint
+		
+		I.1 Interim (Present)
+			Start mockup
+		I.2 Final
+			Mockup is ok, to represent the product without code
+			Write some codes, but no need to write all codes
+				Atleast icon must appear
+				Maybe a few screens must work
+				Bonus points for more functionality
+					Use acceleromitor
+					Object and distance detection
+					
+	Phase II
+		The focus is on process AND product
+		Semi formal documentation IS required like UML
+		Some functional code
+		II.1 Interim
+		II.2 Final (Present)
