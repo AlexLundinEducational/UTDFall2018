@@ -20,3 +20,8 @@ Review
 		Solution
 			Paging
 				divide physical memory into frames
+				
+	How to translate Virtual Address (VA) to Page Address (PA)
+		20 bits | 12 bits
+		page #  | page offset
+		
