@@ -1,0 +1,8 @@
+Review
+	Segmentation		one process uses RAM at a time
+	Time Sharing		add per process starting location to obtain physical address
+	Base				several base+bound pairs per process	
+	Base+Bounds			dynamic approach that verifies address is in valide range
+	
+	
+	Segmentation
