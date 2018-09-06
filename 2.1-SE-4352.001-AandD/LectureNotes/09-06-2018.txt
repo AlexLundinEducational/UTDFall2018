@@ -50,3 +50,4 @@ Elicitation
 			1) Does it work?
 			2) Is it secure?
 			3) Is it portable and customizable to multiple locations and feature sets?
+			4) Is it adaptable?
