@@ -3,3 +3,6 @@ Chapter 3
 	ER diagram
 		Entity - table
 		Attriubtes - columns in a table
+			Simple		single atomic value
+			Composite	serveral components
+			multivalued color of a car(multi colored / 2 tone), previous degree(s)
