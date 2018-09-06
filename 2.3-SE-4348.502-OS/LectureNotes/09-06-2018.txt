@@ -6,3 +6,17 @@ Review
 	
 	
 	Segmentation
+	
+	MMU - Memory Management Unit
+		- stores the segments
+		
+	Segmentation
+		Problems
+			Space utilization
+				too big, wastes spaces
+			Fragmentation
+				free memory holes are too small and scattered
+				
+		Solution
+			Paging
+				divide physical memory into frames
