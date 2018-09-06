@@ -27,4 +27,5 @@ Elicitation
 				Tempurature control, 
 				Food, order when fridge is empty
 				Green energy, toggle electricity off when no one is here
-			
+				
+			Manaul Override
