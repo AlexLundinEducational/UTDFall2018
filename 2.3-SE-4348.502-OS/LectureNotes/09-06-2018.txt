@@ -51,5 +51,10 @@ Review
 		content switch
 			save old page table base register in PCB
 			change contents of page talbe base register to knew processes
+			
+		2 memory accesses
+			consult page table to find frame
+			get data from frame, then translate to the phyiscal address
+			this is doubling memory referencing
 		
 		
