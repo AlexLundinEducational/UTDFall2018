@@ -31,7 +31,14 @@ Elicitation
 				Tempurature control, 
 				Food, order when fridge is empty
 				Green energy, toggle electricity off when no one is here, manaul Override
-			
+				People can	
+					sets preferences
+					change preferences
+					delete preferences
+				Workers can	
+					see preferences
+				Computers can
+					see preferences
 			Security
 				1)Inside
 				2)Outside
@@ -51,3 +58,4 @@ Elicitation
 			2) Is it secure?
 			3) Is it portable and customizable to multiple locations and feature sets?
 			4) Is it adaptable?
+			5) Are the customer satisfied? Is the system user friendly?
