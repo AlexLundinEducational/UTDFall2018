@@ -1,0 +1,5 @@
+Chapter 3
+
+	ER diagram
+		Entity - table
+		Attriubtes - columns in a table
