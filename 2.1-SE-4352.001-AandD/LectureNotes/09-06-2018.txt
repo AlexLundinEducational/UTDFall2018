@@ -31,3 +31,6 @@ Elicitation
 			Security
 				1)Inside
 				2)Outside
+				3)High payment for cameras off
+				4)Only used for legality issues, discretion
+				5)Multiple level of access for workers
