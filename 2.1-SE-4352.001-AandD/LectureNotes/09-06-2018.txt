@@ -1,0 +1,15 @@
+Elicitation
+	Questions:
+		What do you want the app to do?
+		What kind of additions for the plug and play?
+		
+		
+		
+Lecture Notes
+Module 4
+
+	Most important point of the course
+	Inhibiting or Enabling a System's Quality Attributes
+		An archtecture decides wether or not a system can deliver quality attributes
+		
+	80% of cost is AFTER deployment
