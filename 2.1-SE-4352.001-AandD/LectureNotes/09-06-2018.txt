@@ -27,10 +27,12 @@ Elicitation
 			
 		IOT
 			Automate
+				Automations must be expandable, in the future
 				Access, secure with a physical ID, possibly with a GPS chip, RFID
 				Tempurature control, 
 				Food, order when fridge is empty
 				Green energy, toggle electricity off when no one is here, manual Override
+				
 				People can	
 					sets preferences
 					change preferences
