@@ -22,6 +22,16 @@ Review
 				divide physical memory into frames
 				
 	How to translate Virtual Address (VA) to Page Address (PA)
-		20 bits | 12 bits
-		page #  | page offset
+		Page Address
+			20 bits | 12 bits
+			page #  | page offset
+			
+		Virtual Address
+			lowbits = offset
+			high bits = total VA bits - low bits
+		
+		3 variables
+			total bits
+			number of bits for page #
+			number of bits for offset size
 		
