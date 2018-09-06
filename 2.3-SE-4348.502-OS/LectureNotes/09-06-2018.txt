@@ -35,3 +35,21 @@ Review
 			number of bits for page #
 			number of bits for offset size
 		
+		VPN - virtual page number
+		PPN - physical page number
+		physical page - frame
+		
+		array is the data structure for big mapping (slide 13)
+		
+		** important slide
+		cpu generates a logical address, which is turned into phyiscal address (slide 15)
+		
+		page table is NOT stored in the MMU
+			page table is stored in memory
+			the page table is accessed through the pointer stored in the base register
+			
+		content switch
+			save old page table base register in PCB
+			change contents of page talbe base register to knew processes
+		
+		
