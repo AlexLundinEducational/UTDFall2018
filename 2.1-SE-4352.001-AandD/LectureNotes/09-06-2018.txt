@@ -20,6 +20,9 @@ Elicitation
 			Lawyers say he has to develop
 			Wants to build resorts with homey feel
 			Individual houses
+				Living area
+				2-4 bedrooms
+				Bathrooms
 			
 		IOT
 			Automate
@@ -34,3 +37,14 @@ Elicitation
 				3)High payment for cameras off
 				4)Only used for legality issues, discretion
 				5)Multiple level of access for workers
+				
+		Initial Design
+			Outline
+				Hardware
+				Building layout
+				Meeting with architects mid to late December
+					Plans due sometime before then
+					
+		Priorities
+			1) Does it work?
+			2) Is it secure?
