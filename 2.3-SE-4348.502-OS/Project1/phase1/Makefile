@@ -4,9 +4,10 @@
 
 
 
-# Flags for the C++ implicit rules
+# Flags for the C implicit rules
 CC = gcc
 CFLAGS=-I.
+DEPS = project1.h
 
 # include flags, each must begin with a -I
 INC=-I$(IDIR)
@@ -20,7 +21,7 @@ PROJECTNAME = SE4348.aml140830.project1.phase1
 EXECFILE = project1
 
 ## actually define the names of the OBJS files
-OBJS = loggingFunctions.o processControl.o project1.o signalHandling.o
+OBJS = project1.o builtIns.o commandLineLoop.o scanCommandLine.o parseCommandLine.o processControl.o executeCommandLine.o  
 ## use wild cards to define what types of files SRCS are
 SRCS = $(wildcard *.c)
 
@@ -31,7 +32,7 @@ clean:
 	rm -f $(OBJS) $(EXECFILE) y.tab.h *~ \#*
 	
 # rule for creating objects from SRCS files, use the include flag and paths from above	
-$(OBJS): $(SRCS)
+%.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 	
 # rule for creating executable, use libaray flags from above
