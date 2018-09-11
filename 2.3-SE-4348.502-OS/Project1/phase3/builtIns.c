@@ -52,18 +52,24 @@ int dash_cd(char **args)
 
 int dash_path(char **args)
 {
-  char *arg;
-  char **paths;
+
+  // create global paths character array
+  int elements_in_args = sizeof(args) / sizeof(args[0]);
+  char *paths[elements_in_args];
+  
+  // initialize loop variables
   int i=1;   
-   
+  int j=0;
+  char *arg;
   // loop through all arguements
   // skip index 0, because this is the path command
   printf("The tokenized paths are:\n");
   do {
-	printf("	%s\n", args[i]);
+	paths[j] = args[i];
+	printf("	%s\n", paths[j]);
 	i++;
+	j++;
   } while (args[i]);
-  
   return 1;
 }
 
@@ -78,7 +84,7 @@ int dash_help(char **args)
     printf("  %s\n", builtin_str[i]);
   }
 
-  printf("Use the man command for information on other programs.\n");
+  printf("The linux man pages will give more information on other programs.\n");
   return 1;
 }
 
