@@ -12,4 +12,14 @@ Slide (8-
 		predict behaviors early on
 		skeletal design
 		
-	
+	Estimates
+		Top down
+			Architect and manager
+		Bottom up
+			Developement team
+			
+	Transferable, Reusable Model (chapter 25)
+		SPL- Software Product Line
+			Assests
+				Fixed - static, won't change
+				Variable - additional, enhanced features
