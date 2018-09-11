@@ -22,4 +22,8 @@ Project 2
 		ctags -R *
 		allows a designer to trace function calls across files
 		
+		look at 
+			GETPID
+			RUNTIME
+		
 		
