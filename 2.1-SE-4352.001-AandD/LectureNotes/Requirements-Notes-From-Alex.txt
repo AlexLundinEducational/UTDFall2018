@@ -1,0 +1,57 @@
+Elicitation
+	Questions:
+		What do you want the app to do?
+		What kind of additions for the plug and play?
+		
+	Notes:
+		Customer is a son of a pig farmer
+		High stakes investment
+		Now customer is in real estate
+		Has alot of land he must do something with
+			Lawyers say he has to develop
+			Wants to build resorts with homey feel
+			Individual houses
+				Living area
+				2-4 bedrooms
+				Bathrooms
+			Middle of Kentucky
+			20 houses on first rollout
+			1 acre of so of land per house
+			
+		IOT
+			Automate
+				Automations must be expandable, in the future
+				Access, secure with a physical ID, possibly with a GPS chip, RFID
+				Tempurature control, 
+				Food, order when fridge is empty
+				Green energy, toggle electricity off when no one is here, manual Override
+				
+				People can	
+					sets preferences
+					change preferences
+					delete preferences
+				Workers can	
+					see preferences
+				Computers can
+					see preferences
+			Security
+				1)Inside
+				2)Outside
+				3)High payment for cameras off
+				4)Only used for legality issues, discretion
+				5)Multiple level of access for workers
+				
+		Initial Design
+			Outline
+				Hardware
+				Building layout
+				Meeting with architects mid to late December
+					Plans due sometime before then
+					
+		Priorities
+			1) Does it work?
+			2) Is it secure?
+			3) Is it portable and customizable to multiple locations and feature sets?
+			4) Is it adaptable?
+			5) Are the customer satisfied? Is the system user friendly?
+			6) Whole app must look like it's all in house (portals to other services is ok)
