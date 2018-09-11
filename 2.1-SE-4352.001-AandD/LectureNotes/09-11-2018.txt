@@ -27,3 +27,19 @@ Slide (8-
 	
 	Independently Developed Components
 		architecture defines elements that can be incorporated
+		
+	13 reasons (need to know 
+	
+	Quiz2 in class
+		Question: Are these 13 (listed above) ranked in order of importance?
+		Answer: Depends on the system, this is a architecture centric design
+		
+	Quality design decisions (slide 34) (know these for exam)
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+		
