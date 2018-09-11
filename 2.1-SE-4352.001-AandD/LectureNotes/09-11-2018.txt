@@ -23,3 +23,7 @@ Slide (8-
 			Assests
 				Fixed - static, won't change
 				Variable - additional, enhanced features
+				
+	
+	Independently Developed Components
+		architecture defines elements that can be incorporated
