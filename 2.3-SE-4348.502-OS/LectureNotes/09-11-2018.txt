@@ -25,5 +25,7 @@ Project 2
 		look at 
 			GETPID
 			RUNTIME
+			syscall.c
+			syscall.h
 		
 		
