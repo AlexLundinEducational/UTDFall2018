@@ -16,4 +16,6 @@ int executeCommandLine(char **args);
 char *scanCommandLine(void);
 extern int (*builtin_func[]) (char **);
 extern char *builtin_str[];
+extern char *dash_paths[];
+extern int dash_paths_elements;
 #endif

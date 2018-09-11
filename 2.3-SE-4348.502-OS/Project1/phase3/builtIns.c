@@ -53,9 +53,9 @@ int dash_cd(char **args)
 int dash_path(char **args)
 {
 
-  // create global paths character array
-  int elements_in_args = sizeof(args) / sizeof(args[0]);
-  char *paths[elements_in_args];
+  // create global dash_paths character array
+  int dash_paths_elements = sizeof(args) / sizeof(args[0]);
+  char *dash_paths[dash_paths_elements];
   
   // initialize loop variables
   int i=1;   
@@ -63,10 +63,10 @@ int dash_path(char **args)
   char *arg;
   // loop through all arguements
   // skip index 0, because this is the path command
-  printf("The tokenized paths are:\n");
+  printf("The tokenized dash_paths are:\n");
   do {
-	paths[j] = args[i];
-	printf("	%s\n", paths[j]);
+	dash_paths[j] = args[i];
+	printf("	%s\n", dash_paths[j]);
 	i++;
 	j++;
   } while (args[i]);

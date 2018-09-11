@@ -21,7 +21,7 @@ PROJECTNAME = SE4348.aml140830.dash.phase3
 EXECFILE = dash
 
 ## actually define the names of the OBJS files
-OBJS = dash.o builtIns.o parsePathArguements.o commandLineLoop.o scanCommandLine.o parseCommandLine.o processControl.o executeCommandLine.o 
+OBJS = dash.o builtIns.o commandLineLoop.o scanCommandLine.o parseCommandLine.o processControl.o executeCommandLine.o 
 ## use wild cards to define what types of files SRCS are 
 SRCS = $(wildcard *.c)
 
