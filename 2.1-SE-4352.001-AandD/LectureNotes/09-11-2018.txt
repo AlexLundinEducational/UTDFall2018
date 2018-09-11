@@ -1,3 +1,15 @@
 Lecture Notes
 Module 4
 Slide (8-
+
+	Constraints
+	
+	Organizational Structure
+		Work breakdown
+		
+	Evolutionary prototyping
+		lower risk
+		predict behaviors early on
+		skeletal design
+		
+	
