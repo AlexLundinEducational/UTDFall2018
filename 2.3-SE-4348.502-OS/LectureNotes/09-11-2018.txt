@@ -1,4 +1,7 @@
 Project 2
+
+	Solution should be 10 to 15 lines of code, max
+	
 	QMU Emulator
 	
 	Main
