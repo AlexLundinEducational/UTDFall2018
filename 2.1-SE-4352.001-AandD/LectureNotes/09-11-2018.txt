@@ -28,7 +28,7 @@ Slide (8-
 	Independently Developed Components
 		architecture defines elements that can be incorporated
 		
-	13 reasons (need to know 
+	13 reasons (slide 18) (need to know a few of these)
 	
 	Quiz2 in class
 		Question: Are these 13 (listed above) ranked in order of importance?
