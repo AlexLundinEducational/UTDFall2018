@@ -1,2 +1,25 @@
 Project 2
 	QMU Emulator
+	
+	Main
+		use exit call explicitly
+		
+		
+	Sample Test Script
+		more /cs448-xv6
+		
+		int rc1 = getReadcount();
+		printf(1, "Read count %d\n", rcl);
+		
+	Debugger
+		GDB and emulator talk to eachother through a port
+		
+		MAKE qemu-gdb
+		
+		gdb kernel/kernel
+		
+	Tracing
+		ctags -R *
+		allows a designer to trace function calls across files
+		
+		
