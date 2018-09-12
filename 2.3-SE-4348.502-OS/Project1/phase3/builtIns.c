@@ -9,7 +9,8 @@ int dash_exit(char **args);
 int dash_cd(char **args);
 int dash_path(char **args);
 int dash_help(char **args);
-
+char *dash_paths[];
+int dash_paths_elements; 
 
 // custom variable declarations
 char *builtin_str[] = {
@@ -53,16 +54,16 @@ int dash_cd(char **args)
 int dash_path(char **args)
 {
 
-  // create global dash_paths character array
-  int dash_paths_elements = sizeof(args) / sizeof(args[0]);
-  char *dash_paths[dash_paths_elements];
+  // initialize global dash_paths character array
+  dash_paths_elements = sizeof(args) / sizeof(args[0]);
+  dash_paths_elements--;
+  *dash_paths[dash_paths_elements];
   
   // initialize loop variables
   int i=1;   
   int j=0;
   char *arg;
   // loop through all arguements
-  // skip index 0, because this is the path command
   printf("The tokenized dash_paths are:\n");
   do {
 	dash_paths[j] = args[i];

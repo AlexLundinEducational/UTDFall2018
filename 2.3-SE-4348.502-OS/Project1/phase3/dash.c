@@ -5,9 +5,11 @@
 #include "dash.h"
 
 
-// main method for dash
-// distributes the work to the other methods
+char *dash_paths[];
+int dash_paths_elements;
 
+// main method for dash
+// distributes the work to the other methods  
 int main(int argc, char **argv)
 {
 

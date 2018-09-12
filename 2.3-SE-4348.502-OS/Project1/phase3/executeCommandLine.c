@@ -15,7 +15,7 @@ int executeCommandLine(char **args)
     return 1;
   }
   
-  // loop through all built in commands first
+  // first, loop through all built in commands
   for (i = 0; i < dash_num_builtins(); i++) {
     if (strcmp(args[0], builtin_str[i]) == 0) {
       return (*builtin_func[i])(args);
@@ -23,24 +23,37 @@ int executeCommandLine(char **args)
   }
   
   
+  char buffer[1024];
+/*   if (dash_paths_elements > 0){
+	 int numberOfSupportPaths = dash_paths_elements + 1;
+     sprintf(buffer, "\nSearching support paths: %d", numberOfSupportPaths); 
+     // Use sprintf to send the string into buffer 
+     // then print with printf
+     printf("%s", buffer); 	 
+  } */
   
-  printf("\nPath loop:");
-  // loop through all search paths second
-  for (i = 0; i < dash_paths_elements; i++) {
-	  
+  // second, loop through all search paths
+  for (i = 0; i < dash_paths_elements; i++) { 
     // create string from path and command name
 	char commandBuffer[1024];
 	strcpy(commandBuffer, dash_paths[i]);
 	strcpy(commandBuffer, args[0]);
+
 	
-	if( access(commandBuffer, F_OK ) != -1 ) {
+	if(access(commandBuffer, F_OK ) != -1 ) {
     // file exists
-	   printf("\nThe command was found in the path:");
+		sprintf(buffer, "\nThe command %s was found in the path: %s", args[0], dash_paths[i]); 
+		//printf("\nThe command was found in the path: %s", dash_paths[i]);
     } else {
     // file doesn't exist
-	   printf("\nThe command was NOT found in the path:");
+		sprintf(buffer, "\nThe command %s was NOT found in the path: %s", args[0], dash_paths[i]); 
+		//printf("\nThe command was NOT found in the path: %s", dash_paths[i]);
     }
-    printf("	%s\n", dash_paths[i]);
-  }  
-  return processControl(args);
+     // Use sprintf to send the string into buffer 
+     // then print with printf
+     printf("%s", buffer);
+  }
+  
+  //return processControl(args);
+  return 1;
 }
