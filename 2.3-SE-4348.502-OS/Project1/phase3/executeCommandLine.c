@@ -24,16 +24,9 @@ int executeCommandLine(char **args)
   
   
   char buffer[1024];
-/*   if (dash_paths_elements > 0){
-	 int numberOfSupportPaths = dash_paths_elements + 1;
-     sprintf(buffer, "\nSearching support paths: %d", numberOfSupportPaths); 
-     // Use sprintf to send the string into buffer 
-     // then print with printf
-     printf("%s", buffer); 	 
-  } */
-  
+
   // second, loop through all search paths
-  for (i = 0; i < dash_paths_elements; i++) { 
+  for (i = 0; dash_paths[i] != NULL; i++) { 
     // create string from path and command name
 	char commandBuffer[1024];
 	strcpy(commandBuffer, dash_paths[i]);
@@ -54,6 +47,7 @@ int executeCommandLine(char **args)
      printf("%s", buffer);
   }
   
+  printf("\n");
   //return processControl(args);
   return 1;
 }

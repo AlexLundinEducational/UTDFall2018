@@ -16,7 +16,7 @@ void commandLineLoop(void)
     args = parseCommandLine(line);
     status = executeCommandLine(args);
 	//printf("\nin commandline loop again:");
-    free(line);
-    free(args);
+    //free(line);
+    //free(args);
   } while (status);
 }

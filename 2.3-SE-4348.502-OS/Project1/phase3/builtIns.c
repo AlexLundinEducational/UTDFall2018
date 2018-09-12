@@ -57,7 +57,7 @@ int dash_path(char **args)
   // initialize global dash_paths character array
   dash_paths_elements = sizeof(args) / sizeof(args[0]);
   dash_paths_elements--;
-  *dash_paths[dash_paths_elements];
+  //*dash_paths[dash_paths_elements];
   
   // initialize loop variables
   int i=1;   
