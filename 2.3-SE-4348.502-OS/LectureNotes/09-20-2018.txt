@@ -1,4 +1,8 @@
 Lecture
+	Review
+		Hardware communcates with software through
+			interupt
+			
 	Beyond Physical Memory
 	
 		In Class Discussion
@@ -18,5 +22,31 @@ Lecture
 				Detect and load page from disk
 			Need hardware support
 			
-			How to find out if page is
-				In memory or On Disk
+			Mechasism
+				Invalid bit	
+					already exists
+					determines if memory is allocated or NOT
+					
+				How to find out if page is
+					In memory or On Disk
+					
+					So add extra bit
+					PTE - present bit set
+					
+				Aspects
+					Extreme Case
+						start process with no pages
+						pure page demanding
+					Instruction
+				
+			Policy
+				Frame replacement
+					takes a long time to, move page from memory to disk
+					solution can have time to execute
+				Algorithims
+					goal is to reduce total number of faults
+					several choices:
+						optimal replacement
+							replace page that will not be used for a long time
+						
+					
