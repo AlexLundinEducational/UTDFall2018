@@ -1,0 +1,9 @@
+Lecture
+	Beyond Physical Memory
+	
+		In Class Discussion
+			A process requests phyiscal memory for a page and the memory is full.
+			How to handle this request?
+				1.) Block the process
+				2.) Search for necessary memory
+				3.) Unblock when memory was found
