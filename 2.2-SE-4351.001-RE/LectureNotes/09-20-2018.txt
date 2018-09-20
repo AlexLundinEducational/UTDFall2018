@@ -1,5 +1,6 @@
 
 Lecture
 		RequirementsModels
+			** slide 6
 			** slide 11
 			Know the formula and symbols
