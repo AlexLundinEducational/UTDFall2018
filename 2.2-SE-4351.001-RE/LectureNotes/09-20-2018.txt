@@ -1,0 +1,5 @@
+
+Lecture
+		RequirementsModels
+			** slide 11
+			Know the formula and symbols
