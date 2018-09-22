@@ -35,17 +35,27 @@ non deterministic - program yeilds different results on different runs
 			agent is completely unware of results of its actions
 			agent is missing all knowledge of world
 3.3 Example problems
+
 	problem - collection of information that the agent will
 		use to decide what to do
-		
-	initial state - the starting space that the agent knows
-		iteself to be in
-		
-	operator - an action, which transitions the agent to a state
+		information:
+			1 initial state - the starting space that the agent knows
+				iteself to be in
+				
+			2 operator set - collection of actions, which transitions the agent to a state
+
+			3 goal test - determines if solution is reached
+			4 path cost - prioritizes solutions
+			
 	state space - all reachable states
 	path - route from initial to solution
-	goal test - determines if solution is reached
 	
+	Multistate probs:
+		initial state SET
+		operator set - action might reach a SET of states, rather than just one
+		path - connects a SET of states
+		solution - a path that leads to a SET of goal states
+		
 3.4 Searching for solutions
 
 3.5 Search strategies
