@@ -1,5 +1,6 @@
 Chapter 3 (page 77)
 Solving by searching
+non deterministic - program yeilds different results on different runs
 
 3.1 Problem solving agents
 	Goal - set of world states
@@ -16,7 +17,23 @@ Solving by searching
 			follow sequence to goal
 			
 3.2 Formulating problems
-
+	Knowledge amounts:
+		Single state
+			agents knows all effects of it's actions
+			agent has all knowledge of world
+				*simplest, search results in solution
+		Multi state
+			agents knows all effects of it's actions
+			agent has some knowledge of world
+				*plan ahead
+		Contigency
+			agents actions are non deterministic
+			agent is missing some knowledge of world
+				*scan during execution
+				*agent can act before search returns solution
+		Exploration
+			agent is completely unware of results of its actions
+			agent is missing all knowledge of world
 3.3 Example problems
 
 3.4 Searching for solutions
@@ -27,7 +44,7 @@ Solving by searching
 
 3.7 Constraint Satisfaction Search
 
-3.8 Summary (85)
+3.8 Summary (107)
 	Why is searching valueable?
 		Because it gives a solution when the agent is not clear
 		on which immediate action is best. The search returns
