@@ -1,0 +1,45 @@
+Chapter 3 (page 77)
+Solving by searching
+
+3.1 Problem solving agents
+
+3.2 Formulating problems
+
+3.3 Example problems
+
+3.4 Searching for solutions
+
+3.5 Search strategies
+
+3.6 Avoiding repeated states
+
+3.7 Constraint Satisfaction Search
+
+3.8 Summary (85)
+	Why is searching valueable?
+		Because it gives a solution when the agent is not clear
+		on which immediate action is best. The search returns
+		a possible sequence of actions for the agent to 
+		consider.
+	
+	Definitions:
+		problem
+			1 intial state 
+			2 set of operators
+			3 goal test function
+			4 path cost function
+			
+		environment - represents the problem state space
+		path - route through state space, from initial state to solution
+		breadth first - expands shallowest node first
+		uniform cost - expands least cost node first
+		depth first - expands deepest node first
+		depth limited - place limit on how deep a depth first search can go
+		iterative deepening - depth-limited with increasing limt until goal is reached
+		bidirectional - reduces time complexity, increases memory useage
+		
+	Evaluation:
+		completeness
+		optimality
+		time complexity
+		space complexity
