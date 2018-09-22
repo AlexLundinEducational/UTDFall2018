@@ -2,7 +2,19 @@ Chapter 3 (page 77)
 Solving by searching
 
 3.1 Problem solving agents
-
+	Goal - set of world states
+	actions - cause transitions of world states
+	Process
+		1 goal formulation
+			determines the stopping point for searching
+		2 problem formulation
+			determines what actions and states to condiser
+		3 search
+			looks for sequence of actions that results in 
+			transition from intial state to goal
+		4 execution
+			follow sequence to goal
+			
 3.2 Formulating problems
 
 3.3 Example problems
