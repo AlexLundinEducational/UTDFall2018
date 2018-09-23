@@ -56,7 +56,13 @@ non deterministic - program yeilds different results on different runs
 		path - connects a SET of states
 		solution - a path that leads to a SET of goal states
 		
-3.4 Searching for solutions
+	Measuring
+		1 solution or no?
+		2 path cost
+		3 search cost
+		4 total cost
+		
+3.4 Searching for solutions 97
 
 3.5 Search strategies
 
