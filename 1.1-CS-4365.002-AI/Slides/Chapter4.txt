@@ -1,0 +1,9 @@
+Chapter 4 (Page 140)
+Beyond Classical Search
+4.1 Local Search And Optomizations
+4.2 Local Search In Continuous Spaces (149)
+4.3 Searching With Nondeterministic Actions (153)
+4.4 Searching With Partial Observations (158)
+4.5 Online Search Agents And Unknown Environments (167)
+4.6 Summary (173)
+EXERCISES (177)

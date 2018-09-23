@@ -1,0 +1,12 @@
+Chapter 5 (Page 181)
+
+5.1 Games (181)
+5.2 Optimal Decisions In Games (183)
+5.3 Alpha—Beta Pruning (187)
+5.4 Imperfect Real-Time Decisions (191)
+5.5 Stochastic Games (197)
+5.6 Partialy Observable Games (200)
+5.7 State-Of-The-Art Game Programs (205)
+5.8 Alternative Approaches (207)
+5.9 Summary (209)
+Exercises (215)
