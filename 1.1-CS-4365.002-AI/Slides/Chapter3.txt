@@ -61,13 +61,55 @@ non deterministic - program yeilds different results on different runs
 		2 path cost
 		3 search cost
 		4 total cost
-		
-3.4 Searching for solutions 97
+	Examples
+		8 puzzle
+			states - specifies each locations of the eight tiles as well as the blank
+			operators - blank moves left, right, up or down
+			goal test - state matches goal configuration shown
+			path cost - each step is 1
+			
+		8 queens
+			states - arrangement of 0 to 8 queens
+			operators - add queen to any square
+			goal test - all 8 queens on board, not attacking any other queen
+			path cost - 0, goal configuration is all that matters
+		Vaccum
+			Single State
+				states - one of eight states
+				operators - suck, move right, move left
+				goal test - all dirt is sucked
+				path cost - 1
+			Multi State
+				state set - subset of states 1-8
+				operators - suck, move right, move left
+				goal test - all states in set have no dirt
+				path cost - 1
+3.4 Searching for solutions 92
 
-3.5 Search strategies
+
+3.5 Search strategies 95
+	uninformed - no information about number of steps to goal
+		also called blind
+		distinguished by order of node expansion
+		1 Bread first
+		2 Uniform cost
+		3 Depth first
+		4 Depth limited
+		5 iterative deepening
+		6 bidirectional
+	informed - 
+		heuristic
 
 3.6 Avoiding repeated states
-
+	do not return the state you came from
+		have expand function refuse to generate any successor that is the same state 
+		as the parent
+	do not create paths with cycles
+		have expand function refuse to
+		generate any sucessor of a node 
+		that is the same as any of the nodes ancestors
+	do not generate any state that was generated before
+		keep all states in memory
 3.7 Constraint Satisfaction Search
 
 3.8 Summary (107)
@@ -98,3 +140,5 @@ non deterministic - program yeilds different results on different runs
 		optimality
 		time complexity
 		space complexity
+		
+Exercises (109)
