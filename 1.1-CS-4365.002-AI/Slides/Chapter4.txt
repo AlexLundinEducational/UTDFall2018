@@ -37,7 +37,38 @@ Stochastic - randomnly determined, not predictable
 4.2 Local Search In Continuous Spaces (149)
 
 4.3 Searching With Nondeterministic Actions (153)
+	contingency plan
+	erractic vaccum world
+		power vaccum
+			can clean both left and right squares
+			also might deposit dirt if the square is already clean
+	AND-OR search trees
+		this is the solution for nondeterministic problems
+			the agent creates a state, these are OR nodes
+				move
+			the environment creates a state, these are AND nodes
+				suck, which might clean or dirty the space
+	Slipery vaccum world	
+		move does not always work
+			try and try again
+			this technique depends on the world space
+			
 4.4 Searching With Partial Observations (158)
+	belief states - states the agent believes itself to possibly be in
+	
+	No observation
+		take action to reach a solveable belief states
+		
+	searching with observations
+		use PERCEPTS function to return percept recieved in a given state
+		create a belief set of states from the current percept
+		for each action from the current belief state
+			use PREDICT (belief, action)
+			
+	partial sensing	
+	
+	non-deteministic actions
+	
 4.5 Online Search Agents And Unknown Environments (167)
 4.6 Summary (173)
 	Local search methods 
