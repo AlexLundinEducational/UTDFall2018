@@ -8,6 +8,7 @@ Stochastic - randomnly determined, not predictable
 		Pros
 			fast
 		Cons
+			doesnt have ability to go downhill
 			get stuck at:
 				local maxima because
 					neighbors are lower, so it won't move to the neighbor nodes
@@ -16,9 +17,23 @@ Stochastic - randomnly determined, not predictable
 				plateau
 			depends on landscape	
 	Simulate annealing
+		example is a pingpong ball finding rest on a bumpy surface
+			shake the surface just hard enough to pop out and start over
 		Pros
-		
+			hillclimb with randomn progression from probability and tempurature
 		Cons
+	Local beam
+		shares info between parallel threads
+		Pros
+			progress is shared between processes
+		Cons	
+			threads have the potential to converge on one area of the set space
+	Genetic
+		Pros
+			usefull components drive creation (fitness = reproduction)
+		Cons
+			randomn mutations can inhibit 
+			
 4.2 Local Search In Continuous Spaces (149)
 
 4.3 Searching With Nondeterministic Actions (153)
