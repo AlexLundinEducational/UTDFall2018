@@ -48,5 +48,6 @@ Lecture
 					several choices:
 						optimal replacement
 							replace page that will not be used for a long time
-						
+						FIFO
+						LRU
 					
