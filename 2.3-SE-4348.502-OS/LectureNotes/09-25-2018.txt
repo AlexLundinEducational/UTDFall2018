@@ -48,4 +48,36 @@ Lecture
 						
 	Threads
 		Concurency - processes that are running simultaneously and independently
-	
+			communicate with 
+				pipes
+				shared memory
+				sockets
+			Procs
+				use things that already exist
+			Cons
+				cumbersome programming
+				high communcation overheads
+				expensive context switch
+			Solution
+				thread
+		Threads	
+			similar to procedures, but they have their own control
+			create thread	
+				assign subtask to thread
+			same process that share same address threads
+			example: global variables are shared by all processes in the thread
+			
+			pros
+				every thread has it's own registers and stack (even multithread)
+				** slide 10
+				threads of same process share:
+					PID
+					address sace
+					open file descritors
+					current working directory
+					user id and group
+				threads have their own:
+					thread ID
+					registers PC and SP
+					stack within the address space
+			cons
