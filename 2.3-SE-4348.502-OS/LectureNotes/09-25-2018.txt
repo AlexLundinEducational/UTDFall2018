@@ -123,3 +123,5 @@ Lecture
 		atomic instruction
 			thread safe
 			uniteruptable group of instructions
+			this is a critical section
+			processes from same thread can NOT be in critical section at the same time
