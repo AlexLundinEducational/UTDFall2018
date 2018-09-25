@@ -17,14 +17,35 @@ Lecture
 					Swapping - pull from disk
 					
 	Big Picture
-		Virtualization
-			CPU
+		Virtualization 	- only used when resource has to be shared
+						- creates isolation between entities sharing
+						- hides the fact of sharing from entities
+			CPU			- sharing starts with CPU
+						- we created an abstraction of process for the CPU
 				Context Switch
+						- 
+						- policy determines who goes next
 				Schedules
-			Memory
+						- determines which process gets the time slice
+			
+			Memory 		- created abstract space called virutal memory
 				Allocation
+						- mapping of virtual memory to real memory
 				Segmentation
+						- deal withs internal fragmentation
+						- doesn't deal with external fragmentation
 				Paging
+						- solves external fragmentation
+						- each page is a equal size
+						- created a new thing to store, the page table
 					TLB
+						- cache for some of the page table entries
 					Multilevel
+						- pageing of the page table so the size of the cache is reduced
 					Swapping
+						- demand paging
+						- allows memory to move pages out for the demanded pages
+						
+	Threads
+		Concurency - processes that are running simultaneously and independently
+	
