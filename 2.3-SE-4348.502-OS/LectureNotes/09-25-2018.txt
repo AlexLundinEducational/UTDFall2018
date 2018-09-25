@@ -1,0 +1,30 @@
+Lecture
+
+	Big Picture
+		Virtualization
+			CPU
+				Context Switch - includes current process, register values
+				Schedules - can have multi level with priority
+					FIFO
+					LIFO
+					
+			Memory
+				Allocation - setting limits for program
+				Segmentation - 
+				Paging - contain commonly accessed values, loaded in memory
+					TLB
+					Multilevel
+					Swapping - pull from disk
+					
+	Big Picture
+		Virtualization
+			CPU
+				Context Switch
+				Schedules
+			Memory
+				Allocation
+				Segmentation
+				Paging
+					TLB
+					Multilevel
+					Swapping
