@@ -4,3 +4,12 @@ Lecture
 
 		chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/http://www.crosstalkonline.org/storage/issue-archives/2002/200204/200204-Florence.pdf
 		**One of these will be on the exam
+
+		Exam
+		10 T/F questions 2 points each
+		Essay type questions	
+			Draw fundamental proccess for RE
+				elicication
+				specification
+				validation
+			2 key differents between drawing above and sprial model
