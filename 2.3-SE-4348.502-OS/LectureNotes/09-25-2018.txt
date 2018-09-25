@@ -120,3 +120,6 @@ Lecture
 				cons
 					unlimted threads
 					high overhead
+		atomic instruction
+			thread safe
+			uniteruptable group of instructions
