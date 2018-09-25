@@ -81,3 +81,42 @@ Lecture
 					registers PC and SP
 					stack within the address space
 			cons
+			
+			
+			implementation
+				many-to-one
+					threads created at user level	
+						kernel is not aware
+				one-to-one	
+					threads created at kernel level
+						linux
+				Discussion
+					many-to-one
+						advantages
+							portable - not OS dependent, because the user library handles the thread
+						disadvantages
+							security
+							reliability
+								OS might do something unideal because it is unware
+					one-to-one
+						advantages
+							security
+							reliability
+								OS will manage memory ideally
+							more overhead
+						disadvantages
+							not portable - os dependent
+			many-to-one
+				pros
+					portable
+					lower overhead
+				cons
+					one block, blocks whole thread
+					multiple threads can not be run parellel
+			one-to-one
+				pros
+					parallel threds
+					no blocking
+				cons
+					unlimted threads
+					high overhead
