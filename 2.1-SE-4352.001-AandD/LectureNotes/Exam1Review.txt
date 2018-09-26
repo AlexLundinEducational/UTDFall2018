@@ -25,36 +25,42 @@ Module 1
 	Architecture Vs. Design (Slide 32)
 Module 2
 	What is Software Architecture (Slide 5 & 7)
-	Views and Structures (Slide 14
+	Views and Structures (Slide 14)
+	
+	Architectural Patterns
 		-Generic Layered
 		-Repository Architecture
 		-Client-Server architecture
 		-pipe and filter
 		-hybrid architectures.
-	Architectural Patterns
-		-Good rule of thumb (Slide 26)
+		
 	What makes good architecture?
-	Stakeholders
+		-Good rule of thumb (Slide 26)
+	
 	Who is involved in Architecture
+		Stakeholders
+		
 	Responsibilities and Skillsets of Architects (Slide 37)
 	Goal of SA (Slide 39)
 	3C's Advice for managers (Slide 41)
 	AIC (Slide 44)
+	
 Module 3
-	ASR (Slide 3-5)
 
-	Quick Notes Page 1
+
 	ASR (Slide 3-5)
-	-ASR from Stakeholders
-	-know the steps
-	-Quality Attribute Workshop (Slide 10)
-	-categories of business goals
-	-ASRs from the Business Goals
-	-What is a Utility Tree (Slide 19)
-	-Example (Slide 20 and 21)
-	-Next steps (Slide 23)
-	-Utility Tree
 	4 ways to gather ASR:
+		-ASR from Stakeholders
+		-Quality Attribute Workshop (Slide 10)
+			-know the steps
+		-ASRs from the Business Goals	
+			-categories of business goals
+		-Utility Tree
+			-What is a Utility Tree (Slide 19)
+			-Example (Slide 20 and 21)
+			-Next steps (Slide 23)
+	
+	
 Module 4
 	13 Reasons of why SA is important
 	Inhibiting or Enabling System's Quality Attribute (Slide 4)
@@ -66,43 +72,45 @@ Module 4
 	Organizational Structure
 	Prototype
 	Reuse
-	-Commercial off the shelf
+	
 	Independent Systems
+		-Commercial off the shelf
 	Restriction of Design Vocab
 	Basis for training
-	-Answer: depends on organization
+	
 	Slide 19
+		-Answer: depends on organization
 	Slide 20
-	Functionality and QA are Orthogonal (independent)
+		Functionality and QA are Orthogonal (independent)
 	Quality Attribute Considerations
-	Allocation of responsibilities
-	Data and Coordination models
 	How do we make decisions (slide 32)
+		Allocation of responsibilities
+		Data and Coordination models
+	
 	Mapping
 	Slide 40 & 41
 Module 5
 	3C's of SA
-	Context, problem, solution
-	Pattern
+	Pattern	
+		Context, problem, solution
+	
 	Different patterns:
+		-Main program and Subroutine
+		Object oriented
+		Layered
+		Client Server
+		Pipe and Filter
+		Peer to Peer
+		Publish-Subscribe
+		Blackboard
+	
+
+
 	Module 5 Extra
-	-Block Diagrams
-	-Pros and Cons
 	Mobile Robotics (4 solutions)
-	Quick Notes Page 2
-	-Main program and Subroutine
-	Object oriented
-	Layered
-	Client Server
-	Pipe and Filter
-	Peer to Peer
-	Publish-Subscribe
-	Blackboard
-	Different patterns:
-	-Pros and Cons
-	Quick Notes Page 3
-
-
+		-Block Diagrams
+		-Pros and Cons
+	
 7 Short Answer Questions
 
 1 of them is for sure on Utility Trees
