@@ -1,0 +1,108 @@
+Exam 1
+	Chapter 1 
+		-What is SA? 
+		Module 1
+	Chapter 2
+		-Why is SA Important? 
+		Module 2
+	Chapter 3 
+		-The Many Contexts of SA? 
+		Module 1
+	Chapter 4
+		-Understanding Quality Attributes? 
+		Module 2
+	Chapter 13
+		-Tactics and Patterns 
+		Module 5 and 5 Extra
+	Chapter 16
+		-Architecture and Requirements 
+		Module 3
+Module 1
+	Analogy Example: Importance of architecture to a non-technical person
+	Common Elements (Slide 11)
+	Architectural Style (Slide 22)
+	SDLC-Waterfall, Iterative, Spiral-Pros and cons
+	Architecture Vs. Design (Slide 32)
+Module 2
+	What is Software Architecture (Slide 5 & 7)
+	Views and Structures (Slide 14
+		-Generic Layered
+		-Repository Architecture
+		-Client-Server architecture
+		-pipe and filter
+		-hybrid architectures.
+	Architectural Patterns
+		-Good rule of thumb (Slide 26)
+	What makes good architecture?
+	Stakeholders
+	Who is involved in Architecture
+	Responsibilities and Skillsets of Architects (Slide 37)
+	Goal of SA (Slide 39)
+	3C's Advice for managers (Slide 41)
+	AIC (Slide 44)
+Module 3
+	ASR (Slide 3-5)
+
+	Quick Notes Page 1
+	ASR (Slide 3-5)
+	-ASR from Stakeholders
+	-know the steps
+	-Quality Attribute Workshop (Slide 10)
+	-categories of business goals
+	-ASRs from the Business Goals
+	-What is a Utility Tree (Slide 19)
+	-Example (Slide 20 and 21)
+	-Next steps (Slide 23)
+	-Utility Tree
+	4 ways to gather ASR:
+Module 4
+	13 Reasons of why SA is important
+	Inhibiting or Enabling System's Quality Attribute (Slide 4)
+	Changes (Slide 5)
+	Predicting System QA (Slide 6)
+	Communication of Stakeholder
+	Design Decision
+	Constraints
+	Organizational Structure
+	Prototype
+	Reuse
+	-Commercial off the shelf
+	Independent Systems
+	Restriction of Design Vocab
+	Basis for training
+	-Answer: depends on organization
+	Slide 19
+	Slide 20
+	Functionality and QA are Orthogonal (independent)
+	Quality Attribute Considerations
+	Allocation of responsibilities
+	Data and Coordination models
+	How do we make decisions (slide 32)
+	Mapping
+	Slide 40 & 41
+Module 5
+	3C's of SA
+	Context, problem, solution
+	Pattern
+	Different patterns:
+	Module 5 Extra
+	-Block Diagrams
+	-Pros and Cons
+	Mobile Robotics (4 solutions)
+	Quick Notes Page 2
+	-Main program and Subroutine
+	Object oriented
+	Layered
+	Client Server
+	Pipe and Filter
+	Peer to Peer
+	Publish-Subscribe
+	Blackboard
+	Different patterns:
+	-Pros and Cons
+	Quick Notes Page 3
+
+
+7 Short Answer Questions
+
+1 of them is for sure on Utility Trees
