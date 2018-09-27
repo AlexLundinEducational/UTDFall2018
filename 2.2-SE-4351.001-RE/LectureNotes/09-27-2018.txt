@@ -1,0 +1,40 @@
+First group	
+	pros
+		included screenshot markups
+		showed working code
+	cons
+		did not explain markup well
+		did not say if they wrote the code from scratch or modifyed existing
+		
+Second group
+	pros
+		defined requirements, system properties and environment properties
+		defined creep rate they can accomodate
+	cons
+		spent too much time showing decision process
+		
+Third
+	pros
+	
+	cons
+	
+Fourth
+	pros
+	
+	cons
+
+Fifth
+	pros
+	
+	cons
+
+Sixth 
+	pros
+	
+	cons	
+	
+What we need to do
+	include screenshots in powerpoint
+	more research on open source code we can use
+	create a reference model of the requirements, system and environment
+	
