@@ -1,4 +1,5 @@
 First group	
+	phone app with some working code
 	pros
 		included screenshot markups
 		showed working code
@@ -7,6 +8,7 @@ First group
 		did not say if they wrote the code from scratch or modifyed existing
 		
 Second group
+	phone app with good requirements, system and environment breakdown
 	pros
 		defined requirements, system properties and environment properties
 		defined creep rate they can accomodate
@@ -14,13 +16,21 @@ Second group
 		spent too much time showing decision process
 		
 Third
+	Theia with computer vision glasses
 	pros
-	
+		great introduction of team members
+		images showing how they wany their product to look like
+			glasses
+		overview of functional and non functional
+		showed how their requirements map to goals and what they've done so far
 	cons
-	
+		
 Fourth
+	Theia with sensors
 	pros
-	
+		detailed UML class diagram of all interfaces
+		intelligent use of existing technology in phone	
+			AM/FM radio
 	cons
 
 Fifth
@@ -37,4 +47,4 @@ What we need to do
 	include screenshots in powerpoint
 	more research on open source code we can use
 	create a reference model of the requirements, system and environment
-	
+	we have to show why our solution is better
