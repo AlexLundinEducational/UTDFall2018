@@ -1,0 +1,19 @@
+import os
+os.chdir("C:/Users/Alex/Desktop/Screen-Cleaner/GitHub/UTDFall2018/1.1-CS-4365.002-AI/Projects/p1")
+os.getcwd()
+
+import os
+os.chdir("C:/Users/Alex/Desktop/Screen-Cleaner/GitHub/aima-python")
+os.getcwd()
+
+import os
+os.chdir("C:/Users/Alex/Desktop/Screen-Cleaner/GitHub/aima-python/tests")
+os.getcwd()
+
+
+python -i C:\Users\Alex\Desktop\Screen-Cleaner\GitHub\UTDFall2018\1.1-CS-4365.002-AI\Projects\p1\search.py
+
+cd C:\Users\Alex\Desktop\Screen-Cleaner\GitHub\aima-python
+
+
+cd C:/Users/Alex/Desktop/Screen-Cleaner/GitHub/aima-python

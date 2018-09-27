@@ -58,11 +58,14 @@ Module 1
 		Cons
 			chaotic sprial
 	Architecture Vs. Design (Slide 32)
-		high vs low
+		high level vs low level
 Module 2
 	What is Software Architecture (Slide 5 & 7)
 	Views and Structures (Slide 14)
-	
+		view
+			represenation of the set of elements
+		structure
+			set of elements
 	Architectural Patterns
 		-Generic Layered
 		-Repository Architecture
@@ -72,40 +75,87 @@ Module 2
 		
 	What makes good architecture?
 		-Good rule of thumb (Slide 26)
-	
+			1 should be the product of a single, or small group with a single identified learder
+				technical consistency
+				strong connection between architect and developers
+			2 based on prioritized list of well specified quality attribute requirements
+			3 documented in terms of views
+			4 evaluated by ability to deliver important quality attributes
+				should occur early to allow for changes
+			5 should be created in an incremental approach
+				skeletal prototype with extensions during each iteration		
 	Who is involved in Architecture
 		Stakeholders
-		
+			Developement organization
+			marketing
+			end user
+			maintenence
+			customer
 	Responsibilities and Skillsets of Architects (Slide 37)
+		liaison with stakeholder
+		tech knowledge
+		SE
+		Risk management
 	Goal of SA (Slide 39)
 	3C's Advice for managers (Slide 41)
+		Capability
+		Culture
+		Commitment
 	AIC (Slide 44)
 	
 Module 3
 	ASR (Slide 3-5)
+		Architecturaly Significant Requirements
+		profound impact on architecture
+		profound impact on business
+		
 	4 ways to gather ASR:
 		-ASR from Stakeholders
 		-Quality Attribute Workshop (Slide 10)
 			-know the steps
+			step1
+				describe the workshop
+			step2
+				business presentation
+			step3
+				architectural plan presentation
+			step4
+				identify the architectural drivers
+			step5
+				scenario brainstorming
+			step6
+				scenario consolidation
+			step7
+				scenario prioritization
+			step8
+				scenario refinement
 		-ASRs from the Business Goals	
 			-categories of business goals
 		-Utility Tree
 			-What is a Utility Tree (Slide 19)
 			-Example (Slide 20 and 21)
 			-Next steps (Slide 23)
+			-Root is utility
+			-Second level is QA categories
+			-Third refines, importance and difficulty
+				(business, technical)
 	
 	
 Module 4
 	13 Reasons of why SA is important
-	Inhibiting or Enabling System's Quality Attribute (Slide 4)
-	Changes (Slide 5)
-	Predicting System QA (Slide 6)
-	Communication of Stakeholder
-	Design Decision
-	Constraints
-	Organizational Structure
-	Prototype
-	Reuse
+		Inhibiting or Enabling System's Quality Attribute (Slide 4)
+		Changes (Slide 5)
+		Predicting System QA (Slide 6)
+		Communication of Stakeholder
+		hardest to change Design Decision
+		Constraints
+		Organizational Structure
+		Basis Prototype
+		Key of cost and schedule
+		Reuse
+		Focus on assembling components, rather than creation
+		restricting design focuses developers creativity later
+		foundation for training
 	
 	Independent Systems
 		-Commercial off the shelf
