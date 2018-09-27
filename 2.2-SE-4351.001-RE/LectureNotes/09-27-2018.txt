@@ -52,7 +52,7 @@ Sixth
 	cons	
 		multiple as is to be scenarios
 	
-What we need to do
+What we need to do:
 	include screenshots in powerpoint
 	more research on open source code we can use
 	create a reference model of the requirements, system and environment

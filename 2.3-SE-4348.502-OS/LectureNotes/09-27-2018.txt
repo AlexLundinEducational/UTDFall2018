@@ -1,0 +1,5 @@
+Project 3a
+	proc.c
+		allproc
+			this is where processes is added to the table
+			this is where tickets are intialized
