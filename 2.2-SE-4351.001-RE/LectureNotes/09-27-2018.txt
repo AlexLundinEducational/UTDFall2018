@@ -34,13 +34,21 @@ Fourth
 	cons
 
 Fifth
+	Theia with beacons
 	pros
-	
+		beacons as adruino or raspberry pi
+			scalable
+		
 	cons
+		multiple As-Is and To-be scenarios
+			I think they meant these as use cases
 
 Sixth 
-	pros
-	
+	Athena, the pompus asses
+	pros	
+		defined what level of handicaped they can help
+			with meidcally valid imparement statistic
+		quantified the positive social impact the solution will have
 	cons	
 	
 What we need to do
@@ -48,3 +56,6 @@ What we need to do
 	more research on open source code we can use
 	create a reference model of the requirements, system and environment
 	we have to show why our solution is better
+	we have to distinguish our system from other beacon based solutions
+		supe the beacons up
+		we need memes, humor seems to be best for saying why we are the best
