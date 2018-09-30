@@ -176,6 +176,220 @@ class SimpleProblemSolvingAgentProgram:
     def search(self, problem):
         raise NotImplementedError
 
+# ______________________________________________________________________________
+# Uninformed Search algorithms
+
+
+def breadth_first_tree_search(problem):
+    """Search the shallowest nodes in the search tree first.
+        Search through the successors of a problem to find a goal.
+        The argument frontier should be an empty queue.
+        Repeats infinitely in case of loops. [Figure 3.7]"""
+
+    frontier = deque([Node(problem.initial)])  # FIFO queue
+
+    while frontier:
+        node = frontier.popleft()
+        if problem.goal_test(node.state):
+            return node
+        frontier.extend(node.expand(problem))
+    return None
+
+
+def depth_first_tree_search(problem):
+    """Search the deepest nodes in the search tree first.
+        Search through the successors of a problem to find a goal.
+        The argument frontier should be an empty queue.
+        Repeats infinitely in case of loops. [Figure 3.7]"""
+
+    frontier = [Node(problem.initial)]  # Stack
+
+    while frontier:
+        node = frontier.pop()
+        if problem.goal_test(node.state):
+            return node
+        frontier.extend(node.expand(problem))
+    return None
+
+
+def depth_first_graph_search(problem):
+    """Search the deepest nodes in the search tree first.
+        Search through the successors of a problem to find a goal.
+        The argument frontier should be an empty queue.
+        Does not get trapped by loops.
+        If two paths reach a state, only use the first one. [Figure 3.7]"""
+    frontier = [(Node(problem.initial))]  # Stack
+    explored = set()
+    while frontier:
+        node = frontier.pop()
+        if problem.goal_test(node.state):
+            return node
+        explored.add(node.state)
+        frontier.extend(child for child in node.expand(problem)
+                        if child.state not in explored and
+                        child not in frontier)
+    return None
+
+
+def breadth_first_graph_search(problem):
+    """[Figure 3.11]
+    Note that this function can be implemented in a
+    single line as below:
+    return graph_search(problem, FIFOQueue())
+    """
+    node = Node(problem.initial)
+    if problem.goal_test(node.state):
+        return node
+    frontier = deque([node])
+    explored = set()
+    while frontier:
+        node = frontier.popleft()
+        explored.add(node.state)
+        for child in node.expand(problem):
+            if child.state not in explored and child not in frontier:
+                if problem.goal_test(child.state):
+                    return child
+                frontier.append(child)
+    return None
+
+
+def best_first_graph_search(problem, f):
+    """Search the nodes with the lowest f scores first.
+    You specify the function f(node) that you want to minimize; for example,
+    if f is a heuristic estimate to the goal, then we have greedy best
+    first search; if f is node.depth then we have breadth-first search.
+    There is a subtlety: the line "f = memoize(f, 'f')" means that the f
+    values will be cached on the nodes as they are computed. So after doing
+    a best first search you can examine the f values of the path returned."""
+    f = memoize(f, 'f')
+    node = Node(problem.initial)
+    frontier = PriorityQueue('min', f)
+    frontier.append(node)
+    explored = set()
+    while frontier:
+        node = frontier.pop()
+        if problem.goal_test(node.state):
+            return node
+        explored.add(node.state)
+        for child in node.expand(problem):
+            if child.state not in explored and child not in frontier:
+                frontier.append(child)
+            elif child in frontier:
+                incumbent = frontier[child]
+                if f(child) < f(incumbent):
+                    del frontier[incumbent]
+                    frontier.append(child)
+    return None
+
+
+
+
+def depth_limited_search(problem, limit=50):
+    """[Figure 3.17]"""
+    def recursive_dls(node, problem, limit):
+        if problem.goal_test(node.state):
+            return node
+        elif limit == 0:
+            return 'cutoff'
+        else:
+            cutoff_occurred = False
+            for child in node.expand(problem):
+                result = recursive_dls(child, problem, limit - 1)
+                if result == 'cutoff':
+                    cutoff_occurred = True
+                elif result is not None:
+                    return result
+            return 'cutoff' if cutoff_occurred else None
+
+    # Body of depth_limited_search:
+    return recursive_dls(Node(problem.initial), problem, limit)
+
+
+def iterative_deepening_search(problem):
+    """[Figure 3.18]"""
+    for depth in range(sys.maxsize):
+        result = depth_limited_search(problem, depth)
+        if result != 'cutoff':
+            return result
+
+
+
+class EightPuzzle(Problem):
+
+    """ The problem of sliding tiles numbered from 1 to 8 on a 3x3 board,
+    where one of the squares is a blank. A state is represented as a 3x3 list,
+    where element at index i,j represents the tile number (0 if it's an empty square) """
+ 
+    def __init__(self, initial, goal=(1, 2, 3, 4, 5, 6, 7, 8, 0)):
+        """ Define goal state and initialize a problem """
+
+        self.goal = goal
+        Problem.__init__(self, initial, goal)
+    
+    def find_blank_square(self, state):
+        """Return the index of the blank square in a given state"""
+
+        return state.index(0)
+    
+    def actions(self, state):
+        """ Return the actions that can be executed in the given state.
+        The result would be a list, since there are only four possible actions
+        in any given state of the environment """
+        
+        possible_actions = ['UP', 'DOWN', 'LEFT', 'RIGHT']       
+        index_blank_square = self.find_blank_square(state)
+
+        if index_blank_square % 3 == 0:
+            possible_actions.remove('LEFT')
+        if index_blank_square < 3:
+            possible_actions.remove('UP')
+        if index_blank_square % 3 == 2:
+            possible_actions.remove('RIGHT')
+        if index_blank_square > 5:
+            possible_actions.remove('DOWN')
+
+        return possible_actions
+
+    def result(self, state, action):
+        """ Given state and action, return a new state that is the result of the action.
+        Action is assumed to be a valid action in the state """
+
+        # blank is the index of the blank square
+        blank = self.find_blank_square(state)
+        new_state = list(state)
+
+        delta = {'UP':-3, 'DOWN':3, 'LEFT':-1, 'RIGHT':1}
+        neighbor = blank + delta[action]
+        new_state[blank], new_state[neighbor] = new_state[neighbor], new_state[blank]
+
+        return tuple(new_state)
+
+    def goal_test(self, state):
+        """ Given a state, return True if state is a goal state or False, otherwise """
+
+        return state == self.goal
+
+    def check_solvability(self, state):
+        """ Checks if the given state is solvable """
+
+        inversion = 0
+        for i in range(len(state)):
+            for j in range(i, len(state)):
+                if state[i] > state[j] != 0:
+                    inversion += 1
+        
+        return inversion % 2 == 0
+    
+    def h(self, node):
+        """ Return the heuristic value for a given state. Default heuristic function used is 
+        h(n) = number of misplaced tiles """
+
+        return sum(s != g for (s, g) in zip(node.state, self.goal))
+
+# ______________________________________________________________________________
+
+
+
 
 
 def recursive_best_first_search(problem, h=None):
@@ -208,6 +422,9 @@ def recursive_best_first_search(problem, h=None):
     node.f = h(node)
     result, bestf = RBFS(problem, node, infinity)
     return result
+
+
+
 
 
 
@@ -334,61 +551,6 @@ romania_map.locations = dict(
     Sibiu=(207, 457), Timisoara=(94, 410), Urziceni=(456, 350),
     Vaslui=(509, 444), Zerind=(108, 531))
 
-""" [Figure 4.9]
-Eight possible states of the vacumm world
-Each state is represented as
-   *       "State of the left room"      "State of the right room"   "Room in which the agent
-                                                                      is present"
-1 - DDL     Dirty                         Dirty                       Left
-2 - DDR     Dirty                         Dirty                       Right
-3 - DCL     Dirty                         Clean                       Left
-4 - DCR     Dirty                         Clean                       Right
-5 - CDL     Clean                         Dirty                       Left
-6 - CDR     Clean                         Dirty                       Right
-7 - CCL     Clean                         Clean                       Left
-8 - CCR     Clean                         Clean                       Right
-"""
-vacuum_world = Graph(dict(
-    State_1=dict(Suck=['State_7', 'State_5'], Right=['State_2']),
-    State_2=dict(Suck=['State_8', 'State_4'], Left=['State_2']),
-    State_3=dict(Suck=['State_7'], Right=['State_4']),
-    State_4=dict(Suck=['State_4', 'State_2'], Left=['State_3']),
-    State_5=dict(Suck=['State_5', 'State_1'], Right=['State_6']),
-    State_6=dict(Suck=['State_8'], Left=['State_5']),
-    State_7=dict(Suck=['State_7', 'State_3'], Right=['State_8']),
-    State_8=dict(Suck=['State_8', 'State_6'], Left=['State_7'])
-    ))
-
-""" [Figure 4.23]
-One-dimensional state space Graph
-"""
-one_dim_state_space = Graph(dict(
-    State_1=dict(Right='State_2'),
-    State_2=dict(Right='State_3', Left='State_1'),
-    State_3=dict(Right='State_4', Left='State_2'),
-    State_4=dict(Right='State_5', Left='State_3'),
-    State_5=dict(Right='State_6', Left='State_4'),
-    State_6=dict(Left='State_5')
-    ))
-one_dim_state_space.least_costs = dict(
-    State_1=8,
-    State_2=9,
-    State_3=2,
-    State_4=2,
-    State_5=4,
-    State_6=3)
-
-""" [Figure 6.1]
-Principal states and territories of Australia
-"""
-australia_map = UndirectedGraph(dict(
-    T=dict(),
-    SA=dict(WA=1, NT=1, Q=1, NSW=1, V=1),
-    NT=dict(WA=1, Q=1),
-    NSW=dict(Q=1, V=1)))
-australia_map.locations = dict(WA=(120, 24), NT=(135, 20), SA=(135, 30),
-                               Q=(145, 20), NSW=(145, 32), T=(145, 42),
-                               V=(145, 37))
 
 
 class GraphProblem(Problem):
@@ -431,297 +593,6 @@ class GraphProblem(Problem):
             return infinity
 
 
-class GraphProblemStochastic(GraphProblem):
-    """
-    A version of GraphProblem where an action can lead to
-    nondeterministic output i.e. multiple possible states.
-
-    Define the graph as dict(A = dict(Action = [[<Result 1>, <Result 2>, ...], <cost>], ...), ...)
-    A the dictionary format is different, make sure the graph is created as a directed graph.
-    """
-
-    def result(self, state, action):
-        return self.graph.get(state, action)
-
-    def path_cost(self):
-        raise NotImplementedError
-
-
-# ______________________________________________________________________________
-
-
-class NQueensProblem(Problem):
-
-    """The problem of placing N queens on an NxN board with none attacking
-    each other.  A state is represented as an N-element array, where
-    a value of r in the c-th entry means there is a queen at column c,
-    row r, and a value of -1 means that the c-th column has not been
-    filled in yet.  We fill in columns left to right.
-    >>> depth_first_tree_search(NQueensProblem(8))
-    <Node (7, 3, 0, 2, 5, 1, 6, 4)>
-    """
-
-    def __init__(self, N):
-        self.N = N
-        self.initial = tuple([-1] * N)
-        Problem.__init__(self, self.initial)
-
-    def actions(self, state):
-        """In the leftmost empty column, try all non-conflicting rows."""
-        if state[-1] is not -1:
-            return []  # All columns filled; no successors
-        else:
-            col = state.index(-1)
-            return [row for row in range(self.N)
-                    if not self.conflicted(state, row, col)]
-
-    def result(self, state, row):
-        """Place the next queen at the given row."""
-        col = state.index(-1)
-        new = list(state[:])
-        new[col] = row
-        return tuple(new)
-
-    def conflicted(self, state, row, col):
-        """Would placing a queen at (row, col) conflict with anything?"""
-        return any(self.conflict(row, col, state[c], c)
-                   for c in range(col))
-
-    def conflict(self, row1, col1, row2, col2):
-        """Would putting two queens in (row1, col1) and (row2, col2) conflict?"""
-        return (row1 == row2 or  # same row
-                col1 == col2 or  # same column
-                row1 - col1 == row2 - col2 or  # same \ diagonal
-                row1 + col1 == row2 + col2)   # same / diagonal
-
-    def goal_test(self, state):
-        """Check if all columns filled, no conflicts."""
-        if state[-1] is -1:
-            return False
-        return not any(self.conflicted(state, state[col], col)
-                       for col in range(len(state)))
-
-    def h(self, node):
-        """Return number of conflicting queens for a given node"""
-        num_conflicts = 0
-        for (r1, c1) in enumerate(node.state):
-            for (r2, c2) in enumerate(node.state):
-                if (r1, c1) != (r2, c2):
-                    num_conflicts += self.conflict(r1, c1, r2, c2)
-
-        return num_conflicts
-
-# ______________________________________________________________________________
-# Inverse Boggle: Search for a high-scoring Boggle board. A good domain for
-# iterative-repair and related search techniques, as suggested by Justin Boyan.
-
-
-ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-
-cubes16 = ['FORIXB', 'MOQABJ', 'GURILW', 'SETUPL',
-           'CMPDAE', 'ACITAO', 'SLCRAE', 'ROMASH',
-           'NODESW', 'HEFIYE', 'ONUDTK', 'TEVIGN',
-           'ANEDVZ', 'PINESH', 'ABILYT', 'GKYLEU']
-
-
-def random_boggle(n=4):
-    """Return a random Boggle board of size n x n.
-    We represent a board as a linear list of letters."""
-    cubes = [cubes16[i % 16] for i in range(n * n)]
-    random.shuffle(cubes)
-    return list(map(random.choice, cubes))
-
-# The best 5x5 board found by Boyan, with our word list this board scores
-# 2274 words, for a score of 9837
-
-
-boyan_best = list('RSTCSDEIAEGNLRPEATESMSSID')
-
-
-def print_boggle(board):
-    """Print the board in a 2-d array."""
-    n2 = len(board)
-    n = exact_sqrt(n2)
-    for i in range(n2):
-
-        if i % n == 0 and i > 0:
-            print()
-        if board[i] == 'Q':
-            print('Qu', end=' ')
-        else:
-            print(str(board[i]) + ' ', end=' ')
-    print()
-
-
-def boggle_neighbors(n2, cache={}):
-    """Return a list of lists, where the i-th element is the list of indexes
-    for the neighbors of square i."""
-    if cache.get(n2):
-        return cache.get(n2)
-    n = exact_sqrt(n2)
-    neighbors = [None] * n2
-    for i in range(n2):
-        neighbors[i] = []
-        on_top = i < n
-        on_bottom = i >= n2 - n
-        on_left = i % n == 0
-        on_right = (i+1) % n == 0
-        if not on_top:
-            neighbors[i].append(i - n)
-            if not on_left:
-                neighbors[i].append(i - n - 1)
-            if not on_right:
-                neighbors[i].append(i - n + 1)
-        if not on_bottom:
-            neighbors[i].append(i + n)
-            if not on_left:
-                neighbors[i].append(i + n - 1)
-            if not on_right:
-                neighbors[i].append(i + n + 1)
-        if not on_left:
-            neighbors[i].append(i - 1)
-        if not on_right:
-            neighbors[i].append(i + 1)
-    cache[n2] = neighbors
-    return neighbors
-
-
-def exact_sqrt(n2):
-    """If n2 is a perfect square, return its square root, else raise error."""
-    n = int(math.sqrt(n2))
-    assert n * n == n2
-    return n
-
-# _____________________________________________________________________________
-
-
-class Wordlist:
-
-    """This class holds a list of words. You can use (word in wordlist)
-    to check if a word is in the list, or wordlist.lookup(prefix)
-    to see if prefix starts any of the words in the list."""
-
-    def __init__(self, file, min_len=3):
-        lines = file.read().upper().split()
-        self.words = [word for word in lines if len(word) >= min_len]
-        self.words.sort()
-        self.bounds = {}
-        for c in ALPHABET:
-            c2 = chr(ord(c) + 1)
-            self.bounds[c] = (bisect.bisect(self.words, c),
-                              bisect.bisect(self.words, c2))
-
-    def lookup(self, prefix, lo=0, hi=None):
-        """See if prefix is in dictionary, as a full word or as a prefix.
-        Return two values: the first is the lowest i such that
-        words[i].startswith(prefix), or is None; the second is
-        True iff prefix itself is in the Wordlist."""
-        words = self.words
-        if hi is None:
-            hi = len(words)
-        i = bisect.bisect_left(words, prefix, lo, hi)
-        if i < len(words) and words[i].startswith(prefix):
-            return i, (words[i] == prefix)
-        else:
-            return None, False
-
-    def __contains__(self, word):
-        return self.lookup(word)[1]
-
-    def __len__(self):
-        return len(self.words)
-
-# _____________________________________________________________________________
-
-
-class BoggleFinder:
-
-    """A class that allows you to find all the words in a Boggle board."""
-
-    wordlist = None  # A class variable, holding a wordlist
-
-    def __init__(self, board=None):
-        if BoggleFinder.wordlist is None:
-            BoggleFinder.wordlist = Wordlist(open_data("EN-text/wordlist.txt"))
-        self.found = {}
-        if board:
-            self.set_board(board)
-
-    def set_board(self, board=None):
-        """Set the board, and find all the words in it."""
-        if board is None:
-            board = random_boggle()
-        self.board = board
-        self.neighbors = boggle_neighbors(len(board))
-        self.found = {}
-        for i in range(len(board)):
-            lo, hi = self.wordlist.bounds[board[i]]
-            self.find(lo, hi, i, [], '')
-        return self
-
-    def find(self, lo, hi, i, visited, prefix):
-        """Looking in square i, find the words that continue the prefix,
-        considering the entries in self.wordlist.words[lo:hi], and not
-        revisiting the squares in visited."""
-        if i in visited:
-            return
-        wordpos, is_word = self.wordlist.lookup(prefix, lo, hi)
-        if wordpos is not None:
-            if is_word:
-                self.found[prefix] = True
-            visited.append(i)
-            c = self.board[i]
-            if c == 'Q':
-                c = 'QU'
-            prefix += c
-            for j in self.neighbors[i]:
-                self.find(wordpos, hi, j, visited, prefix)
-            visited.pop()
-
-    def words(self):
-        """The words found."""
-        return list(self.found.keys())
-
-    scores = [0, 0, 0, 0, 1, 2, 3, 5] + [11] * 100
-
-    def score(self):
-        """The total score for the words found, according to the rules."""
-        return sum([self.scores[len(w)] for w in self.words()])
-
-    def __len__(self):
-        """The number of words found."""
-        return len(self.found)
-
-# _____________________________________________________________________________
-
-
-def boggle_hill_climbing(board=None, ntimes=100, verbose=True):
-    """Solve inverse Boggle by hill-climbing: find a high-scoring board by
-    starting with a random one and changing it."""
-    finder = BoggleFinder()
-    if board is None:
-        board = random_boggle()
-    best = len(finder.set_board(board))
-    for _ in range(ntimes):
-        i, oldc = mutate_boggle(board)
-        new = len(finder.set_board(board))
-        if new > best:
-            best = new
-            if verbose:
-                print(best, _, board)
-        else:
-            board[i] = oldc  # Change back
-    if verbose:
-        print_boggle(board)
-    return board, best
-
-
-def mutate_boggle(board):
-    i = random.randrange(len(board))
-    oldc = board[i]
-    # random.choice(boyan_best)
-    board[i] = random.choice(random.choice(cubes16))
-    return i, oldc
 
 # ______________________________________________________________________________
 
@@ -767,7 +638,12 @@ class InstrumentedProblem(Problem):
 
 
 def compare_searchers(problems, header,
-                      searchers=[ recursive_best_first_search]):
+                      searchers=[breadth_first_tree_search,
+                                 breadth_first_graph_search,
+                                 depth_first_graph_search,
+                                 iterative_deepening_search,
+                                 depth_limited_search,
+                                 recursive_best_first_search]):
     def do(searcher, problem):
         p = InstrumentedProblem(problem)
         searcher(p)
@@ -783,5 +659,4 @@ def compare_graph_searchers():
                                 GraphProblem('Q', 'WA', australia_map)],
                       header=['Searcher', 'romania_map(Arad, Bucharest)',
                               'romania_map(Oradea, Neamt)', 'australia_map'])
-
 
