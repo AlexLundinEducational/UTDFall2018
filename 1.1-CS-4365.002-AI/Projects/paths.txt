@@ -17,3 +17,5 @@ cd C:\Users\Alex\Desktop\Screen-Cleaner\GitHub\aima-python
 
 
 cd C:/Users/Alex/Desktop/Screen-Cleaner/GitHub/aima-python
+
+C:\Users\kim\AppData\Local\Programs\Python\Python37-32
