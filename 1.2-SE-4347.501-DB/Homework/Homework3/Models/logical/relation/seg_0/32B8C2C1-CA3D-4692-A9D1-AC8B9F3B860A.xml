@@ -1,0 +1,34 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Typev3" directorySegmentName="seg_0" id="32B8C2C1-CA3D-4692-A9D1-AC8B9F3B860A">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 04:05:42 UTC</createdTime>
+<ownerDesignName>Models</ownerDesignName>
+<engineerTo>
+<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
+</engineerTo>
+<sourcePk>2498CBAB-7BEE-E791-39D5-E92C19C0FE2C</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>1</nameOnSource>
+<nameOnTarget>1</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>47BDD793-24E6-E7E2-B529-AFF3AE9FC96A</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>84C2036C-CEEF-9C89-D8D4-FEC883E9B1C9</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="Type" id="64CCCA67-C411-6BA8-BBC6-F9F9774155FD">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 04:05:47 UTC</createdTime>
+<ownerDesignName>Models</ownerDesignName>
+<engineerTo>
+<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F1DDAFF1-C951-E4E9-1102-8B05F4ADB8D5" name="CAR_LOAN">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 04:01:29 UTC</createdTime>
+<ownerDesignName>Models</ownerDesignName>
+<engineerTo>
+<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Loan_no" id="D76DC8E2-52B9-B2FD-56E3-28BC7EC74B54">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 04:05:24 UTC</createdTime>
+<generatorID>069E0FD4-D45E-F2B7-6BD4-F1173F491697</generatorID>
+<ownerDesignName>Models</ownerDesignName>
+<engineerTo>
+<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
+</engineerTo>
+<referedAttribute>C5A64516-C3C7-36B1-4B9F-7351EDE1423D</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>
