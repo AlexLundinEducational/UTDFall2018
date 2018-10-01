@@ -1,0 +1,12 @@
+1.1 Define in your own words:
+	(a) intelligence
+		the capability of making informed descisions
+	(b) artificial intelligence
+		a logical model that emulates informed decision making
+	(c) agent
+		something that acts
+	(d) rationality
+		the quality of a decision in the face of unknowns
+	(e) logical reasoning
+		the mechanism for reaching an informed decision
+	
