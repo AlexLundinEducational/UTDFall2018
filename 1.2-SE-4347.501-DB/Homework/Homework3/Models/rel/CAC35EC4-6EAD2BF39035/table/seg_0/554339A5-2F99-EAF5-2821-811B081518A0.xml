@@ -1,0 +1,42 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="554339A5-2F99-EAF5-2821-811B081518A0" schemaObject="67A42E5E-B40F-944A-72B6-BCEF21529300" name="BANK_BRANCH">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 01:45:26 UTC</createdTime>
+<ownerDesignName>Models</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Addr" id="06D2E385-F628-1A0E-DA7F-A75057DC28DC">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 01:45:46 UTC</createdTime>
+<ownerDesignName>Models</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Branch_No" id="C52936A4-A395-019C-41E6-BDC66534D024">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 01:45:46 UTC</createdTime>
+<ownerDesignName>Models</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="67DCC8C6-EA91-8DF6-43FB-0E093C81E15D" name="Branch_no">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 01:46:13 UTC</createdTime>
+<ownerDesignName>Models</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C52936A4-A395-019C-41E6-BDC66534D024"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

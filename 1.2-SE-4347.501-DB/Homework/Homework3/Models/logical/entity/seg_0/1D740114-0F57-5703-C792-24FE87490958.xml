@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1D740114-0F57-5703-C792-24FE87490958" name="BANK_BRANCH">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 01:53:32 UTC</createdTime>
+<ownerDesignName>Models</ownerDesignName>
+<engineerTo>
+<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Branch_no" id="11A47841-4404-D6DF-9FCC-28F0936E1381">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 01:53:42 UTC</createdTime>
+<ownerDesignName>Models</ownerDesignName>
+<engineerTo>
+<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Addr" id="CF8120DF-C092-3A21-DBCC-F6FB509636EE">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 01:53:53 UTC</createdTime>
+<ownerDesignName>Models</ownerDesignName>
+<engineerTo>
+<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Loan_no" id="5E23976F-7E8C-2813-C176-22A7EF038592">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 02:03:09 UTC</createdTime>
+<generatorID>1373AB92-766C-0350-66C6-15CB6129EAFA</generatorID>
+<ownerDesignName>Models</ownerDesignName>
+<engineerTo>
+<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>C5A64516-C3C7-36B1-4B9F-7351EDE1423D</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="11B2C029-C277-BFE8-4092-BB7ED5CBF255" name="Branch_no">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 01:54:01 UTC</createdTime>
+<ownerDesignName>Models</ownerDesignName>
+<engineerTo>
+<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>11A47841-4404-D6DF-9FCC-28F0936E1381</newElementsIDs>
+<usedAttributes>
+<attributeRef>11A47841-4404-D6DF-9FCC-28F0936E1381</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="197ED60A-F7C6-8757-1024-29D325F127A3" name="BANK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 01:31:16 UTC</createdTime>
+<ownerDesignName>Models</ownerDesignName>
+<engineerTo>
+<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Code" id="8644922E-43E4-C1AB-3D33-49B66DCCABF3">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 01:31:42 UTC</createdTime>
+<ownerDesignName>Models</ownerDesignName>
+<engineerTo>
+<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Name" id="81EC6BC8-8E04-F738-9A9C-25C3C358CEFC">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 01:31:59 UTC</createdTime>
+<ownerDesignName>Models</ownerDesignName>
+<engineerTo>
+<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Address" id="94DAF5EA-0F71-DC3E-A64E-295938ED2F57">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 01:32:02 UTC</createdTime>
+<ownerDesignName>Models</ownerDesignName>
+<engineerTo>
+<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Branch_no" id="1F973661-A5DF-E7E2-E55B-574CF82CD65B">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 01:56:35 UTC</createdTime>
+<generatorID>A6491980-EE63-C0F2-63D5-F463AF19AC90</generatorID>
+<ownerDesignName>Models</ownerDesignName>
+<engineerTo>
+<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>11A47841-4404-D6DF-9FCC-28F0936E1381</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="27A28424-A267-C867-0005-1E8ABBD17B6A" name="Code">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 01:32:47 UTC</createdTime>
+<ownerDesignName>Models</ownerDesignName>
+<engineerTo>
+<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>8644922E-43E4-C1AB-3D33-49B66DCCABF3</newElementsIDs>
+<usedAttributes>
+<attributeRef>8644922E-43E4-C1AB-3D33-49B66DCCABF3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

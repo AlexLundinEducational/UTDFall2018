@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="47BDD793-24E6-E7E2-B529-AFF3AE9FC96A" name="Loan">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 02:00:11 UTC</createdTime>
+<ownerDesignName>Models</ownerDesignName>
+<engineerTo>
+<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Loan_no" id="C5A64516-C3C7-36B1-4B9F-7351EDE1423D">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 02:00:15 UTC</createdTime>
+<ownerDesignName>Models</ownerDesignName>
+<engineerTo>
+<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Amount" id="F4A2E6DE-7041-AE7E-5F16-DF59BF5C54D8">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 02:00:23 UTC</createdTime>
+<ownerDesignName>Models</ownerDesignName>
+<engineerTo>
+<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Type" id="403BC828-73FB-C8AC-CE1C-B6054B2B9264">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 02:00:28 UTC</createdTime>
+<ownerDesignName>Models</ownerDesignName>
+<engineerTo>
+<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2498CBAB-7BEE-E791-39D5-E92C19C0FE2C" name="Loan_no">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 02:00:36 UTC</createdTime>
+<ownerDesignName>Models</ownerDesignName>
+<engineerTo>
+<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>C5A64516-C3C7-36B1-4B9F-7351EDE1423D</newElementsIDs>
+<usedAttributes>
+<attributeRef>C5A64516-C3C7-36B1-4B9F-7351EDE1423D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
