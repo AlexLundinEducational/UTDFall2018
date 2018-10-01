@@ -15,27 +15,6 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Code" id="8644922E-43E4-C1AB-3D33-49B66DCCABF3">
-<createdBy>Alex</createdBy>
-<createdTime>2018-10-01 01:31:42 UTC</createdTime>
-<ownerDesignName>Models</ownerDesignName>
-<engineerTo>
-<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
-</engineerTo>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Name" id="81EC6BC8-8E04-F738-9A9C-25C3C358CEFC">
-<createdBy>Alex</createdBy>
-<createdTime>2018-10-01 01:31:59 UTC</createdTime>
-<ownerDesignName>Models</ownerDesignName>
-<engineerTo>
-<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="Address" id="94DAF5EA-0F71-DC3E-A64E-295938ED2F57">
 <createdBy>Alex</createdBy>
 <createdTime>2018-10-01 01:32:02 UTC</createdTime>
@@ -60,9 +39,30 @@
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="Code" id="8644922E-43E4-C1AB-3D33-49B66DCCABF3">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 01:31:42 UTC</createdTime>
+<ownerDesignName>Models</ownerDesignName>
+<engineerTo>
+<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Name" id="81EC6BC8-8E04-F738-9A9C-25C3C358CEFC">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 01:31:59 UTC</createdTime>
+<ownerDesignName>Models</ownerDesignName>
+<engineerTo>
+<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="27A28424-A267-C867-0005-1E8ABBD17B6A" name="Code">
+<identifier id="27A28424-A267-C867-0005-1E8ABBD17B6A" name="PK BANK">
 <createdBy>Alex</createdBy>
 <createdTime>2018-10-01 01:32:47 UTC</createdTime>
 <ownerDesignName>Models</ownerDesignName>

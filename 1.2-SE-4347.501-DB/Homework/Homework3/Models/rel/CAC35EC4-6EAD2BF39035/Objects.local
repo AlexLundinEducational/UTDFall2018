@@ -1,6 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <oracle.dbtools.crest.model.design.relational.RelationalDesign>
-   <object objectType="SchemaObject" objectID="67A42E5E-B40F-944A-72B6-BCEF21529300" name="Schema_1" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.SchemaObject" propertyParentId="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" propertySourceId="" propertyTargetId=""/>
    <object objectType="Table" objectID="D37E5DC8-DE07-B23F-4E3C-85EAFC1014CB" name="BANK" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" propertySourceId="" propertyTargetId=""/>
    <object objectType="Table" objectID="554339A5-2F99-EAF5-2821-811B081518A0" name="BANK_BRANCH" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" propertySourceId="" propertyTargetId=""/>
 </oracle.dbtools.crest.model.design.relational.RelationalDesign>

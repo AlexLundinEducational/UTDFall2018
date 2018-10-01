@@ -1,27 +1,26 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="LOANS" directorySegmentName="seg_0" id="1373AB92-766C-0350-66C6-15CB6129EAFA">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="L_PAY" directorySegmentName="seg_0" id="D9B15961-AA17-95D1-7AAF-0806507E814F">
 <createdBy>Alex</createdBy>
-<createdTime>2018-10-01 02:02:53 UTC</createdTime>
+<createdTime>2018-10-01 03:14:44 UTC</createdTime>
 <ownerDesignName>Models</ownerDesignName>
 <engineerTo>
 <item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
 </engineerTo>
-<targetPk>2498CBAB-7BEE-E791-39D5-E92C19C0FE2C</targetPk>
 <identifying>false</identifying>
 <nameOnSource>1</nameOnSource>
 <nameOnTarget>N</nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>*</sourceCardinality>
-<sourceEntity>1D740114-0F57-5703-C792-24FE87490958</sourceEntity>
+<sourceEntity>47BDD793-24E6-E7E2-B529-AFF3AE9FC96A</sourceEntity>
 <targetCardinalityString>1</targetCardinalityString>
-<targetEntity>47BDD793-24E6-E7E2-B529-AFF3AE9FC96A</targetEntity>
+<targetEntity>ECEE04D9-2203-1FC0-BF19-F00E09C31484</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<attribute name="LOANS" id="42766DED-C9A1-D344-E525-7BFB543F0482">
+<attribute name="L_PAY" id="7791946F-EE24-0380-414F-42050C6BE314">
 <createdBy>Alex</createdBy>
-<createdTime>2018-10-01 03:04:51 UTC</createdTime>
+<createdTime>2018-10-01 03:15:28 UTC</createdTime>
 <ownerDesignName>Models</ownerDesignName>
 <engineerTo>
 <item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>

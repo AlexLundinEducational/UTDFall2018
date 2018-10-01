@@ -6,7 +6,7 @@
 <autoRoute>false</autoRoute>
 <boxInbox>true</boxInbox>
 <showLegend>false</showLegend>
-<showLabels>false</showLabels>
+<showLabels>true</showLabels>
 <showRelAttributes>false</showRelAttributes>
 <gridEnabled>false</gridEnabled>
 <showGrid>false</showGrid>
@@ -16,7 +16,7 @@
 <objectViews>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="554339A5-2F99-EAF5-2821-811B081518A0" otype="Table" vid="FAA0A7B3-E1C2-7877-AA11-CF8861EAA7A6">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="344" y="74" width="170" height="110"/>
+<bounds x="334" y="59" width="170" height="110"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="D37E5DC8-DE07-B23F-4E3C-85EAFC1014CB" otype="Table" vid="E5A4D24D-7B49-A5D4-E366-E9EAE48C73C8">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>

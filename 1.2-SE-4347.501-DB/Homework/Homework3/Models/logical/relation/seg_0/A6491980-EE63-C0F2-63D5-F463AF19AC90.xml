@@ -9,6 +9,8 @@
 <sourcePk>27A28424-A267-C867-0005-1E8ABBD17B6A</sourcePk>
 <targetPk>11B2C029-C277-BFE8-4092-BB7ED5CBF255</targetPk>
 <identifying>false</identifying>
+<nameOnSource>1</nameOnSource>
+<nameOnTarget>N</nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>*</sourceCardinality>
@@ -17,4 +19,17 @@
 <targetEntity>1D740114-0F57-5703-C792-24FE87490958</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="BRANCHES" id="61EBC206-8043-A50B-E298-D18D1232A440">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 03:05:50 UTC</createdTime>
+<ownerDesignName>Models</ownerDesignName>
+<engineerTo>
+<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
 </Relation>

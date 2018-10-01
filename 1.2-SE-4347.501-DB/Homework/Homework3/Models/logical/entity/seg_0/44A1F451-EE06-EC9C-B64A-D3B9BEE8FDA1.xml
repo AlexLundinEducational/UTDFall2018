@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4C9D180D-5133-F555-0B76-57499C7FDC01" name="ACCOUNT">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="44A1F451-EE06-EC9C-B64A-D3B9BEE8FDA1" name="ACCOUNT_TRANSACTIONS">
 <createdBy>Alex</createdBy>
-<createdTime>2018-10-01 01:58:10 UTC</createdTime>
+<createdTime>2018-10-01 03:10:37 UTC</createdTime>
 <ownerDesignName>Models</ownerDesignName>
 <engineerTo>
 <item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
@@ -15,19 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Acct_no" id="DA89DE8F-C75D-45A4-109E-09CF96D25105">
+<Attribute name="Withdrawl" id="A849AFBD-38F4-3914-EF9B-271A4FB596D5">
 <createdBy>Alex</createdBy>
-<createdTime>2018-10-01 01:58:20 UTC</createdTime>
-<ownerDesignName>Models</ownerDesignName>
-<engineerTo>
-<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
-</engineerTo>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Balance" id="BEA032DD-DA64-441A-C734-2FA720A8FA34">
-<createdBy>Alex</createdBy>
-<createdTime>2018-10-01 01:58:28 UTC</createdTime>
+<createdTime>2018-10-01 03:11:00 UTC</createdTime>
 <ownerDesignName>Models</ownerDesignName>
 <engineerTo>
 <item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
@@ -36,9 +26,20 @@
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Type" id="7DEBE90A-0D59-1184-F02C-8E85E5FB534D">
+<Attribute name="Deposit" id="D4260AF6-3B22-96C8-29C8-A79DAFC65F95">
 <createdBy>Alex</createdBy>
-<createdTime>2018-10-01 01:58:35 UTC</createdTime>
+<createdTime>2018-10-01 03:11:05 UTC</createdTime>
+<ownerDesignName>Models</ownerDesignName>
+<engineerTo>
+<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Checks" id="E055B772-18F7-5333-D667-A29081B3C896">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 03:11:30 UTC</createdTime>
 <ownerDesignName>Models</ownerDesignName>
 <engineerTo>
 <item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
@@ -48,19 +49,4 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
-<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="141348FB-22EF-98CD-8578-F133F02A852E" name="PK ACCOUNT">
-<createdBy>Alex</createdBy>
-<createdTime>2018-10-01 01:58:45 UTC</createdTime>
-<ownerDesignName>Models</ownerDesignName>
-<engineerTo>
-<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
-</engineerTo>
-<pk>true</pk>
-<newElementsIDs>DA89DE8F-C75D-45A4-109E-09CF96D25105</newElementsIDs>
-<usedAttributes>
-<attributeRef>DA89DE8F-C75D-45A4-109E-09CF96D25105</attributeRef>
-</usedAttributes>
-</identifier>
-</identifiers>
 </Entity>

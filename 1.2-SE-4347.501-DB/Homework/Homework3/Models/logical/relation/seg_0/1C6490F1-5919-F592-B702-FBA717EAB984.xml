@@ -9,6 +9,8 @@
 <sourcePk>2498CBAB-7BEE-E791-39D5-E92C19C0FE2C</sourcePk>
 <targetPk>1DF297CB-FCB2-6F43-13F6-495A67E7DAD4</targetPk>
 <identifying>false</identifying>
+<nameOnSource>M</nameOnSource>
+<nameOnTarget>N</nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>*</sourceCardinality>
@@ -17,4 +19,17 @@
 <targetEntity>6D5D2568-BC20-69B5-8D62-B987D23B5146</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="L_C" id="DFB5E9EF-DA29-AD26-87DC-0B3A105CF832">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 03:03:30 UTC</createdTime>
+<ownerDesignName>Models</ownerDesignName>
+<engineerTo>
+<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
 </Relation>

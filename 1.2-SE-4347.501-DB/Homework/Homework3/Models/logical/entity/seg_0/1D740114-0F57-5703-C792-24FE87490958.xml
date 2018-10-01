@@ -15,13 +15,16 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Branch_no" id="11A47841-4404-D6DF-9FCC-28F0936E1381">
+<Attribute name="Acct_no" id="F1B09593-031C-6422-B6AC-B1384E409B53">
 <createdBy>Alex</createdBy>
-<createdTime>2018-10-01 01:53:42 UTC</createdTime>
+<createdTime>2018-10-01 02:44:36 UTC</createdTime>
+<generatorID>E0C814EC-86C0-DB85-F589-14E4DAFFF092</generatorID>
 <ownerDesignName>Models</ownerDesignName>
 <engineerTo>
 <item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>DA89DE8F-C75D-45A4-109E-09CF96D25105</referedAttribute>
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
@@ -33,6 +36,16 @@
 <item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Branch_no" id="11A47841-4404-D6DF-9FCC-28F0936E1381">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-01 01:53:42 UTC</createdTime>
+<ownerDesignName>Models</ownerDesignName>
+<engineerTo>
+<item key="CAC35EC4-3240-FBBF-7F85-6EAD2BF39035" value="true"/>
+</engineerTo>
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
@@ -51,7 +64,7 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="11B2C029-C277-BFE8-4092-BB7ED5CBF255" name="Branch_no">
+<identifier id="11B2C029-C277-BFE8-4092-BB7ED5CBF255" name="PK BANK_BRANK">
 <createdBy>Alex</createdBy>
 <createdTime>2018-10-01 01:54:01 UTC</createdTime>
 <ownerDesignName>Models</ownerDesignName>
