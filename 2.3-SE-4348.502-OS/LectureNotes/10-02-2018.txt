@@ -1,0 +1,20 @@
+Threads
+	What do they share?
+	
+	What is independent?
+	
+	
+	Locks
+		critical section
+			only avaiaible to those who have lock
+			
+	Evaluation
+		mutual exclusion
+			localize variables
+			fails lead to race conditions
+		fairness
+			lock must be avaiable to anyone
+			fail leads to starvation
+		performance
+			be quick
+			fail can affect the program
