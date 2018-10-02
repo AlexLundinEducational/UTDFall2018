@@ -1,0 +1,32 @@
+Ch1
+Intro
+51 Slides
+	1-15 	Intro
+	16-33 	What is AI?
+	34-36 	Foundations
+	37-38 	History
+	39-49 	State of the art
+	50-51 	Summary
+Ch2
+117 Slides
+
+Ch3
+Solving by searching
+103 Slides
+	1-7 	Intro
+	8-20 	Problem Sovling Agents
+	21-38 	Example Problems
+	39-50 	Searching for Solutions
+	51-68 	Uninformed Search Strategies
+	69-99 	Informed Search Strategies
+	99-103 	Heurisitc Functions
+	
+	
+Ch4
+Beyond Classical Search
+63 Slides
+	1-4 	Intro
+	5-31	Local Search Algorithims and Optomization Problems
+	32-36	Logical Search in Continuous Space
+	37-49	Searching with Non Determinisitic Actions
+	50-63	Searching with Partial Observations
