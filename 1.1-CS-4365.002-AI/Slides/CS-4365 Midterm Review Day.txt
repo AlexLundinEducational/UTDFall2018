@@ -20,10 +20,55 @@
 			vector...
 			
 	CH3
+		well defined problems
+		toy problems
 		path cost
 		
 		real world problems
 		
 		Search
 			tree search
+			infrastructure for search
+				what data structures
+				state
+				parent
+				action
+				path cost
+					
+		Evaluation
+			completeness
+			op
+				
+	Uninformed Search
+		Depth-First Search (DFS)  
+			counterclockwise traversal around perimeter "around the tree"
+		Depth-Limited Search (DLS) 
+			counterclockwise traversal, one level at a time, around perimeter "around the tree"
+		Iterative Deepening Search (IDS) 
+		
+		Bidirectional Search
+		
+	Informed Search  
+		Be able to to work out given problems  
+			Greedy Best-First Search  
+			A* 
+			Recursive Best-First Search (RBFS) 
+		Questions about 
+			Memory Bounded A* (MA*) 
+			Simplified Memory Bounded A* (SMA*) 
+		Heuristic Functions
+			properties
+				valid heuristics can never overestimate
+				
+		CH4
+			local search	
+				hill climb
+				simulated annealing
+			genetic algorithims
+				naive - 2 parents
+				breeding population
+			complicating the search
+				searching without percepts
+				searching with non-deterministic actions
+				searching with percepts AND non-determinism
 		
