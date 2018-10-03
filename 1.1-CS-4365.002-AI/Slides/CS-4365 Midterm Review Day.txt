@@ -1,0 +1,29 @@
+10-03-2018
+	CH1
+		Place the 5 phases of AI in chronological order
+		
+		Discussion about state of the art
+		
+		Chapter summary
+	
+	CH2
+		agents
+			the basic agent function
+		good behavior
+			rationality
+		PEAS
+		
+		Describe internal structure of 4 agents at a high level
+		
+		Representing states
+			atomic
+			vector...
+			
+	CH3
+		path cost
+		
+		real world problems
+		
+		Search
+			tree search
+		
