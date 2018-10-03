@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5554541A-3A26-2D53-EBF6-5892DC3B2956" name="WORKS_ON">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:33:12 UTC</createdTime>
+<ownerDesignName>tmp</ownerDesignName>
+<importedID>7CFB5A14-F252-C85D-23EA-6809294AA38B</importedID>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Essn" id="4879028C-AC11-7183-96DA-3A1D03895F37">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:33:12 UTC</createdTime>
+<ownerDesignName>tmp</ownerDesignName>
+<importedID>C76598D5-F712-20D4-A067-1AB0C6B393BC</importedID>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pno" id="674CE87A-F159-B1D3-E5CE-0CBB2D76C9F4">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:33:12 UTC</createdTime>
+<ownerDesignName>tmp</ownerDesignName>
+<importedID>0DB0DDA1-317D-545C-26D5-C53E501E919D</importedID>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Hours" id="064AC25E-7854-AEFD-0CE3-669AB7F7DB47">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:33:12 UTC</createdTime>
+<ownerDesignName>tmp</ownerDesignName>
+<importedID>0B687A3D-49D9-7710-C658-BBBDE256832D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="335D8A44-0C79-D040-92E0-6B7CB6B12130" name="WORKS_ON_PK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:33:12 UTC</createdTime>
+<ownerDesignName>tmp</ownerDesignName>
+<importedID>AFA4ED25-92C7-C752-5770-196C8A9869BA</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="674CE87A-F159-B1D3-E5CE-0CBB2D76C9F4"/>
+<colUsage columnID="4879028C-AC11-7183-96DA-3A1D03895F37"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

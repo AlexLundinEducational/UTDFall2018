@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0ECB4DD1-875F-70BA-32D8-C04CCC414D25" name="EMPLOYEE">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:22:47 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Fname" id="5278A003-7913-1102-0474-1883499C7D22">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:23:02 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Minit" id="2E48CFC1-E8C9-74D3-CC54-9BDBFF1B2C13">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:23:59 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Lname" id="85743C26-FD4E-D128-09BD-8D796C5144DB">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:23:59 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ssn" id="9D30EB64-921D-F24F-FA95-E2800AA8B476">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:23:59 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Bdate" id="FEB87413-579A-B6A2-1EF0-F685C8FA63FD">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:23:59 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Address" id="E883187D-DC7C-008A-228D-517E83F0E368">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:23:59 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Sex" id="3AA2D785-C629-88FD-C9E4-C82CA3A26982">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:23:59 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Salary" id="88AC6E20-4CFB-3C98-62D5-1EA474F49F85">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:23:59 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Super_ssn" id="3BAFB01D-FA4D-E64C-B27B-8E634589E7A9">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:23:59 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dno" id="148C3A8A-C941-8A95-486D-13C7C4B81F24">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:23:59 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="89EA76DD-8A96-E657-0B24-FE4072F3BE30" name="EMPLOYEE_PK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:23:59 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D30EB64-921D-F24F-FA95-E2800AA8B476"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

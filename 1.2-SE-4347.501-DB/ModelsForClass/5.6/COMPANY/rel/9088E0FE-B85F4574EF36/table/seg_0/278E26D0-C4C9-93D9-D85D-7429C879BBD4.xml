@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="278E26D0-C4C9-93D9-D85D-7429C879BBD4" name="PROJECT">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:27:34 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Pname" id="9116D4BB-908C-C2B1-0245-2CAEC11B1007">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:28:35 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pnumber" id="07933B2E-8DDC-7E49-800E-B09D12D36397">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:28:35 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Plocation" id="A01C9E88-95AE-1496-91B0-3C09537B56A6">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:28:35 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dnum" id="346BD118-5FC2-B8E6-BE6D-E7FAD13B272C">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:28:35 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="28A8B892-6D51-531C-49A3-0546F1589100" name="PROJECT_PK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:28:35 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="07933B2E-8DDC-7E49-800E-B09D12D36397"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

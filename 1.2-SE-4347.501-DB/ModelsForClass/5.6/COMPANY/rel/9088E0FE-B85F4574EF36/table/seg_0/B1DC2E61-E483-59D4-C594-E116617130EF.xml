@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B1DC2E61-E483-59D4-C594-E116617130EF" name="DEPARTMENT">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:24:18 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Dname" id="AAF7FB6A-6748-0F48-C34D-E7460C220C2E">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:25:07 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dnumber" id="FF9F9B09-091B-C418-21DF-3C3470D50A2D">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:25:07 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Mgr_ssn" id="76C5D2AD-D20C-7C9A-042B-E87304A9905D">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:25:07 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Mgr_start_date" id="87595D2D-FF38-E35D-1DB3-90EBE90956B7">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:25:07 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ADB71722-EE55-67F5-D77D-F7563FE41B9D" name="DEPARTMENT_PK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:25:07 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF9F9B09-091B-C418-21DF-3C3470D50A2D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

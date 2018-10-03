@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7CFB5A14-F252-C85D-23EA-6809294AA38B" name="WORKS_ON">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:26:28 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Essn" id="C76598D5-F712-20D4-A067-1AB0C6B393BC">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:26:56 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pno" id="0DB0DDA1-317D-545C-26D5-C53E501E919D">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:26:45 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Hours" id="0B687A3D-49D9-7710-C658-BBBDE256832D">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:27:33 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AFA4ED25-92C7-C752-5770-196C8A9869BA" name="WORKS_ON_PK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-10-03 06:26:45 UTC</createdTime>
+<ownerDesignName>COMPANY</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0DB0DDA1-317D-545C-26D5-C53E501E919D"/>
+<colUsage columnID="C76598D5-F712-20D4-A067-1AB0C6B393BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

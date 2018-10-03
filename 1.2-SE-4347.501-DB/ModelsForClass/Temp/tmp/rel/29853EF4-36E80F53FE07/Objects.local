@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="EB0B11EA-B2D2-7355-AABD-CE444D800C62" name="DEPARTMENT" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="29853EF4-641F-19F2-76EA-36E80F53FE07" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="8668B66D-6596-5F58-83CF-6418054D3CB6" name="DEPENDENT" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="29853EF4-641F-19F2-76EA-36E80F53FE07" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="4FCB73B7-1D65-F469-FC99-4EE5FB97410F" name="DEPT_LOCATIONS" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="29853EF4-641F-19F2-76EA-36E80F53FE07" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="6A151386-1F89-7E7F-9663-8979A856D085" name="EMPLOYEE" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="29853EF4-641F-19F2-76EA-36E80F53FE07" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="C175DF79-756A-88DC-0972-00067CCA869E" name="PROJECT" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="29853EF4-641F-19F2-76EA-36E80F53FE07" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="5554541A-3A26-2D53-EBF6-5892DC3B2956" name="WORKS_ON" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="29853EF4-641F-19F2-76EA-36E80F53FE07" propertySourceId="" propertyTargetId=""/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>
