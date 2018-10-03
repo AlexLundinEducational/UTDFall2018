@@ -64,6 +64,9 @@
 			local search	
 				hill climb
 				simulated annealing
+				beam search
+					hill climb with agents in parallel
+					size of beam is number of agents
 			genetic algorithims
 				naive - 2 parents
 				breeding population
@@ -71,4 +74,20 @@
 				searching without percepts
 				searching with non-deterministic actions
 				searching with percepts AND non-determinism
+				
+				in the vaccum cleaner world is it possible to search with non-determinism and gaurentee 
+					completeness?
+					optimality?
+					
+			CH5
+				minimax
+				alpha-beta pruning
+				search vs lookup
+					lookup for first 4 moves of chess
+					then switch to search
+				partially observable
+					cards
+				state of the art games
+					questions only
+					mostly deep learning
 		
