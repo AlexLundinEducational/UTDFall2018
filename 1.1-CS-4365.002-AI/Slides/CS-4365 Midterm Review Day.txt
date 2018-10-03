@@ -90,4 +90,13 @@
 				state of the art games
 					questions only
 					mostly deep learning
+					
+		Question 5
+		{node}, f = cost{ToNode} + h{node}
+		{s} f = 0 + 7
+		{s,a} f = 1 + 6
+		{s,b} f = 4 + 2
 		
+		
+		Draw minimax search tree
+		be able to alpha-beta prune a tree, simply circling the node
