@@ -1,1 +1,0 @@
-INSERT INTO EMPLOYEE (Fname, Minit, Lname, Ssn, Bdate, Address, Sex, Salary, Super_ssn, Dno) VALUES('John', 'B', 'Smith', 123456789, '09-JAN-1985', 'Houston, TX', 'M', 30000, 333445555, 5);
