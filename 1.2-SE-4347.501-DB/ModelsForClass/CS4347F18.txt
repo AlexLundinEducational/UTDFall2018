@@ -1,0 +1,7 @@
+create user cs4347f18 identified by dbmgmt;
+SELECT username, account_status FROM dba_users WHERE username = 'CS4347F18';
+--grant dba to pubs;--
+connect CS4347F18/dbmgmt;
+SELECT username, account_status FROM dba_users WHERE username = 'CS4347F18';
+GRANT CONNECT TO CS4347F18;
+GRANT CONNECT, RESOURCE, DBA TO CS4347F18;
