@@ -1,4 +1,4 @@
---- these lines deletes existing tables
+--- these lines delete existing tables
 DROP TABLE PUBLISHER; 
 DROP TABLE BOOK; 
 DROP TABLE BOOK_AUTHORS; 
