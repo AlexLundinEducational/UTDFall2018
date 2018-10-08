@@ -1,0 +1,11 @@
+--- https://stackoverflow.com/questions/19609649/does-the-foreign-keys-automatically-get-updated-as-primary-table-is-updated
+--- https://docs.oracle.com/cd/B19306_01/server.102/b14220/triggers.htm#i6052
+--- trigger test of the BOOK TABLE
+--- insert rows into BOOK
+--- edit BOOKID of the BOOK
+--- trigger will CASCADE the UPDATE to BOOK_AUTHORS
+INSERT INTO "CS4347F18"."PUBLISHER" (NAME, ADDRESS, PHONE) VALUES ('p1', 'a1', 'p1')
+INSERT INTO "CS4347F18"."BOOK" (BOOKID, TITLE, PUBLISHERNAME) VALUES ('b1', 't1', 'p1')
+INSERT INTO "CS4347F18"."BOOK_AUTHORS" (BOOKID, AUTHORNAME) VALUES ('b1', 'a123')
+UPDATE "CS4347F18"."BOOK" SET BOOKID = 'b2
+

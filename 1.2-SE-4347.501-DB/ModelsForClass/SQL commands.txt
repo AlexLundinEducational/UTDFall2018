@@ -1,0 +1,25 @@
+https://www.youtube.com/watch?v=rnfO8O2z-Yc
+Query Automation ^
+
+-- All the employees except the manager of
+-- department (WORKDEPT) 'E21' have been temporarily reassigned. 
+-- Indicate this by changing their job (JOB) to NULL and their pay
+-- (SALARY, BONUS, COMM) values to zero in the EMPLOYEE table. 
+UPDATE EMPLOYEE
+  SET JOB=NULL, SALARY=0, BONUS=0, COMM=0
+  WHERE WORKDEPT = 'E21' AND JOB <> 'MANAGER'
+
+-- PROMOTE the job (JOB) of employees without a specific job title to MANAGER
+UPDATE EMPLOYEE
+	SET JOB = 'MANAGER'
+	WHERE JOB IS NULL;
+// Increase the project staffing (PRSTAFF) by 1.5 for all projects
+stmt.executeUpdate("UPDATE PROJECT SET PRSTAFF = "
+"PRSTAFF + 1.5" +
+"WHERE CURRENT OF" + ResultSet.getCursorName());
+
+-- Change the job (JOB) of employee number (EMPNO) '000290' in the EMPLOYEE table 
+-- to its DEFAULT value which is NULL
+UPDATE EMPLOYEE
+  SET JOB = DEFAULT
+  WHERE EMPNO = '000290'
