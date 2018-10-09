@@ -9,3 +9,18 @@
 			
 			Elicitation
 				Starts after we ID a good solution
+				
+			3 Techniques for Root Cause
+				Fish Bone
+				Fault Tree
+				PIG
+		Fish Bone
+		Fault Tree
+			have to use logical representation
+			might not be possible for all problems
+		Problem Interdependency Graph (PIG)
+			RE-Tools
+		Pareto Principle
+			
+	Second part of course project
+		RE-Tools source forge
