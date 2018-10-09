@@ -1,0 +1,11 @@
+10-09-2018
+	ASMS
+		**What is a problem?
+		
+		Problem Analysis Roadmap
+		In terms of business Problem
+		**Root Cause
+			The best solution humanly possible
+			
+			Elicitation
+				Starts after we ID a good solution
