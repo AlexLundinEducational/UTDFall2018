@@ -20,6 +20,7 @@ T <- not on exam
 F <- not on exam
 
 Whenever we see illusion, say true
+^ he was kinda joking, but interesting point to note
 
 21. RUNNING
 22. READY

@@ -28,7 +28,7 @@ Exam Review
 	More context switches, more overhead
 	Virtual page is a imaginary copy of the physical frame
 	Offset formula
-	Know what threads share and have of their
+	Know what threads share and have of their own
 	
 	Lexicographic - alphabetical
 	
@@ -38,3 +38,14 @@ Exam Review
 	Know how to draw gant charts
 	Know defintions for scheduling
 	Know formulas for scheduling
+	
+	Part 1
+	
+	Part 2 
+		program output
+		
+	Part 3
+		virual memory
+		
+	Part 4 
+		paging 
