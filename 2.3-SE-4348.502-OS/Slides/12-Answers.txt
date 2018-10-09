@@ -1,0 +1,24 @@
+T
+F
+F
+T
+T
+T
+F
+T
+T
+F
+T
+T
+F
+F
+F
+F
+F
+F
+T <- not on exam
+F <- not on exam
+
+
+
+Whenever we see illusion, say true

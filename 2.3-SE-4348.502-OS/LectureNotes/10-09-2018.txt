@@ -14,3 +14,17 @@ Exam Review
 			turnaround
 			response time
 			calculation times
+			
+	Paging
+		how paging work
+		translating virtual page to actual page
+		relationships between variables
+		if page size increases, what happens to page table
+		
+	A modern OS virutalizes CPU by time sharing
+	A process is a program in execution
+	A thread is
+	You must change from user mode to kernel mode to execute syscall
+	More context switches, more overhead
+	Virtual page is a imaginary copy of the physical frame
+	Offset formula
