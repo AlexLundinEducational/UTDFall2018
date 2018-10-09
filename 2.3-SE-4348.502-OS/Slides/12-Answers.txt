@@ -19,6 +19,21 @@ F
 T <- not on exam
 F <- not on exam
 
-
-
 Whenever we see illusion, say true
+
+21. RUNNING
+22. READY
+
+23. BLOCKED
+24. RUNNING
+25. BLOCKED
+
+26. RUNNING
+27. ZOMBIE
+28. READY
+
+29. BLOCKED
+30. ZOMBIE
+31. RUNNING
+
+
