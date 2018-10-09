@@ -20,7 +20,11 @@
 			might not be possible for all problems
 		Problem Interdependency Graph (PIG)
 			RE-Tools
+			
 		Pareto Principle
+			**80/20 rule
+			
+			
 			
 	Second part of course project
 		RE-Tools source forge
