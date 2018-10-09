@@ -43,7 +43,14 @@ Whenever we see illusion, say true
 35. 1 second
 36. 17 seconds
 
-37. 9 pages
+37. 9 page faults
 
-38. 8 pages
+38. 8 page faults
 
+39. 10 page faults
+
+40. can't determine
+41. 2
+42. 4
+43. 6
+44. 6
