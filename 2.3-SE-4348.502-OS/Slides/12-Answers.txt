@@ -38,6 +38,12 @@ Whenever we see illusion, say true
 
 
 32. 10 seconds, gant chart  A [0-2] B[2-10], turnaround is time completed - time in que
-33. 4 seconds, 
+33. 4 seconds
 34. 17 seconds
+35. 1 second
+36. 17 seconds
+
+37. 9 pages
+
+38. 8 pages
 
