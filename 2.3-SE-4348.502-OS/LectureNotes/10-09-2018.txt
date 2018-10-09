@@ -40,7 +40,8 @@ Exam Review
 	Know formulas for scheduling
 	
 	Part 1
-	
+		T/F
+		
 	Part 2 
 		program output
 		
