@@ -396,7 +396,9 @@ def recursive_best_first_search(problem, h=None):
     """[Figure 3.26]"""
     h = memoize(h or problem.h, 'h')
 
-    def RBFS(problem, node, flimit):
+	
+    def RBFS(problem, node, flimit):	
+        printBoard(node)	
         if problem.goal_test(node.state):
             return node, 0   # (The second value is immaterial)
         successors = node.expand(problem)
@@ -417,16 +419,24 @@ def recursive_best_first_search(problem, h=None):
             result, best.f = RBFS(problem, best, min(flimit, alternative))
             if result is not None:
                 return result, best.f
-
+	
     node = Node(problem.initial)
     node.f = h(node)
     result, bestf = RBFS(problem, node, infinity)
+    print("Solution Found")
+    printMoves(result)
     return result
 
 
 
-
-
+def printMoves(goalNode):
+    sequenceOfActions = goalNode.solution()
+    print (sequenceOfActions)
+    return 0
+	
+def printBoard(node):
+    path = node.path()
+    print(path)
 
 # _____________________________________________________________________________
 # The remainder of this file implements examples for the search algorithms.

@@ -9,6 +9,7 @@ eight_puzzle2 = EightPuzzle((1, 0, 6, 8, 7, 5, 4, 2), (0, 1, 2, 3, 4, 5, 6, 7, 8
 
 
 def test_recursive_best_first_search():
+    print ("Test1")
     assert recursive_best_first_search(
         romania_problem).solution() == ['Sibiu', 'Rimnicu', 'Pitesti', 'Bucharest']
     assert recursive_best_first_search(
@@ -75,4 +76,6 @@ DIET LENT NETS NIL NIT SETAL LATS TARE ARE SATI'
 """
 
 if __name__ == '__main__':
+    sys.stdout.write("test_RBFS")
+    sys.stdout.flush()	
     pytest.main()
