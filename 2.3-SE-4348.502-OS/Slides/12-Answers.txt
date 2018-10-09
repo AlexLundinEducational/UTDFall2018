@@ -37,3 +37,7 @@ Whenever we see illusion, say true
 31. RUNNING
 
 
+32. 10 seconds, gant chart  A [0-2] B[2-10], turnaround is time completed - time in que
+33. 4 seconds, 
+34. 17 seconds
+

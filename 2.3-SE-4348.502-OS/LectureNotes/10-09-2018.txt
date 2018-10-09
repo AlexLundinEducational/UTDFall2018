@@ -34,3 +34,7 @@ Exam Review
 	
 	5 States in proc.h
 	EMBRYO, READY, RUNNING, BLOCKED, ZOMBIE
+	
+	Know how to draw gant charts
+	Know defintions for scheduling
+	Know formulas for scheduling
