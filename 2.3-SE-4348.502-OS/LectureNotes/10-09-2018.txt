@@ -1,1 +1,16 @@
 Exam Review
+	Big picture
+	Virutalization
+		CPU
+		Memory
+	How fork works
+		Process creation
+		process deleteion
+		waiting for child
+		
+	Schedulers
+		How different ones work
+		Comparision chart
+			turnaround
+			response time
+			calculation times
