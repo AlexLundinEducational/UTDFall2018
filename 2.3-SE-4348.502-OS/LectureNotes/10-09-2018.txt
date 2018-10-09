@@ -28,3 +28,9 @@ Exam Review
 	More context switches, more overhead
 	Virtual page is a imaginary copy of the physical frame
 	Offset formula
+	Know what threads share and have of their
+	
+	Lexicographic - alphabetical
+	
+	5 States in proc.h
+	EMBRYO, READY, RUNNING, BLOCKED, ZOMBIE
