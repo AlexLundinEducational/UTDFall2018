@@ -398,6 +398,7 @@ def recursive_best_first_search(problem, h=None):
 
 	
     def RBFS(problem, node, flimit):	
+        # uncomment this line to print during recursion
         printBoard(node)	
         if problem.goal_test(node.state):
             return node, 0   # (The second value is immaterial)
@@ -428,12 +429,15 @@ def recursive_best_first_search(problem, h=None):
     return result
 
 
-
+# Added just for you :-)
 def printMoves(goalNode):
     sequenceOfActions = goalNode.solution()
     print (sequenceOfActions)
     return 0
-	
+
+# You'll have to figure out how to edit this monster
+# because it prints the entire board during recursion	
+# so it gets to be alot
 def printBoard(node):
     path = node.path()
     print(path)
