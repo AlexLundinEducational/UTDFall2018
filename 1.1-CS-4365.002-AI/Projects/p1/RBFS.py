@@ -320,7 +320,7 @@ class EightPuzzle(Problem):
     where one of the squares is a blank. A state is represented as a 3x3 list,
     where element at index i,j represents the tile number (0 if it's an empty square) """
  
-    def __init__(self, initial, goal=(1, 2, 3, 4, 5, 6, 7, 8, 0)):
+    def __init__(self, initial, goal=(0, 1, 2, 3, 4, 5, 6, 7, 8)):
         """ Define goal state and initialize a problem """
 
         self.goal = goal
@@ -398,8 +398,7 @@ def recursive_best_first_search(problem, h=None):
 
 	
     def RBFS(problem, node, flimit):	
-        # uncomment this line to print during recursion
-        printBoard(node)	
+	
         if problem.goal_test(node.state):
             return node, 0   # (The second value is immaterial)
         successors = node.expand(problem)
@@ -424,8 +423,10 @@ def recursive_best_first_search(problem, h=None):
     node = Node(problem.initial)
     node.f = h(node)
     result, bestf = RBFS(problem, node, infinity)
-    print("Solution Found")
+    print("\nSolution Found")
     printMoves(result)
+    print("\n")
+    printBoard(result)
     return result
 
 
