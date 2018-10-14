@@ -5,10 +5,16 @@ from RBFS import *
 eight_puzzle = EightPuzzle((1, 2, 3, 4, 5, 7, 8, 6, 0))
 
 # Alex Lundin
-# Edit input.txt to whatever filename you would like to read
+# Notes to TA
+# inputFileName holds the name of the file to read
+
 def fileReader():
+   # edit this variable to whatever input necessary
+   inputFileName = './input.txt'
    stringAccumulator = ""
-   with open('./input.txt') as f:
+   
+   # read loop
+   with open(inputFileName) as f:
       for l in f:
           # replace \n with \t so the stringAccumulator is consistent
           l = l.replace('\n','\t')
@@ -23,10 +29,12 @@ def fileReader():
    # return the converted stringAccumulator
    return stringAccumulator  
    
-   
+# Main program for script file   
 if __name__ == '__main__':
-    sys.stdout.write("Script1\n")
-    sys.stdout.flush()
-    boardValues = fileReader()	
+    # sys.stdout.write("Script started\n")
+    # sys.stdout.flush()
+	# call fileReader and store return value into boardValues
+    boardValues = fileReader()
+	# pass input to RBFS file
     recursive_best_first_search(EightPuzzle((boardValues)))
 	

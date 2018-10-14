@@ -17,8 +17,13 @@ import sys
 import bisect
 from operator import itemgetter
 
+
+# All edits are marked with a comment started with my name
+# code from http://aima.cs.berkeley.edu/code.html
+	   
 # Alex Lundin
 # Added just for you :-)
+# prints action sequence from a certain node
 def printMoves(goalNode):
     sequenceOfActions = goalNode.solution()
     print (sequenceOfActions)
@@ -31,11 +36,10 @@ def printMoves(goalNode):
 # Then starts a new line
 def printBoard(goalNode):
     path = goalNode.path()
-	
+    print("\n")	
     for node in path:
         i = 0
-        print("\n")
-        print("\n")
+        
         for tile in node.state:
             # on the 3rd node printed
 			# reset the counter i and print a newline
@@ -47,8 +51,9 @@ def printBoard(goalNode):
             sys.stdout.write(" ")
             sys.stdout.flush()
             i += 1
-
-	
+		# add two newlines between board prints
+        print("\n")
+        print("\n")	
 
 
 
@@ -189,7 +194,8 @@ class EightPuzzle(Problem):
     """ The problem of sliding tiles numbered from 1 to 8 on a 3x3 board,
     where one of the squares is a blank. A state is represented as a 3x3 list,
     where element at index i,j represents the tile number (0 if it's an empty square) """
- 
+	# Alex Lundin
+	# Edited order of nodes for goal
     def __init__(self, initial, goal=(0, 1, 2, 3, 4, 5, 6, 7, 8)):
         """ Define goal state and initialize a problem """
 
@@ -295,9 +301,9 @@ def recursive_best_first_search(problem, h=None):
     result, bestf = RBFS(problem, node, infinity)
 	# Alex Lundin
 	# Added printers when solution is found
-    print("\nSolution Found")
-    printMoves(result)
-    print("\nMove Sequence")
+    # print("\nSolution Found")
+    # printMoves(result)
+    # print("\nMove Sequence")
     printBoard(result)
     return result
 
