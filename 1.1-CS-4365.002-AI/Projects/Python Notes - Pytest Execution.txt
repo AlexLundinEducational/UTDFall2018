@@ -1,0 +1,20 @@
+https://autode.sk/2Qzf9qO
+
+1.) Pull GitHub folder
+	https://github.com/aimacode/aima-python
+	
+2.) Run pytest on the folder
+
+	cd  into the AIMA folder
+	type line below into windows command prompt of a valid folder structure
+	pytest
+	
+3.) Using pytest
+	disable output capturing
+	https://docs.pytest.org/en/latest/capture.html
+	
+	type line below into windows command prompt of a valid folder structure
+	pytest -s
+	
+4.) Shelled out version of AIMA code with printers
+	https://utdallas.box.com/s/nlghf1ewv40r0cq8pkjtbo34m8w7zgnk

@@ -1,0 +1,33 @@
+https://knowledge.autodesk.com/community/screencast/3eff70f3-c49c-4d10-afaa-c45926eacf92
+
+*Realize that python may install to a different location on your machine*
+
+1.) Install python
+	Download an installer from here
+	https://www.python.org/downloads/windows/
+	I used this one Python 3.7.1rc1 - 2018-09-26, Download Windows x86-64 executable installer
+	
+	Start Installer
+		check add path for python
+		
+	Edit long paths
+		disable path limit when it pops up during install
+
+2.) Add to the path system variable for python
+	search for system variables from the search bar (it's part of control panel)
+	C:\Users\%UserName%\AppData\Local\Programs\Python\Python37-32
+	C:\Users\%UserName%\AppData\Local\Programs\Python\Python37-32\Scripts
+	C:\Users\%UserName%\AppData\Local\Programs\Python\Python37-32\Lib\test\libregrtest
+	
+3.) Check pip install exists
+	From windows command prompt type to command below
+	pip --version
+	
+	Install if needed
+	https://stackoverflow.com/questions/4750806/how-do-i-install-pip-on-windows
+	
+	
+4.) Install pytest if needed
+	From windows command prompt type to command below
+	pip install -U pytest
+	*follow whatever prompts it says for upgrading*
