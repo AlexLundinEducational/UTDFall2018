@@ -17,7 +17,44 @@ import sys
 import bisect
 from operator import itemgetter
 
+# Alex Lundin
+# Added just for you :-)
+def printMoves(goalNode):
+    sequenceOfActions = goalNode.solution()
+    print (sequenceOfActions)
+    return 0
+	
+# Alex Lundin
+# accepts node as arguments
+# Uses node class to traverse the path from initial state to goal node
+# Prints 3 nodes per line
+# Then starts a new line
+def printBoard(goalNode):
+    path = goalNode.path()
+	
+    for node in path:
+        i = 0
+        print("\n")
+        print("\n")
+        for tile in node.state:
+            # on the 3rd node printed
+			# reset the counter i and print a newline
+            if i > 2:
+                print("\n")
+                i = 0
+            sys.stdout.write(str(tile))
+			# print a space between nodes
+            sys.stdout.write(" ")
+            sys.stdout.flush()
+            i += 1
 
+	
+
+
+
+
+
+	
 infinity = float('inf')
 
 # ______________________________________________________________________________
@@ -256,34 +293,11 @@ def recursive_best_first_search(problem, h=None):
     node = Node(problem.initial)
     node.f = h(node)
     result, bestf = RBFS(problem, node, infinity)
+	# Alex Lundin
+	# Added printers when solution is found
     print("\nSolution Found")
     printMoves(result)
     print("\nMove Sequence")
     printBoard(result)
     return result
 
-
-# Added just for you :-)
-def printMoves(goalNode):
-    sequenceOfActions = goalNode.solution()
-    print (sequenceOfActions)
-    return 0
-
-# You'll have to figure out how to edit this monster
-# because it prints the entire board during recursion	
-# so it gets to be alot
-def printBoard(goalNode):
-    path = goalNode.path()
-	
-    for node in path:
-        i = 0
-        print("\n")
-        print("\n")
-        for tile in node.state:
-            if i > 2:
-                print("\n")
-                i = 0
-            sys.stdout.write(str(tile))
-            sys.stdout.write(" ")
-            sys.stdout.flush()
-            i += 1
