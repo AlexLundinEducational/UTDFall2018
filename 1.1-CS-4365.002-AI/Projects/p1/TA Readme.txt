@@ -8,5 +8,5 @@ Steps to execute program
 	call by executing the following command in window command line
 	python s1.py
 
-35 second video of working program
+40 second video of working program
 	https://knowledge.autodesk.com/community/screencast/f257da60-0bdd-4d8a-a253-184183e19cd3
