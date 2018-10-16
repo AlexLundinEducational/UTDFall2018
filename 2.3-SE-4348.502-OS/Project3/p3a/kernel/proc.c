@@ -8,16 +8,7 @@
 #include "pstat.h"
 #include "spinlock.h"
 
-struct {
-  struct spinlock lock;
-  struct proc proc[NPROC];
-} ptable;
-
-// added for p3a
-struct {
-  struct spinlock lock;
-  struct pstat pstat[NPROC];
-} stable;
+// moved ptable to defs.h for p3a so entire kernel has access
 
 static struct proc *initproc;
 
@@ -81,7 +72,7 @@ found:
   // print from the stable entry of this process
   cprintf ("\nAllproc edited the statistics table."); 
   cprintf ("\nProcess In Use Bit: %d", st->inuse[p->pid]);
-  cprintf ("\nNumber of tickets: %d", p->tickets); 
+  cprintf ("\nNumber of tickets: %d", st->tickets[p->pid]); 
   cprintf ("\nProcess ID: %d", st->pid[p->pid]); 
   cprintf ("\nNumber of tickets in lottery so far : %d", st->ticks[p->pid]);   
   cprintf ("\nAllproc added the edited statistics to the s.table with the above information.");

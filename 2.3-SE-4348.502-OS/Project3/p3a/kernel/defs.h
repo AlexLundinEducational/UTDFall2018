@@ -5,6 +5,22 @@
 struct pstat;
 // pstat is a new struct from the Include file pstat.h
 
+
+// added for p3a
+struct {
+  struct spinlock lock;
+  struct pstat pstat[NPROC];
+} stable;
+
+// moved ptable here for p3a so entire kernel has access
+struct {
+  struct spinlock lock;
+  struct proc proc[NPROC];
+} ptable;
+
+
+
+
 struct buf;
 struct context;
 struct file;

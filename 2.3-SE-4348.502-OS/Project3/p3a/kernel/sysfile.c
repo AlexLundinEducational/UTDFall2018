@@ -14,16 +14,49 @@
 int
 sys_settickets(void)
 {
-	cprintf("\nSet tickets called.");
-	return 1;
+  cprintf("\nSet tickets called.");
+  
+  int n;
+
+  // if argint returns anything invalid
+  // don't set the tickets
+  if(argint(2, &n) < 0)
+    return -1;
+
+  // set the current process, proc, tickets to n
+  proc->tickets=n;
+  return n;
 }
 
 // get info from the passed in pstat pointer
 int
 sys_getpinfo(void)
 {
-	cprintf("\nGetpinfo called.");
-	return 1;
+  cprintf("\nGetpinfo called.");
+
+  int n;
+  char *p;
+  struct pstat *st;
+  
+  if(argptr(1, &p, n) < 0)
+    return -1;
+
+  // print from the stable entry of the process point to by p
+  cprintf ("\nInfo from the statistics table."); 
+  cprintf ("\nProcess In Use Bit: %d", st->inuse[p->pid]);
+  cprintf ("\nNumber of tickets: %d", st->tickets[p->pid]); 
+  cprintf ("\nProcess ID: %d", st->pid[p->pid]); 
+  cprintf ("\nNumber of tickets in lottery so far : %d", st->ticks[p->pid]);   
+  
+  return 1;
+}
+
+// added for p3a
+// Fetch the nth 32-bit system call argument.
+int
+argint(int n, int *ip)
+{
+  return fetchint(proc->tf->esp + 4 + 4*n, ip);
 }
 
 // Fetch the nth word-sized system call argument as a file descriptor
