@@ -1,0 +1,7 @@
+10-16-2018
+	Requirements Elicitation: Essential Concepts
+	
+	Point out 3 groups of stakeholders
+		For: 	User side
+		By:		Developer side
+		Of:		Ownership, investors
