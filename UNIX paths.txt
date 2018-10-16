@@ -20,3 +20,7 @@ scp -r ./src ~/cs4348-xv6
 cd ~/cs4348-xv6/src
 mkdir ~/cs4348-xv6/p3a && tar xf xv6.tar.gz -C ~/cs4348-xv6/p3a --strip-components 1
 scp -r ./testscripts/p3a/* ~/cs4348-xv6/p3a/user
+
+copy from csjaws to csjaws
+mkdir /cs4348-xv6/aml140830/p3a && tar xf xv6.tar.gz -C /cs4348-xv6/aml140830/p3a --strip-components 1
+scp -r ./testscripts/p3a/* /cs4348-xv6/aml140830/p3a/user/
