@@ -1,3 +1,15 @@
 cd "./GitHub/UTDFall2018/2.3-SE-4348.502-OS"
 
 cd "./GitHub/UTDFall2018/2.3-SE-4348.502-OS/Project1/phase3"
+
+csjaws
+cd "/cs4348-xv6/src"
+cd "/cs4348-xv6/src/testscripts"
+cd "/cs4348-xv6/src/testscripts/p3a"
+cd "/cs4348-xv6/aml140830"
+
+cs1
+cd "~/cs4348-xv6"
+cd "~/cs4348-xv6/pshell"
+cd "~/cs4348-xv6/p3a"
+cd "~/cs4348-xv6/p3b"

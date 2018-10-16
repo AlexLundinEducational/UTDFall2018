@@ -23,7 +23,7 @@ Talked about Project
 	next week we will discuss atleast part 1 and 2
 	
 Ch7-Complex Queries
-	Summary:
+	Lecture Summary:
 		We covered examples of complex queries on the EMPLOYEE 5.6 tables
 		It was mostly looking at the slides and seeing how the queries work
 		You need to know how to use EXISTS/IN <- why to use EXISTS and why to use IN
