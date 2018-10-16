@@ -5,3 +5,9 @@ Talked about homework 5
 	
 	console output
 		JDBC in the minimum requirement to make the console output happen
+		
+	This Friday
+		we need to have:
+			the schema
+			connectivity to the database
+			10 books created in a spreadsheet
