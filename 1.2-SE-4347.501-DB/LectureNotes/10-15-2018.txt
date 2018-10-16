@@ -1,2 +1,7 @@
 Talked about homework 5
 	there will be no extensions
+	
+	we need to submit excel sheets with valid data
+	
+	console output
+		JDBC in the minimum requirement to make the console output happen
