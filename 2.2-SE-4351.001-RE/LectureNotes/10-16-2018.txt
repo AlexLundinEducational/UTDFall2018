@@ -5,3 +5,14 @@
 		For: 	User side
 		By:		Developer side
 		Of:		Ownership, investors
+		
+	Semaphore Example in class
+	sem_t s;
+	sem_init(&s, 0);
+	void thread_join(){
+		sem_wait($s);
+	}
+
+	void thread_exit(){
+		sem_post(&s);
+	}
