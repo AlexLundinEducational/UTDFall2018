@@ -9,7 +9,7 @@ cd "/cs4348-xv6/src/testscripts/p3a"
 cd "/cs4348-xv6/aml140830"
 
 cs1
-cd "~/cs4348-xv6"
-cd "~/cs4348-xv6/pshell"
-cd "~/cs4348-xv6/p3a"
-cd "~/cs4348-xv6/p3b"
+cd ~/cs4348-xv6
+cd ~/cs4348-xv6/pshell
+cd ~/cs4348-xv6/p3a
+cd ~/cs4348-xv6/p3b
