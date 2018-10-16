@@ -21,3 +21,64 @@ Talked about homework 7
 	
 Talked about Project
 	next week we will discuss atleast part 1 and 2
+	
+Ch7-Complex Queries
+	Slides 14
+	
+	
+	Employee ssn
+	Works_On ess
+	
+	# exists is an OR operator which is fast
+	# if you don't need anything from the Works_On table later on, then use exists
+	#
+	# in is a AND operator which is much slow
+	# only us in when you need some other attribute from the table later
+	
+	#1
+	#this is a natural join because essn is the foriegn key
+	select distinct e.ssn
+	 from Employee e,
+	    Works_On p
+	 where e.ssn = p.essn
+	 
+	 #2
+	 #exists is better than in when we are using a foriegn key
+	 select e.ssn, pno, hours
+	   from Employee e
+	 where exists(select * from Works_On p where e.ssn = p.essn)
+	 
+	 select e.ssn
+	   from Employee e
+	       Works_On p
+	 where e.ssn = p.essn
+	 
+	 #3
+	 #slow
+	 select e.ssn
+	   from Employee e
+	 where e.ssn in (select essn from Works_On p)	 
+	 
+	 #4
+	 select e.ssn
+	   from Employee e
+	 where e.ssn in (select distinct essn from Works_On p)	
+	 
+	 At this point we spent alot of time breaking down the queries in the slide deck
+	 
+	 AS operator allows the query to change the column name of the returned values
+		this is good for the GUI so the front end can display meaningful data, instead of abreviated columns
+		
+	Inner and outer Joins
+	
+		LEFT OUTER Join
+			ALL the rows from the Left Table matching or not matching
+		
+		RIGHT OUTER Joins	
+			All the rows from the right table matching or not matching
+			
+	Group By
+	SELECT DNO, COUNT(*), AVG(SALARY)  
+		FROM EMPLOYEE
+	GROUPBY DNO
+			
