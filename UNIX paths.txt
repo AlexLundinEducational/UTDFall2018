@@ -13,3 +13,10 @@ cd ~/cs4348-xv6
 cd ~/cs4348-xv6/pshell
 cd ~/cs4348-xv6/p3a
 cd ~/cs4348-xv6/p3b
+
+copy from csjaws to local and pull out test scripts
+cd /cs4348-xv6
+scp -r ./src ~/cs4348-xv6
+cd ~/cs4348-xv6/src
+mkdir ~/cs4348-xv6/p3a && tar xf xv6.tar.gz -C ~/cs4348-xv6/p3a --strip-components 1
+scp -r ./testscripts/p3a/* ~/cs4348-xv6/p3a/user
