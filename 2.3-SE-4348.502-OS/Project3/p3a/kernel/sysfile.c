@@ -12,16 +12,18 @@
 
 // set tickets of the calling process
 int
-settickets(int)
+sys_settickets(void)
 {
-	cprintf("\nSet tickets called.")
+	cprintf("\nSet tickets called.");
+	return 1;
 }
 
 // get info from the passed in pstat pointer
 int
-getpinfo(struct pstat *)
+sys_getpinfo(void)
 {
-	cprintf("\nGetpinfo called.")
+	cprintf("\nGetpinfo called.");
+	return 1;
 }
 
 // Fetch the nth word-sized system call argument as a file descriptor

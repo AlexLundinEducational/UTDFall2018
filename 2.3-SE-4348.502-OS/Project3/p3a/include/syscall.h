@@ -2,6 +2,7 @@
 #define _SYSCALL_H_
 
 // System call numbers
+// two new entries for p3a
 #define SYS_fork    1
 #define SYS_exit    2
 #define SYS_wait    3
@@ -23,8 +24,6 @@
 #define SYS_sbrk   19
 #define SYS_sleep  20
 #define SYS_uptime 21
-// two new entries for p3a
 #define SYS_settickets 22
 #define SYS_getpinfo 23
-
 #endif // _SYSCALL_H_

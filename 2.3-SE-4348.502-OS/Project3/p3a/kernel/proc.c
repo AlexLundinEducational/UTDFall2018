@@ -13,6 +13,12 @@ struct {
   struct proc proc[NPROC];
 } ptable;
 
+// added for p3a
+struct {
+  struct spinlock lock;
+  struct pstat pstat[NPROC];
+} stable;
+
 static struct proc *initproc;
 
 int nextpid = 1;
@@ -40,37 +46,57 @@ allocproc(void)
 {
   struct proc *p;
   char *sp;
-
+  // added for p3a
+  struct pstat *st;
+  
   acquire(&ptable.lock);
+  acquire(&stable.lock);
   for(p = ptable.proc; p < &ptable.proc[NPROC]; p++)
     if(p->state == UNUSED)
       goto found;
   release(&ptable.lock);
+  release(&stable.lock);
   return 0;
 
 found:
   p->state = EMBRYO;
   p->pid = nextpid++;
   
-  // before releasing ptable.lock
-  // create a pstat struct that points into the process table of the current process
-  struct pstat *pinfo = p->pinfo;
   
-  // add the necessary information from p to the pinfo struct
-  pinfo->inuse[p->pid] = 1; // whether this slot of the process table is in use (1 or 0)
-  pinfo->tickets[p->pid] = 10; // the number of tickets this process has
-  pinfo->pid[p->pid] = p->pid; // the PID of each process
-  pinfo->ticks[p->pid] = pinfo->ticks[p->pid] + pinfo->tickets[p->pid]; // the number of ticks each process has accumulated
+  // edit the stable with process information
+  // before releasing locks
+  // create a pointer into the stable
+  st = stable.pstat;
   
-  // set the ptable entry to contain the above pinfo struct
-  p->pinfo = pinfo;
+  // use the pid of p to jump into the correct location of the stable
+  // add the necessary information from p to the entry in the stable
+  // this is very weird because the pstat values are in a table called stable
+  // indexed by the pid of the process
   
-  // print from the pstat of this process
-  cprintf ("\nAllproc added process to the table:");
-  cprintf ("\nAllproc created a pstruct:");  
+  st->inuse[p->pid] = 1; // whether this slot of the process table is in use (1 or 0)
+  st->tickets[p->pid] = 10; // the number of tickets this process has
+  st->pid[p->pid] = p->pid; // the PID of each process
+  st->ticks[p->pid] = st->ticks[p->pid] + st->tickets[p->pid]; // the number of ticks each process has accumulated
   
+  // print from the stable entry of this process
+  cprintf ("\nAllproc edited the statistics table."); 
+  cprintf ("\nProcess In Use Bit: %d", st->inuse[p->pid]);
+  cprintf ("\nNumber of tickets: %d", p->tickets); 
+  cprintf ("\nProcess ID: %d", st->pid[p->pid]); 
+  cprintf ("\nNumber of tickets in lottery so far : %d", st->ticks[p->pid]);   
+  cprintf ("\nAllproc added the edited statistics to the s.table with the above information.");
+  
+  // print from the ptable entry of this process
+  cprintf ("\nAllproc edited the process table."); 
+  cprintf ("\nProcess Name: %s" , p->name);
+  cprintf ("\nProcess ID: %d", p->pid); 
+  cprintf ("\nNumber of tickets: %d", p->tickets);   
+  cprintf ("\nAllproc added the edited process to the p.table with the above information.");
+ 
+ 
   release(&ptable.lock);
-
+  release(&stable.lock);
+  
   // Allocate kernel stack if possible.
   if((p->kstack = kalloc()) == 0){
     p->state = UNUSED;
