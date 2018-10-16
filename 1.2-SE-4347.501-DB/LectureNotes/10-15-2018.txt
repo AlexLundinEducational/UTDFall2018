@@ -23,6 +23,13 @@ Talked about Project
 	next week we will discuss atleast part 1 and 2
 	
 Ch7-Complex Queries
+	Summary:
+		We covered examples of complex queries on the EMPLOYEE 5.6 tables
+		It was mostly looking at the slides and seeing how the queries work
+		You need to know how to use EXISTS/IN <- why to use EXISTS and why to use in
+		You need to know what AS does
+		You need to know what GROUP BY does
+	
 	Slides 14
 	
 	
