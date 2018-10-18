@@ -1,5 +1,6 @@
 Lecture Summary:
 	Create trigger in the project where it MAKES SENSE
+	quiz Monday
 	
 Ch7-Complex Queries
 
@@ -71,6 +72,31 @@ Ch14-Basics of FD and Normalization
 		Shows logical relation
 		Lists out names of columns
 		Lists out name of foreign keys and primary keys
+	Guidline 1
+		schema easily understood from relation to relation
+	Guidline 2
+		Insertion Update and Removal
+	Guidline 3
+		attributes with frequent null values could be placed in separate relations
+			with the primary key
+		reasons
+			attribute N/A
+			attribute unknown
+			attribute known but unavaible
+			
+	Functional Dependencies
+		look at the mapping from 1 column to another column
+		anything that is 1 to 1 uniqueness is a dependency
+		1 to n is not a dependency, because column a doesn't gaurentee the same value in column be
 		
+	Functional Constraints
+	
+	Normalization
+		process of breaking table into smaller relations
+		tieing small pieces together with primary key and foreign key
+		
+	Normal form
+		uses keys and Functional Dependencies of a relation to certify
+			if a relation schema is in a PARTICULAR normal form
 	First Normal Form
 	Second Normal Form
