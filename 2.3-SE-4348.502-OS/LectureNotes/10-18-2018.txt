@@ -1,0 +1,12 @@
+10-16-2018
+	Semaphores
+		initialize state with value
+		from there one out, the state is hidden
+		
+		Operations
+			eem_wait
+				decrement counter
+			sem_post
+				increment counter
+				
+	Producer/Consumer

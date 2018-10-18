@@ -1,0 +1,24 @@
+10-16-2018
+	Semaphores
+		initialize state with value
+		from there one out, the state is hidden
+		
+		Operations
+			eem_wait
+				decrement counter
+			sem_post
+				increment counter
+		Lock
+			// intialize semaphore to open
+			sem_t m;
+			int x = 1;
+			sem_init(&m, 0, x);
+			
+			
+			sem_wait
+			// semaphore is now 0, locked
+			// critical section
+			sem_post
+			// semaphore is now 1, open
+		
+		Threads parent and child
