@@ -11,10 +11,11 @@ int
 main(int argc, char *argv[])
 {
    struct pstat st;
-
-   check(getpinfo(&st) == 0, "getpinfo");
    check(getpinfo(NULL) == -1, "getpinfo with bad pointer");
    check(getpinfo((struct pstat *)1000000) == -1, "getpinfo with bad pointer"); 
+   check(getpinfo(&st) == 0, "getpinfo");
+   
+   
    printf(1, "Should print 1 then 2");
    exit();
 }

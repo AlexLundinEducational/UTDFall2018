@@ -14,50 +14,46 @@
 int
 sys_settickets(void)
 {
-  cprintf("\nSet tickets called.");
+  cprintf("\nsys_settickets tickets called.");
   
   int n;
 
   // if argint returns anything invalid
-  // don't set the tickets
-  if(argint(2, &n) < 0)
-    return -1;
+  // the value returned from the function into n, will be less than 0
+  // so return -1 to whoever called sys_settickets
+if(argint(0, &n) < 0 ){
+	  return -1;
+  }
+    
 
+  // if argint returned a valid number into n
+  // check the ticket bounds
+  if (n > 1000000){
+	  //cprintf("\nN > 1000000.");
+	  return -1;
+  }
+	 
+  // if argint returned a valid number into n
+  // check the ticket bounds
+  if (n <= 0 ){
+	  //cprintf("\nN less than or equal to 0. N = %d", n);
+	  return -1;
+  }
+	 
+	 
+  // if process made it to here, then argint was valid and n is within ticket bounds
+  // print n and set tickets to n
+  cprintf("\nSetting tickets to: %d", n);
   // set the current process, proc, tickets to n
+  //validated_tickets(n);
   proc->tickets=n;
-  return n;
-}
-
-// get info from the passed in pstat pointer
-int
-sys_getpinfo(void)
-{
-  cprintf("\nGetpinfo called.");
-
-  int n;
-  char *p;
-  struct pstat *st;
   
-  if(argptr(1, &p, n) < 0)
-    return -1;
-
-  // print from the stable entry of the process point to by p
-  cprintf ("\nInfo from the statistics table."); 
-  cprintf ("\nProcess In Use Bit: %d", st->inuse[p->pid]);
-  cprintf ("\nNumber of tickets: %d", st->tickets[p->pid]); 
-  cprintf ("\nProcess ID: %d", st->pid[p->pid]); 
-  cprintf ("\nNumber of tickets in lottery so far : %d", st->ticks[p->pid]);   
-  
-  return 1;
+  cprintf ("\n");
+  // return 0 for all sucesses
+  return 0;
 }
 
-// added for p3a
-// Fetch the nth 32-bit system call argument.
-int
-argint(int n, int *ip)
-{
-  return fetchint(proc->tf->esp + 4 + 4*n, ip);
-}
+
 
 // Fetch the nth word-sized system call argument as a file descriptor
 // and return both the descriptor and the corresponding struct file.

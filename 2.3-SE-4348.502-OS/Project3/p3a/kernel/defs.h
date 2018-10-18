@@ -1,25 +1,6 @@
 #ifndef _DEFS_H_
 #define _DEFS_H_
 
-// added new global for p3a
-struct pstat;
-// pstat is a new struct from the Include file pstat.h
-
-
-// added for p3a
-struct {
-  struct spinlock lock;
-  struct pstat pstat[NPROC];
-} stable;
-
-// moved ptable here for p3a so entire kernel has access
-struct {
-  struct spinlock lock;
-  struct proc proc[NPROC];
-} ptable;
-
-
-
 
 struct buf;
 struct context;
@@ -29,6 +10,18 @@ struct pipe;
 struct proc;
 struct spinlock;
 struct stat;
+
+// added new global for p3a
+struct pstat;
+// pstat is a new struct from the Include file pstat.h
+
+// sysfile.c
+// added for p3a
+struct pinfo*	copypstat(struct pstat *);
+/* int				validated_tickets(int);
+int 			validated_stable_pointer(struct proc*); */
+// end of additions from sysfile.c for p3a
+
 
 // bio.c
 void            binit(void);
@@ -115,9 +108,6 @@ int             piperead(struct pipe*, char*, int);
 int             pipewrite(struct pipe*, char*, int);
 
 // proc.c
-// added for p3a
-struct pinfo*	copypstat(struct pstat*);
-// new pointer
 struct proc*    copyproc(struct proc*);
 void            exit(void);
 int             fork(void);

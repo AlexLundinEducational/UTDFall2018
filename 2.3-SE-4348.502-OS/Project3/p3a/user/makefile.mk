@@ -4,6 +4,7 @@ USER_PROGS := \
 	cat\
 	echo\
 	forktest\
+	getpinfo\
 	grep\
 	init\
 	kill\
@@ -11,6 +12,7 @@ USER_PROGS := \
 	ls\
 	mkdir\
 	rm\
+	setticket\
 	sh\
 	stressfs\
 	tester\

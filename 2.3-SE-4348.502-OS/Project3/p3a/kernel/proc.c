@@ -8,7 +8,18 @@
 #include "pstat.h"
 #include "spinlock.h"
 
-// moved ptable to defs.h for p3a so entire kernel has access
+// moved ptable here for p3a so entire kernel has access
+struct {
+  struct spinlock lock;
+  struct proc proc[NPROC];
+} ptable;
+
+// added for p3a
+struct {
+  struct spinlock lock;
+  struct pstat pstat[NPROC];
+} stable;
+
 
 static struct proc *initproc;
 
@@ -25,8 +36,43 @@ pinit(void)
 }
 
 // p3a notes
-// when a process is created, this function is automatically called
+// when a process is created, alloproc is automatically called
+// when user passes argument to kernel argptr can be used to retreive it
 
+
+// get info from the passed in pstat pointer
+// this process needs access to the stable, so it must stay defined here
+int
+sys_getpinfo(void)
+{
+  cprintf("\nsys_getpinfo called.");
+
+  struct pstat *st;
+  
+  
+  // if argptr returned a pointer less than 0
+  if(argptr(0, (void*)&st, sizeof(*st)) < 0){
+	  cprintf ("\nBad pointer, -1");
+	  return -1;
+  }
+    
+  // if argptr retunred null
+  if(st == NULL){
+	  cprintf ("\nNull pstat pointer.");
+	  return -1;
+  }
+  
+
+  // if process makes it this far
+  // pointer is valid
+  cprintf ("\nInfo from the statistics table."); 
+  cprintf ("\nProcess In Use Bit: %d", st->inuse[proc->pid]);
+  cprintf ("\nNumber of tickets: %d", st->tickets[proc->pid]); 
+  cprintf ("\nProcess ID: %d", st->pid[proc->pid]); 
+  cprintf ("\nNumber of tickets in lottery so far : %d", st->ticks[proc->pid]);   
+  cprintf ("\n");
+  return 0;
+}
 
 // Look in the process table for an UNUSED proc.
 // If found, change state to EMBRYO and initialize
@@ -53,6 +99,13 @@ found:
   p->state = EMBRYO;
   p->pid = nextpid++;
   
+  // print from the ptable entry of this process before edits
+  cprintf ("\nBefore Allproc edits the process table with the st pointer."); 
+  cprintf ("\nProcess Name: %s" , p->name);
+  cprintf ("\nProcess ID: %d", p->pid); 
+  cprintf ("\nNumber of tickets: %d", p->tickets);   
+  cprintf ("\nAllproc added the edited process to the p.table with the above information.\n");
+  
   
   // edit the stable with process information
   // before releasing locks
@@ -68,21 +121,24 @@ found:
   st->tickets[p->pid] = 10; // the number of tickets this process has
   st->pid[p->pid] = p->pid; // the PID of each process
   st->ticks[p->pid] = st->ticks[p->pid] + st->tickets[p->pid]; // the number of ticks each process has accumulated
+
   
   // print from the stable entry of this process
-  cprintf ("\nAllproc edited the statistics table."); 
+  cprintf ("\nAllproc editing the statistics table with st pointer."); 
   cprintf ("\nProcess In Use Bit: %d", st->inuse[p->pid]);
   cprintf ("\nNumber of tickets: %d", st->tickets[p->pid]); 
   cprintf ("\nProcess ID: %d", st->pid[p->pid]); 
   cprintf ("\nNumber of tickets in lottery so far : %d", st->ticks[p->pid]);   
-  cprintf ("\nAllproc added the edited statistics to the s.table with the above information.");
+  cprintf ("\nAllproc added the edited statistics to the s.table with the above information.\n");
   
+  // edit the process table wit the st pointer
+  p->tickets = st->tickets[p->pid];
   // print from the ptable entry of this process
-  cprintf ("\nAllproc edited the process table."); 
+  cprintf ("\nAfter Allproc edited the process table with the st pointer."); 
   cprintf ("\nProcess Name: %s" , p->name);
   cprintf ("\nProcess ID: %d", p->pid); 
   cprintf ("\nNumber of tickets: %d", p->tickets);   
-  cprintf ("\nAllproc added the edited process to the p.table with the above information.");
+  cprintf ("\nAllproc added the edited process to the p.table with the above information.\n");
  
  
   release(&ptable.lock);
