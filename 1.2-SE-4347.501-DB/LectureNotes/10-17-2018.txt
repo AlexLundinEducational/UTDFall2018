@@ -1,0 +1,76 @@
+Lecture Summary:
+	Create trigger in the project where it MAKES SENSE
+	
+Ch7-Complex Queries
+
+	
+	Slides 30 - End
+	
+	Select with group by
+	Ignore recurise query slides (38-39)
+	
+	Triggers
+		dynamic actions that take place on tables
+		
+	In class example
+		DB A
+			Data for objects
+			
+		Application B
+			Flat table of objects created from Tables in A
+		
+		Data replication
+			this is a nightmare
+			
+	Test this assertion:
+	CREATE ASSERTION SALARY_CONSTRAINT
+	CHECK ( NOT EXISTS ( SELECT *
+		FROM	EMPLOYEE E, EMPLOYEE M
+				DEPARTMENT D
+		WHERE	E.Salary>M.Salary
+				AND E.Dno=D.Dnumber
+				AND D.Mgr_ssn=M.Ssn ));
+				
+	Views
+		virtual tables that protects us from having to write the same query over and over
+		can give other users access to the view
+		these are a representation of the database
+		inherits all contraits from the database
+		solves the problem of giving access to certain data from the database
+		allows other applications to access data from the database without understanding the schema
+	v1
+
+	CREATE VIEW WORKS_ON1
+	AS SELECT Fname, Lname, Pname, Hours
+	FROM	EMPLOYEE,PROJECT,WORKS_ON
+	WHERE Ssn=Essn AND Pno=Pnumber;
+
+	SELECT * WORKS_ON1
+		WHERE 1=1;
+		
+	DROP VIEW WORKS_ON1	
+		
+	v2
+	
+	CREATE VIEW DEPT_INFO (Dept_name, No_of_emps, Total_sal)
+	AS SELECT Dname, COUNT(*), SUM(Salary)
+	FROM	DEPARTMENT, EMPLOYEE
+	WHERE Dnumber=Dno
+	GROUP BY Dname;
+	
+	SELECT * WORKS_ON1
+		WHERE 1=1;	
+		
+	DROP VIEW DEPT_INFO 
+	
+Ch14-Basics of FD and Normalization
+	Slide 1 - 
+	
+	**Relational Database Schema (slide 9)
+		Boxes pointing between tables
+		Shows logical relation
+		Lists out names of columns
+		Lists out name of foreign keys and primary keys
+		
+	First Normal Form
+	Second Normal Form
