@@ -7,6 +7,10 @@
 // added for p3a
 #include "pstat.h"
 #include "spinlock.h"
+#include "sysfunc.h"
+// modified for project p3a
+
+
 
 // moved ptable here for p3a so entire kernel has access
 struct {
@@ -39,6 +43,104 @@ pinit(void)
 // when a process is created, alloproc is automatically called
 // when user passes argument to kernel argptr can be used to retreive it
 
+int lottery_Total(void){
+  struct proc *p;
+  int ticket_aggregate=0;
+  
+  //loop over process table and increment total tickets if a runnable process is found 
+  for(p = ptable.proc; p < &ptable.proc[NPROC]; p++)
+  {
+    if(p->state==RUNNABLE){
+      ticket_aggregate+=p->tickets;
+    }
+  }
+  
+  return ticket_aggregate;          // returning total number of tickets for runnable processes
+}
+
+
+void
+set_current_processes_tickets(int n)
+{
+  // added for p3a
+  struct pstat st;
+  struct proc *p;
+  
+  
+  acquire(&stable.lock);  
+
+  int current_pid = proc->pid;
+  
+  acquire(&ptable.lock);
+  for(p = ptable.proc; p < &ptable.proc[NPROC]; p++){
+    if (p->pid == current_pid){
+      cprintf("\n\nSetting tickets to: %d", n);
+      cprintf("\nPtable PID is : %d", p->pid);
+      cprintf("\nTickets : %d", p->tickets);
+      p->tickets=n;
+      cprintf("\nUpdated tickets : %d", p->tickets);  
+		  cprintf ("\n");
+      }	
+	}
+  release(&ptable.lock);
+  
+  int i = 0;
+  for(i = 0; i < NPROC; i++){
+   if (st.pid[i] == current_pid){
+     cprintf("\n\nStable PID is : %d", st.pid[i]);
+     cprintf("\nStable tickets: %d", st.pid[i]);   
+  	 st.tickets[i] = n;
+     cprintf("\nUpdated stable tickets: %d", st.tickets[i]);   
+   }
+  }
+          
+
+  
+  release(&stable.lock);  
+}
+
+// set tickets of the calling process with the value from user
+int
+sys_settickets(void)
+{
+	
+  cprintf("\nsys_settickets tickets called.");
+  
+  int n;
+
+  // if argint returns anything invalid
+  // the value returned from the function into n, will be less than 0
+  // so return -1 to whoever called sys_settickets
+  if(argint(0, &n) < 0 ){
+	  return -1;
+  }
+    
+
+  // if argint returned a valid number into n
+  // check the ticket bounds
+  if (n > 1000000){
+	  //cprintf("\nN > 1000000.");
+	  return -1;
+  }
+	 
+  // if argint returned a valid number into n
+  // check the ticket bounds
+  if (n <= 0 ){
+	  //cprintf("\nN less than or equal to 0. N = %d", n);
+	  return -1;
+  }
+	 
+	 
+  // if process made it to here, then argint was valid and n is within ticket bounds
+  // print n and set tickets to n
+  
+  // set the current process, proc, tickets to n
+  set_current_processes_tickets(n);
+  
+  cprintf ("\n");
+  // return 0 for all sucesses
+  return 0;
+}
 
 // get info from the passed in pstat pointer
 // this process needs access to the stable, so it must stay defined here
@@ -46,31 +148,34 @@ int
 sys_getpinfo(void)
 {
   cprintf("\nsys_getpinfo called.");
-
-  struct pstat *st;
   
+  struct pstat *stablePointer, st;
   
   // if argptr returned a pointer less than 0
-  if(argptr(0, (void*)&st, sizeof(*st)) < 0){
+  if(argptr(0, (void*)&stablePointer, sizeof(*stablePointer)) < 0){
 	  cprintf ("\nBad pointer, -1");
 	  return -1;
   }
     
   // if argptr retunred null
-  if(st == NULL){
+  if(stablePointer == NULL){
 	  cprintf ("\nNull pstat pointer.");
 	  return -1;
   }
-  
 
-  // if process makes it this far
-  // pointer is valid
-  cprintf ("\nInfo from the statistics table."); 
-  cprintf ("\nProcess In Use Bit: %d", st->inuse[proc->pid]);
-  cprintf ("\nNumber of tickets: %d", st->tickets[proc->pid]); 
-  cprintf ("\nProcess ID: %d", st->pid[proc->pid]); 
-  cprintf ("\nNumber of tickets in lottery so far : %d", st->ticks[proc->pid]);   
-  cprintf ("\n");
+
+  
+  int i = 0;
+  // print all used entries of stable
+  for(i = 0; i < NPROC; i++){
+   if (st.inuse[i] == 1){
+     cprintf("\nStable PID is : %d", st.pid[i]);
+     cprintf("\nStable tickets: %d", st.tickets[i]);
+     cprintf("\nStable inuse: %d", st.inuse[i]);
+     cprintf("\nStable ticks: %d", st.ticks[i]);
+   }
+  }
+  
   return 0;
 }
 
@@ -83,8 +188,7 @@ allocproc(void)
 {
   struct proc *p;
   char *sp;
-  // added for p3a
-  struct pstat *st;
+  
   
   acquire(&ptable.lock);
   acquire(&stable.lock);
@@ -92,63 +196,49 @@ allocproc(void)
     if(p->state == UNUSED)
       goto found;
   release(&ptable.lock);
-  release(&stable.lock);
   return 0;
 
 found:
   p->state = EMBRYO;
+  // p3a addition
+  int current_pid = p->pid;
   p->pid = nextpid++;
   
-  // print from the ptable entry of this process before edits
-  cprintf ("\nBefore Allproc edits the process table with the st pointer."); 
-  cprintf ("\nProcess Name: %s" , p->name);
-  cprintf ("\nProcess ID: %d", p->pid); 
-  cprintf ("\nNumber of tickets: %d", p->tickets);   
-  cprintf ("\nAllproc added the edited process to the p.table with the above information.\n");
-  
-  
-  // edit the stable with process information
-  // before releasing locks
-  // create a pointer into the stable
-  st = stable.pstat;
-  
-  // use the pid of p to jump into the correct location of the stable
-  // add the necessary information from p to the entry in the stable
-  // this is very weird because the pstat values are in a table called stable
-  // indexed by the pid of the process
-  
-  st->inuse[p->pid] = 1; // whether this slot of the process table is in use (1 or 0)
-  st->tickets[p->pid] = 10; // the number of tickets this process has
-  st->pid[p->pid] = p->pid; // the PID of each process
-  st->ticks[p->pid] = st->ticks[p->pid] + st->tickets[p->pid]; // the number of ticks each process has accumulated
-
-  
-  // print from the stable entry of this process
-  cprintf ("\nAllproc editing the statistics table with st pointer."); 
-  cprintf ("\nProcess In Use Bit: %d", st->inuse[p->pid]);
-  cprintf ("\nNumber of tickets: %d", st->tickets[p->pid]); 
-  cprintf ("\nProcess ID: %d", st->pid[p->pid]); 
-  cprintf ("\nNumber of tickets in lottery so far : %d", st->ticks[p->pid]);   
-  cprintf ("\nAllproc added the edited statistics to the s.table with the above information.\n");
-  
-  // edit the process table wit the st pointer
-  p->tickets = st->tickets[p->pid];
-  // print from the ptable entry of this process
-  cprintf ("\nAfter Allproc edited the process table with the st pointer."); 
-  cprintf ("\nProcess Name: %s" , p->name);
-  cprintf ("\nProcess ID: %d", p->pid); 
-  cprintf ("\nNumber of tickets: %d", p->tickets);   
-  cprintf ("\nAllproc added the edited process to the p.table with the above information.\n");
- 
- 
+  // edit the process table to include 10 tickets by defaullt
+  // p->tickets = 10;
   release(&ptable.lock);
-  release(&stable.lock);
   
+  // use p-ptable.proc
+  
+  cprintf("\nCurrent pid: %d", current_pid);
+  
+  // added for p3a
+  struct pstat st;
+  int i = 0;
+  // find first unsued stable entry and use it
+  for(i = 0; i < NPROC; i++){
+   if (st.inuse[i] == 0){
+     cprintf("\n\nFirst unused stable entry found.");
+     cprintf("\nStable PID is : %d", st.pid[i]);
+     cprintf("\nStable tickets: %d", st.tickets[i]);
+     cprintf("\nStable inuse: %d", st.inuse[i]);
+     st.pid[i] = current_pid;    
+  	 st.tickets[i] = 10;
+     st.inuse[i] = 1;
+     cprintf("\nUpdated stable pid: %d", st.pid[i]);
+     cprintf("\nUpdated stable tickets: %d", st.tickets[i]);
+     cprintf("\nUpdated stable in use: %d", st.inuse[i]);
+     break;   
+   }
+  }
+    
   // Allocate kernel stack if possible.
   if((p->kstack = kalloc()) == 0){
     p->state = UNUSED;
+	  st.inuse[i] = 0;
     return 0;
   }
+  release(&stable.lock);
   sp = p->kstack + KSTACKSIZE;
   
   // Leave room for trap frame.
@@ -197,6 +287,7 @@ userinit(void)
 
   p->state = RUNNABLE;
   release(&ptable.lock);
+  //p3a maybe stable unlock goes here later
 }
 
 // Grow current process's memory by n bytes.
@@ -228,6 +319,10 @@ fork(void)
   int i, pid;
   struct proc *np;
 
+  // added for p3a
+  struct pstat st;
+  
+
   // Allocate process.
   if((np = allocproc()) == 0)
     return -1;
@@ -237,10 +332,51 @@ fork(void)
     kfree(np->kstack);
     np->kstack = 0;
     np->state = UNUSED;
+	  // added for p3a
+    // rework later to set invalid allocation to inuse 0
+    // added for p3a
+    // find first unsued stable entry and use it
+    for(i = 0; i < NPROC; i++){
+     if (st.pid[i] == np->pid){
+       cprintf("\n\nFork was unable to copy proces state, setting inuse to 0.");
+       cprintf("\nStable PID is : %d", st.pid[i]);
+       cprintf("\nStable tickets: %d", st.tickets[i]);
+       cprintf("\nStable inuse: %d", st.inuse[i]);
+  	   st.inuse[i] = 0;
+       cprintf("\nUpdated stable tickets: %d", st.inuse[i]);
+       break;   
+     }
+    }    
+    
+    
+	  st.inuse[np->pid] = 0;
     return -1;
   }
   np->sz = proc->sz;
   np->parent = proc;
+  
+  // p3a
+  // loop over the ptable
+  int child_pid = np->pid;
+  int parent_pid = proc->pid;
+  cprintf("\n\nFork: %d", child_pid);
+  
+  // added for p3a
+  // find first unsued stable entry and use it
+  for(i = 0; i < NPROC; i++){
+   if (st.pid[i] == child_pid){
+     cprintf("\n\nFound child pid in stable.");
+     cprintf("\nStable PID is : %d", st.pid[i]);
+     cprintf("\nStable tickets: %d", st.tickets[i]);
+     cprintf("\nStable inuse: %d", st.inuse[i]);
+     cprintf("\nParents pid is : %d", parent_pid);
+     cprintf("\nParents tickets are : %d", proc->tickets);  
+  	 st.tickets[i] = proc->tickets;
+     cprintf("\nUpdated stable tickets: %d", st.tickets[i]);
+     break;   
+   }
+  }
+  
   *np->tf = *proc->tf;
 
   // Clear %eax so that fork returns 0 in the child.
@@ -254,6 +390,8 @@ fork(void)
   pid = np->pid;
   np->state = RUNNABLE;
   safestrcpy(np->name, proc->name, sizeof(proc->name));
+  
+
   return pid;
 }
 
@@ -265,7 +403,11 @@ exit(void)
 {
   struct proc *p;
   int fd;
-
+  // added for p3a
+  //struct pstat *st;
+  //st = stable.pstat;
+  
+  
   if(proc == initproc)
     panic("init exiting");
 
@@ -281,7 +423,10 @@ exit(void)
   proc->cwd = 0;
 
   acquire(&ptable.lock);
-
+  
+  // added for p3a
+  //acquire(&stable.lock);
+  
   // Parent might be sleeping in wait().
   wakeup1(proc->parent);
 
@@ -296,6 +441,9 @@ exit(void)
 
   // Jump into the scheduler, never to return.
   proc->state = ZOMBIE;
+  // p3a
+  //st->inuse[proc->pid] = 0; // whether this slot of the process table is in use (1 or 0)
+  
   sched();
   panic("zombie exit");
 }
@@ -307,7 +455,12 @@ wait(void)
 {
   struct proc *p;
   int havekids, pid;
-
+  
+  // added for p3a
+  //struct pstat *st;
+  //st = stable.pstat;
+  //acquire(&stable.lock);
+  
   acquire(&ptable.lock);
   for(;;){
     // Scan through table looking for zombie children.
@@ -323,11 +476,14 @@ wait(void)
         p->kstack = 0;
         freevm(p->pgdir);
         p->state = UNUSED;
+		// added for p3a
+		//st->inuse[p->pid] = 0;
         p->pid = 0;
         p->parent = 0;
         p->name[0] = 0;
         p->killed = 0;
         release(&ptable.lock);
+		//release(&stable.lock);
         return pid;
       }
     }
@@ -335,12 +491,42 @@ wait(void)
     // No point waiting if we don't have any children.
     if(!havekids || proc->killed){
       release(&ptable.lock);
+	  //release(&stable.lock);
       return -1;
     }
-
+	//release(&stable.lock);
     // Wait for children to exit.  (See wakeup1 call in proc_exit.)
     sleep(proc, &ptable.lock);  //DOC: wait-sleep
   }
+}
+
+int
+myModulus (unsigned int x, int n)
+{
+	
+	int q, p, m;
+	q = x / n;
+	p = q * n;
+	m = x - p;
+	
+	return m;
+}
+
+int 
+PRNG(int ceiling)
+{
+    // our initial starting seed is 5323
+     int seed = 5323;
+ 
+    // Take the current seed and generate a new value from it
+    // Due to our use of large constants and overflow, it would be
+    // hard for someone to casually predict what the next number is
+    // going to be from the previous one.
+    seed = 83274519 * seed + 2378203;
+ 
+    // Take the seed and return a value between 0 and ceiling
+	int random = myModulus(seed, ceiling);
+    return random;
 }
 
 // Per-CPU process scheduler.
@@ -354,17 +540,43 @@ void
 scheduler(void)
 {
   struct proc *p;
-
+  int count = 0;
+  long winningTicketAmount = 0;
+  int ticket_aggregate = 0;
+  int ceiling = 1;
   for(;;){
     // Enable interrupts on this processor.
     sti();
-
+    ticket_aggregate=0;
+  
+    winningTicketAmount = 0;
+	count = 0;
+    ticket_aggregate = 0;
+  
+    ticket_aggregate = lottery_Total();
+	if
+		(ticket_aggregate == 0){
+		ceiling = 1;
+		}
+	else{
+		ceiling = ticket_aggregate;
+	}
+	
+	winningTicketAmount = PRNG(ceiling);
+    //winningTicketAmount = mod(pseudo_rand(seed), ticket_aggregate);
+	//cprintf("\nWinning amount threshold is: %d", ticket_aggregate);
     // Loop over process table looking for process to run.
     acquire(&ptable.lock);
     for(p = ptable.proc; p < &ptable.proc[NPROC]; p++){
+	  
       if(p->state != RUNNABLE)
         continue;
 
+	  // count starts and 0
+	  if(count + p->tickets < winningTicketAmount){
+		  count+=p->tickets;
+		  continue;
+	  }
       // Switch to chosen process.  It is the process's job
       // to release ptable.lock and then reacquire it
       // before jumping back to us.
@@ -409,6 +621,7 @@ yield(void)
 {
   acquire(&ptable.lock);  //DOC: yieldlock
   proc->state = RUNNABLE;
+  
   sched();
   release(&ptable.lock);
 }
@@ -418,6 +631,7 @@ yield(void)
 void
 forkret(void)
 {
+
   // Still holding ptable.lock from scheduler.
   release(&ptable.lock);
   
@@ -435,6 +649,7 @@ sleep(void *chan, struct spinlock *lk)
   if(lk == 0)
     panic("sleep without lk");
 
+
   // Must acquire ptable.lock in order to
   // change p->state and then call sched.
   // Once we hold ptable.lock, we can be
@@ -449,6 +664,7 @@ sleep(void *chan, struct spinlock *lk)
   // Go to sleep.
   proc->chan = chan;
   proc->state = SLEEPING;
+
   sched();
 
   // Tidy up.
@@ -496,7 +712,8 @@ kill(int pid)
       p->killed = 1;
       // Wake process from sleep if necessary.
       if(p->state == SLEEPING)
-        p->state = RUNNABLE;
+	    p->state = RUNNABLE;
+        
       release(&ptable.lock);
       return 0;
     }
@@ -540,5 +757,3 @@ procdump(void)
     cprintf("\n");
   }
 }
-
-

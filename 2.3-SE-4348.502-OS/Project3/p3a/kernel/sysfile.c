@@ -8,52 +8,6 @@
 #include "file.h"
 #include "fcntl.h"
 #include "sysfunc.h"
-//added two new functions for p3a
-
-// set tickets of the calling process
-int
-sys_settickets(void)
-{
-  cprintf("\nsys_settickets tickets called.");
-  
-  int n;
-
-  // if argint returns anything invalid
-  // the value returned from the function into n, will be less than 0
-  // so return -1 to whoever called sys_settickets
-if(argint(0, &n) < 0 ){
-	  return -1;
-  }
-    
-
-  // if argint returned a valid number into n
-  // check the ticket bounds
-  if (n > 1000000){
-	  //cprintf("\nN > 1000000.");
-	  return -1;
-  }
-	 
-  // if argint returned a valid number into n
-  // check the ticket bounds
-  if (n <= 0 ){
-	  //cprintf("\nN less than or equal to 0. N = %d", n);
-	  return -1;
-  }
-	 
-	 
-  // if process made it to here, then argint was valid and n is within ticket bounds
-  // print n and set tickets to n
-  cprintf("\nSetting tickets to: %d", n);
-  // set the current process, proc, tickets to n
-  //validated_tickets(n);
-  proc->tickets=n;
-  
-  cprintf ("\n");
-  // return 0 for all sucesses
-  return 0;
-}
-
-
 
 // Fetch the nth word-sized system call argument as a file descriptor
 // and return both the descriptor and the corresponding struct file.
