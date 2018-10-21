@@ -1,0 +1,33 @@
+cd "./GitHub/UTDFall2018/2.3-SE-4348.502-OS"
+
+cd "./GitHub/UTDFall2018/2.3-SE-4348.502-OS/Project1/phase3"
+
+csjaws
+cd "/cs4348-xv6/src"
+cd "/cs4348-xv6/src/testscripts"
+cd "/cs4348-xv6/src/testscripts/p3a"
+cd "/cs4348-xv6/aml140830"
+cd "/cs4348-xv6/aml140830/p3a"
+
+cs1
+cd ~/cs4348-xv6
+cd ~/cs4348-xv6/p3a
+cd ~/cs4348-xv6/p3b
+
+copy from csjaws to local and pull out test scripts
+cd /cs4348-xv6
+rm -rf ~/cs4348-xv6/src
+scp -r ./src ~/cs4348-xv6
+cd ~/cs4348-xv6/src
+mkdir ~/cs4348-xv6/p3b && tar xf xv6.tar.gz -C ~/cs4348-xv6/p3b --strip-components 1
+scp -r ./testscripts/p3b/* ~/cs4348-xv6/p3b/user
+
+copy from csjaws to csjaws
+mkdir /cs4348-xv6/aml140830/p3b && tar xf xv6.tar.gz -C /cs4348-xv6/aml140830/p3b --strip-components 1
+scp -r ./testscripts/p3b/* /cs4348-xv6/aml140830/p3b/user/
+
+copy from local to csjaws
+rm -rf /cs4348-xv6/aml140830/p3b
+mkdir /cs4348-xv6/aml140830/p3b
+cd ~/cs4348-xv6
+scp -r ./p3b/* /cs4348-xv6/aml140830/p3b
