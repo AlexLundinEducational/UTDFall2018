@@ -1,0 +1,9 @@
+10-22-2018
+
+	Chapter 6 Constraints
+	
+	Lamdba Calculus:
+	
+		Functions that return functions
+		
+		Functions that recursivley modify themselves through recursion
