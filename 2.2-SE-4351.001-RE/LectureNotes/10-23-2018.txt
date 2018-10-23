@@ -9,13 +9,20 @@ Summary
 			http://www.utdallas.edu/~chung/SAMPLE/ex_vision.htm
 				use this ^ as the format
 			Use root cause analysis to build a full problem statement
-			accuractly define "irities" Security and Safety
-			Safety is the MOST important
+			accuractly define non functional terms
+				"irities" Security and Safety
+				Safety is the MOST important
 		WRS
 
 10-23-2018
 
 	Started Enterprise Requirements: Modeling Techniques
-	Slides 7 - 
+	Slides 7 - 20
 	
-	Workflow/Business process
+	
+	Notes on symbols
+	
+	3 version of UML
+		PreUML
+		UML1.X
+		UML2.X
