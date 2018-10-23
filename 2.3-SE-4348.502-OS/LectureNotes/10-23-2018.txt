@@ -2,7 +2,9 @@
 	Summary
 		Translate problem into pure english
 			then is it clear how to use sem_wait and sem_post
-		
+		Mutex
+			mutual exclusion
+			
 	Semaphores
 		initialize state with value
 		from there one out, the state is hidden
@@ -15,22 +17,26 @@
 				
 	Atomicity/ Mutual Exclusion Violation
 		- variables are only modified when code is aware
-		Causes:
+		Caused by:
 			data editing when program is not aware
 		Fix:
 			locks
 	Order
 		-thread 1 does some action that must be done before thread 2
-		Causes:
-			thread2 starts
+		Caused by:
+			action sequences between threads
 		Fix:
 			sem_wait on thread 2
 			sem_post on thread 1
 			
 	Deadlock
 		-every thread is waiting on other threads
-		Causes:
-			circular waiting
+		Caused by:
+			1 mutual exclusion required
+			2 holding and waiting
+			3 no preemption (can't take resource from thread)
+			4 circular wait (chain of threads hold and waiting)
 		Fix:	
+			break any 1 of the above conditions
 	
 	
