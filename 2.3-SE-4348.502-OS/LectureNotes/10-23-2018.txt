@@ -1,12 +1,36 @@
 10-23-2018
+	Summary
+		Translate problem into pure english
+			then is it clear how to use sem_wait and sem_post
+		
 	Semaphores
 		initialize state with value
 		from there one out, the state is hidden
 		
 		Operations
-			eem_wait
+			sem_wait
 				decrement counter
 			sem_post
 				increment counter
 				
-	Producer/Consumer
+	Atomicity/ Mutual Exclusion Violation
+		- variables are only modified when code is aware
+		Causes:
+			data editing when program is not aware
+		Fix:
+			locks
+	Order
+		-thread 1 does some action that must be done before thread 2
+		Causes:
+			thread2 starts
+		Fix:
+			sem_wait on thread 2
+			sem_post on thread 1
+			
+	Deadlock
+		-every thread is waiting on other threads
+		Causes:
+			circular waiting
+		Fix:	
+	
+	
