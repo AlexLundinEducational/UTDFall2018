@@ -10,7 +10,7 @@ Summary
 				use this ^ as the format
 			Use root cause analysis to build a full problem statement
 			accuractly define non functional terms
-				"irities" Security and Safety
+				Security vs Safety
 				Safety is the MOST important
 		WRS
 
@@ -29,3 +29,13 @@ Summary
 			
 		UML2.X
 			13 different diagram types
+			
+	Flowchart
+		does not support concurrency
+		cannot decompose
+		only for small system
+		
+	Activity
+		can decompose activities into smalelr
+		supports concurrency
+		supports big systems
