@@ -80,3 +80,6 @@
 	
 	Deadlock avoidance with scheduling
 		requires global knowledge of thread locks
+		
+			price:
+				reducedy concurrency
