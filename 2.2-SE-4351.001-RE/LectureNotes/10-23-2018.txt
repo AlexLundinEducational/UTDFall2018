@@ -25,4 +25,7 @@ Summary
 	3 version of UML
 		PreUML
 		UML1.X
+			9 different diagram types
+			
 		UML2.X
+			13 different diagram types
