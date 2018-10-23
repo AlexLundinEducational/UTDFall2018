@@ -1,3 +1,13 @@
+Summary
+	Project
+		Vision Document (Enterprise Requirements: slide 10)
+			Defines problem
+			System level document
+			Problem statement IN A TABLE (slide 12)
+				4 entries
+				include stakeholders
+		WRS
+
 10-23-2018
 
 	Started Enterprise Requirements: Modeling Techniques
