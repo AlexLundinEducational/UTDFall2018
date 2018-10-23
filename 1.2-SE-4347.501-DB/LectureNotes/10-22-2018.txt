@@ -1,0 +1,25 @@
+Lecture Summary:
+	
+	
+	
+Ch14-Basics of FD and Normalization
+	Slide 27 - 
+	
+	Normalization- decomposing unsatisfactor relations by
+			breaking up their attributes into smaller realtions
+			
+	First Normal Form
+		Disallows
+			composite attributes
+			multivalue attriubtes
+			nested realtions
+			
+	Second Normal Form
+		Uses of the concept of Functional Dependencies
+		
+		Anything output from a FD must be unique
+		Dropping anything from a FD will break it
+	
+	Third Normal Form
+		only attributes that DEPEND on the primary key can stay
+		any transistive attributes have to get out and go to another table
