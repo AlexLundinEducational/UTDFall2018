@@ -38,5 +38,45 @@
 			4 circular wait (chain of threads hold and waiting)
 		Fix:	
 			break any 1 of the above conditions
+			
+	Preventing circular wait
+		total ordering - cannot aquire any resource that is earlier in the order than
+			any resource currently held
+		proof by contradiction
+			because we can not hold any resource, earlier than any resource in possesion there will be no loops
+			
+			price: 
+				utilization of resources goes down
+				concurrency goes down
 	
+	Prevent hold and wait
+		aquire all locks at once
+		
+		meta lock for all locks
+		
+			price:
+				need to know the locks that will be aquired in the future
+				concurrency goes down
+				
+	Prevent no preemption
+		tryLock - if cannot get lock needed, release locks held
+		
+			price:
+				livelock
+				cost of reaquiring all missing locks after release
+				
+			solution:
+				exponential backoff, leaves locks unlocked
 	
+	Prevent Mutual Exclusion
+		compareAndSwap
+		only allow updates when the shared variable is the way you left it
+			price:
+				complexity of list insert, but there is no deadlock
+				
+			solution:
+				there are some cases where this won't work
+					like writing lots of data to a file, locks are needed
+	
+	Deadlock avoidance with scheduling
+		requires global knowledge of thread locks
