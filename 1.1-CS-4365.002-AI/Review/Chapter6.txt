@@ -1,0 +1,13 @@
+First Edition
+Chapter 6 (Page 172 - 205)
+
+6.1 Games (181)
+6.2 Optimal Decisions In Games (183)
+6.3 Alpha—Beta Pruning (187)
+6.4 Imperfect Real-Time Decisions (191)
+6.5 Stochastic Games (197)
+6.6 Partialy Observable Games (200)
+6.7 State-Of-The-Art Game Programs (205)
+6.8 Alternative Approaches (207)
+6.9 Summary (209)
+Exercises (215)
