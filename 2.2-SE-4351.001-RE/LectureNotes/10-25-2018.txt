@@ -27,3 +27,9 @@ Summary
 			Phase 2
 				input/activity/outout
 				people
+				
+	These map to the others
+	
+	*Process | ^Product | -Functional |+Non functional
+	
+	*-Functional Processes | *+Nonfunctional Process |  ^-Functional Product| ^+Non Functional Product
