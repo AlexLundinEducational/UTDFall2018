@@ -3,3 +3,17 @@ Summary
 
 10-25-2018
 
+	Mention ontologies
+		knowledge is essence
+		most important categories
+			things 
+			relationships between things
+			constraints on things
+		
+	Key Diff
+		this time we use formal/semiformal notations
+		
+	UML
+		BPMN
+		IDEF0
+		UML swimlane diagram
