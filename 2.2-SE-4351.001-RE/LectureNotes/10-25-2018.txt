@@ -17,3 +17,13 @@ Summary
 		BPMN
 		IDEF0
 		UML swimlane diagram
+		
+	Describe this is processes specification
+		Explains how we developed the APP
+		Breakdown Activity Phases
+			Phase 1
+				input/activity/output
+				people
+			Phase 2
+				input/activity/outout
+				people
