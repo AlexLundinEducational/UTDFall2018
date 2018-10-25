@@ -1,0 +1,18 @@
+Lecture Summary:
+	
+	
+	
+Ch14-Basics of FD and Normalization
+	Slide 46 - 
+	Fully Functional Dependency
+		FD, Y -> Z
+		removal of any attribute from Y means FD does not hold
+		
+	Informal Definition Chart
+		1
+			all attributes depend on the key
+		2
+			all attributes depend on the WHOLE key
+			
+		3
+			all attributes depend on nothing BUT the KEY

@@ -3,7 +3,7 @@ Lecture Summary:
 	
 	
 Ch14-Basics of FD and Normalization
-	Slide 27 - 
+	Slide 27 - 46
 	
 	Normalization- decomposing unsatisfactor relations by
 			breaking up their attributes into smaller realtions
