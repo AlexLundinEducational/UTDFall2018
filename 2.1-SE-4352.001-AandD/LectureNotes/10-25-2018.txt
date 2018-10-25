@@ -15,16 +15,20 @@ Slide (8-
 		L,Y
 		generic architecture
 	Reuse
-		
+		L,Y
 		can generic components be used in the architecture
 	Flexibility
+		L,Y
 		Can Components be added changed reordered?
 	Anticipates obsolecence
-	
+		L,Y by splitting modules
 	Designed for portablity
+		L,Y dependent factilities are usually in lower layers
 		can the architecture be deployed on a different OS
 	Designed for testability
+		L, Y layers can be tested independently
 		Are outputs visible
 	Design defensivley
+		L, Y rigous checked on each layer
 		validating input
 		
