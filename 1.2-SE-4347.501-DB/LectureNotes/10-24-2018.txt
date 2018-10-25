@@ -3,12 +3,15 @@ Lecture Summary:
 	
 	
 Ch14-Basics of FD and Normalization
-	Slide 46 - 
+	Slide 46 - End
+	Prime attribute	
+		form a candidate key in a table
+		p
 	Fully Functional Dependency
 		FD, Y -> Z
 		removal of any attribute from Y means FD does not hold
 		
-	Informal Definition Chart
+	Informal Definition Chart3
 		1
 			all attributes depend on the key
 		2
@@ -16,3 +19,14 @@ Ch14-Basics of FD and Normalization
 			
 		3
 			all attributes depend on nothing BUT the KEY
+			
+	Skipped alot
+	
+Ch20-TranscationProcessing
+	Slide 1-
+	
+	Physical Transcation
+	
+	Logical Transcation
+		an object
+			cannot be physically "touched"
