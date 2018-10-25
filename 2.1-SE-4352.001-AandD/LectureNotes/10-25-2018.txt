@@ -1,0 +1,30 @@
+Lecture Notes
+Module 9
+Slide (8-
+
+	Divide and conquere
+		L,Y
+	Increase cohesion
+		L,Y
+	Reduced coupling
+		L,Y
+	Increase abstraction
+		L,Y
+		hides internal details
+	Increased Reusability
+		L,Y
+		generic architecture
+	Reuse
+		
+		can generic components be used in the architecture
+	Flexibility
+		Can Components be added changed reordered?
+	Anticipates obsolecence
+	
+	Designed for portablity
+		can the architecture be deployed on a different OS
+	Designed for testability
+		Are outputs visible
+	Design defensivley
+		validating input
+		
