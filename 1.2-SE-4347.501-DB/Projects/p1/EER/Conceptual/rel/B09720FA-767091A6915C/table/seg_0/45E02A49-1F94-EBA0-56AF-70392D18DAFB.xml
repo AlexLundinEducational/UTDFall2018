@@ -1,0 +1,39 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="45E02A49-1F94-EBA0-56AF-70392D18DAFB" name="EMPLOYEE">
+<createdBy>kim</createdBy>
+<createdTime>2018-10-29 23:17:44 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TITLE" id="BEA43382-0681-683B-61C9-7FB407C0AC52">
+<createdBy>kim</createdBy>
+<createdTime>2018-10-29 23:25:37 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUPERVISOR" id="9E13EDC8-602A-398F-D42C-26BBCADEB223">
+<createdBy>kim</createdBy>
+<createdTime>2018-10-29 23:29:46 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C989F960-809D-F23A-AFE7-9871CA8F030A" name="EMPLOYEE_PERSON_FK">
+<createdBy>kim</createdBy>
+<createdTime>2018-10-29 23:43:39 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>
