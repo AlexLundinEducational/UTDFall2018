@@ -27,9 +27,9 @@ CC       = gcc
 INCDIR := include
 
 
-CFLAGS   = -std=gnu11 -O3 -Wall -Wextra -Wpedantic -Wstrict-aliasing
-# optional flags and library flags
-CFLAGS  += 
+# all flags from xv6 plus the pthread flag for final executable
+CFLAGS   = -std=gnu11 -O3 -Wall -Wextra -Wpedantic -Wstrict-aliasing -pthread
+# optional library flags
 LDFLAGS  = 
 # add -I flag to the beginning of each item in INCDIR
 INCDIRS := -I$(INCDIR)
@@ -49,13 +49,13 @@ all: clean $(EXECFILE) permissions
 
 ${EXECFILE}: $(OBJ)
 	@echo Linking........
-	$(CC) -o $@ $^
+	$(CC) -o $@ $^ $(CFLAGS)
 	@echo Sucessfully linked object files to create final executable.
 	@echo Compilation Done!
 	
 
 %.o: %.c
-	$(CC) $(INCDIRS) -o $@ -c $<
+	$(CC) $(INCDIRS) $(CFLAGS) -o $@ -c $<
 	@echo Sucessfully created object file named: $@
 
 

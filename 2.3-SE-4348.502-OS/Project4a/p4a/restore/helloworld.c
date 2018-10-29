@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 // Hello world, with include file
-int hello()
+int main()
 {
    // printf() displays the string inside quotation
    printf("\nHello, World!");
