@@ -3,6 +3,23 @@ Lecture Summary:
 Project
 	What is Type of Person?
 	Person can have multiple phone numbers
+	There is something missing from req 8)
+	12, 11 and 8 are connected by line 12
+	
 	Job
 		Only potential employees can apply
 		How to handle existing employees?
+		
+	View
+		4, look at requirement 12, that will give the view
+	Queries
+		7, 
+		12, name and email of selected employees
+		13, name and email of selected employees who applied for each job
+	
+Assignment 5
+	Interface
+		GUI 	- graphical User interface
+				Java class file
+		UI 		- user interface
+				Webapp
