@@ -1,0 +1,8 @@
+Lecture Summary:
+	
+Project
+	What is Type of Person?
+	Person can have multiple phone numbers
+	Job
+		Only potential employees can apply
+		How to handle existing employees?
