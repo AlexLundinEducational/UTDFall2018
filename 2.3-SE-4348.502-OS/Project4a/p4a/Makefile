@@ -7,16 +7,13 @@
 
 # PROJECTNAME is a descriptive name used for the backup target
 # This should not contain spaces or special characters
-PROJECTNAME = p4abackup
+PROJECTNAME = p4a
 
 # use current directory name as exec file
 # EXECFILE = $(shell basename $$(pwd))
-# or name it ourseklves
-EXECFILE = p4a
+# or name it ourselves
+EXECFILE = csmc
 
-
-
-# https://gist.github.com/ork/11248510
 
 ################################################################################
 # Build options
@@ -27,14 +24,14 @@ CC       = gcc
 INCDIR := include
 
 
-# all flags from xv6 plus the pthread flag for final executable
+# all flags from xv6 make file AND the pthread flag for final executable
 CFLAGS   = -std=gnu11 -O3 -Wall -Wextra -Wpedantic -Wstrict-aliasing -pthread
 # optional library flags
 LDFLAGS  = 
 # add -I flag to the beginning of each item in INCDIR
 INCDIRS := -I$(INCDIR)
 
-
+# rules for expanding src and obj targets from file types
 SRC      = $(wildcard *.c)
 OBJ      = $(SRC:.c=.o)
 
@@ -45,7 +42,7 @@ OBJ      = $(SRC:.c=.o)
 .PHONY: clean all permissions
 
 all: clean $(EXECFILE) permissions
-	@echo Type ./p4a then enter to execute the final linked executable.
+	@echo Type ./csmc then type the arguments "#students" "#tutors" "#chairs" "#help" followed by enter to execute the program.
 
 ${EXECFILE}: $(OBJ)
 	@echo Linking........
@@ -60,7 +57,7 @@ ${EXECFILE}: $(OBJ)
 
 
 clean:
-	@rm -rf *.o
+	@rm -rf *.o csmc
 	
 clean2:
 	@rm -rf ./restore
@@ -68,14 +65,16 @@ clean2:
 permissions:
 	@echo Setting file permissions on current directory.
 	@$(eval CURDIRNAME := $(shell basename "`pwd`"))
-	@chmod 777 $(CURDIRNAME)
+	@chmod 777 ../
 	@echo File permissions set to:
-	@stat -c "%a %n" $(CURDIRNAME)
+	@stat -c "%a %n" ../
 
 ################################################################################
 # Backups
 ################################################################################
-restore:
+# restore grabs the simple tarball backup
+# then untars it into the current directory under the /restore folder
+restore: clean2
 	@$(eval FULLDIRNAME := $(shell "`pwd`"))
 	@$(eval CURDIRNAME := $(shell basename "`pwd`"))
 	# copy tar over
