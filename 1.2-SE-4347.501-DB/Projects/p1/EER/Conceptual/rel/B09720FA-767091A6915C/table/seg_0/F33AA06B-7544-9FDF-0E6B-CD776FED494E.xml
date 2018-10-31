@@ -1,0 +1,30 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F33AA06B-7544-9FDF-0E6B-CD776FED494E" name="POTENTIAL_EMPLOYEE">
+<createdBy>kim</createdBy>
+<createdTime>2018-10-29 23:18:03 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="27F9D557-B0B2-C4E7-4A41-404000E8FF61">
+<createdBy>kim</createdBy>
+<createdTime>2018-10-29 23:42:53 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4F439DBB-499F-BB0E-F184-70A9CEE4F87B" name="POTENTIAL_EMPLOYEE_PERSON_FK">
+<createdBy>kim</createdBy>
+<createdTime>2018-10-29 23:42:53 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

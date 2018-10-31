@@ -1,0 +1,13 @@
+Lecture Notes
+Module 9
+Slide (
+	CIA
+		
+	AAAA
+		Authentication
+		Authorization/Control
+		Audit
+		Action
+		
+	Threat Modeling
+		Security/Risk/Requirements Analysis
