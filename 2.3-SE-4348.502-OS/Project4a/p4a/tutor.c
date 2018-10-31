@@ -1,59 +1,62 @@
 // includes for project p4a
 #include "globals.h"
 
-
+// declarations of any globals that are used for the first time
+int helpAccumulator;
 
 void * tutor (void * tId )
 {
    // Signal(tutorReady) // signal tutor is ready
 //    Wait(CoordReady) // wait for coord to give them a student
-//    // Help student
+//    // argNumSeekHelp student
 
-   while(studDone < NumStudents ) // If student not done continue to help. Tutors work till all students done
+   int rHtime; 	// random amount of time tutor will assist student
+   
+   while(studentsDone < argNumStudents ) // If student not done continue to assistance. Tutors work till all students done
    {
       if(DEBUG)
       {
-         printf("Tutor %d is signalling to the coordinator that it is ready to help students\n", tId);
+         printf("Tutor %d is signalling to the coordinator that it is ready to assist students\n", tId);
       }
-      sem_post(&tutorReady); // says to coord it is ready.
-      while((sem_trywait(&coordTut)) < 0) // continue to happen in till does get semaphore
-       // Wait until student finsished 
+	  // tell coorindator that this tutor is ready
+      sem_post(&tutorReady);
+	  
+	  // continue to try to get semaphore, until try returns a value greater than 0
+      while((sem_trywait(&coordToTutor)) < 0)
        {
-          if(studDone >= NumStudents)
+          if(studentsDone >= argNumStudents)
           {
             if(DEBUG)
             {
-               printf("The tutors have finished helping the students\n");
-               printf("Tutor %d is done helping\n", tId);
+               printf("The tutors have finished assisting the students\n");
+               printf("Tutor %d is done assisting\n", tId);
             }   
             
             pthread_exit(0);
             
           }
        }
-
-      
-      //sem_wait(&coordTut); // Wait for coordinator when coordinator is ready
+      // wait on mutex lock for shared variable editing
       sem_wait(&mutex);
-      r = ( rand() % 3 ) + 1;
+      rHtime = ( rand() % 3 ) + 1;
       sem_post(&mutex);
-      printf("Tutor %d helping student for %d miliseconds\nCurrently waiting students: %d\n", tId, r, stuWaiting);
+      printf("Tutor %d assisting student for %d miliseconds\nCurrently waiting students: %d\n", tId, rHtime, studentsWaiting);
       sem_wait(&mutex);
-      sleep(r);  
+      sleep(rHtime);  
       sem_post(&mutex);
       
       sem_wait(&mutex);
-      numHelp++;
+      helpAccumulator++;
       if(DEBUG)
       {
-         printf("tutors helped %d times\n", numHelp); // Tells how many times the tutors in total helped.
+         printf("Tutors assisted %d times\n", helpAccumulator); // accumulates total times any tutor assists any student
       } 
       sem_post(&mutex);   
    }
    
    if(DEBUG)
    {
-      printf("tutor %d is done helping\n", tId);
+      printf("Tutor %d is done assisting\n", tId);
    }  
    pthread_exit(0);
    

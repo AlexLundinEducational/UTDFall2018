@@ -42,8 +42,10 @@ OBJ      = $(SRC:.c=.o)
 .PHONY: clean all permissions
 
 all: clean $(EXECFILE) permissions
-	@echo Type ./csmc then type the arguments "#students" "#tutors" "#chairs" "#help" followed by enter to execute the program.
+	@echo Type ./csmc then type the arguments "#students" "#tutors" "#chairs" "#argNumSeekHelp" followed by enter to execute the program.
+	@echo Example from assignment pdf file ./csmc 10 3 4 5
 
+	
 ${EXECFILE}: $(OBJ)
 	@echo Linking........
 	$(CC) -o $@ $^ $(CFLAGS)

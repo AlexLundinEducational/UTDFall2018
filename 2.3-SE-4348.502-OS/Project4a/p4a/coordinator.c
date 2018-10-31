@@ -2,56 +2,66 @@
 #include "globals.h"
 
 
-void * coodinator (void * cId )
+void * coordinator (void * cId )
 {
    
-   while(studDone < NumStudents) // Help is the amount of times each student needs help. Each student needs help
+   while(studentsDone < argNumStudents) 
    {
-                     // not changing vaalue of helo here
       if(DEBUG)
       {   
          printf("Coordinator is waiting for a student to assign a tutor to\n");
       }   
       
-      while((sem_trywait(&studReady)) < 0) // continue to happen in till does hget semaphore
-       // Wait for student to be ready and ask for help
-       {
-          if(studDone >= NumStudents)
-          {
+	  // continue to try to get semaphore, until try returns a value greater than 0
+      while((sem_trywait(&studReady)) < 0)
+      {
+		 // if all students are done, tell coordinator thread it's time to exit
+         if(studentsDone >= argNumStudents)
+         {
             if(DEBUG)
             {
-               printf("All students are finished and received help\n");
+               printf("All students are finished and received assistance\n");
                printf("Coordinator is done helping\n");
             }   
             pthread_exit(0);
             
-          }
-       }
+         }
+      }
       
+	  // control flow made it to here, so two things about students are true
+      // 1] students are ready because studReady is locked
+	  // 2] some are not done yet because studentsDone < argNumStudents
       if(DEBUG)
       {
          printf("Coordinator is waiting for a tutor to be available\n");
       }   
-      //sem_post(&coordReady); // Signal 
-      sem_wait(&tutorReady); // signal tutor to be available to help student
+
+	  // wait until a tutor becomes available
+      sem_wait(&tutorReady);
+	  
+      // once tutor is ready
+	  // unlocking the coordinator to tutor and student semaphores
+	  // *** seems like it makes sense to signal tutor first, then student
+	  sem_post(&coordToTutor);
+	  sem_post(&coordToStudent);
       
-      sem_post(&coordStu); // Coordinator is ready to asign a tutor to a student
-      sem_post(&coordTut);
+
       if(DEBUG)
       {
          printf("Coordinator has found and assigned an available tutor to a student\n"); 
       }    
    
+      // wait on mutex lock for shared variable editing
       sem_wait(&mutex);
-      numAval++; // Coordinator setting a chair free for another student to sit on
-      stuWaiting--;
-      //help--;
+      chairsAvailable++; // free a chair
+      studentsWaiting--; // remove student from queue
       sem_post(&mutex);
      
-      }
+   }
+	  
    if(DEBUG)
    {
-      printf("Coordinator %d is done helping\n");
+      printf("Coordinator %d is done directing\n", cId);
    }   
    
    pthread_exit(0);

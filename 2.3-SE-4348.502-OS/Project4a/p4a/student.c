@@ -1,81 +1,82 @@
 // includes for project p4a
 #include "globals.h"
 
-
+// declarations of any globals that are used for the first time
+int studentsDone;
+int studentsWaiting;
 
 void * student (void * sId )
 {
 
-//   If(help > 0)
-// Mutex
-// mutex
-// While  numberOfFreeWRSeats > 0: # If there are any free seats:
-// mutex
-//       numberOfFreeWRSeats -= 1  #   sit down in a chair
-// signal(mutex)     #   don't need to lock the chairs anymore mutex
-//       signal(studReady)         #   notify the coord, who's waiting until there is a student
-//       wait(CoordReady)         #   wait until theCoordinator is ready
-//       # (Have hair cut here.)
-//     else:                       # otherwise, there are no free seats; tough luck --
-//       signal(mutex)
-   int helpNum = help; // Each students needs a copy of help that they modify
+   // random amount of time student will program
+   int rPtime; 	
    
-   while(helpNum > 0) // Help is the amount of times each student needs help. Each student needs help
+   // Each students needs a copy of argNumSeekHelp that they modify
+   int seeksRemaining = argNumSeekHelp; 
+   
+   // while loop until student reaches number of seeks required
+   while(seeksRemaining > 0)
    {
-                     // not changing value of helo here
-         sem_wait(&mutex);
-         r = ( rand() % 3 ) + 1;
-         sem_post(&mutex);
-         if(DEBUG)
-         {
-            printf("Student %d programming\n", (int)sId); // Students programming which takes time
-         }
-         sleep(r);                   
-      
-      if(numAval > 0) 
+
+      if(DEBUG)
       {
+         printf("Student %d programming\n", (int)sId); // Students programming which takes time
+      }
+	  // start loop off with student programming for random time
+	  rPtime = ( rand() % 3 ) + 1;
+      sleep(rPtime);                   
+      
+	  // if atleast 1 chair is open
+	  // then sit on the chair and signal studReady
+      if(chairsAvailable > 0) 
+      {
+		  
+		 // wait on mutex lock for shared variable editing
          sem_wait(&mutex);
-         numAval--; // sit on chair
-         stuWaiting++;
-         sem_post(&mutex); // Protect numAval, stuWaiting, r
-         
-         printf("Student %d takes a seat, notifying coordinator its ready and waiting for help\nCurrently waiting students: %d\n", (int)sId, stuWaiting);
-         sem_post(&studReady); // notify the coord, who's waiting until there is a student
+         chairsAvailable--; // sit on chair
+         studentsWaiting++; // add self to queue
+         sem_post(&mutex);
+		 
+         printf("Student %d takes a seat, notifying coordinator its ready and waiting for assistance\nCurrently waiting students: %d\n", (int)sId, studentsWaiting);
+		 
+		 // signal that a student is ready
+         sem_post(&studReady); 
         
-        // put student in an array. Space to save what students are want help and are waiting for help or not.
-         sem_wait(&coordStu); // wait until theCoordinator is ready
+         // wait here until coordinator signals by unlocking the coordToStudent semaphore
+         sem_wait(&coordToStudent); 
          if(DEBUG)
          {
-            printf("Student %d got help\n", (int)sId);
+            printf("Student %d got assistance\n", (int)sId);
          }   
          
          sem_wait(&mutex);
-         helpNum--;
+		 // decrement seeksRemaining
+         seeksRemaining--;
          if(DEBUG)
          {
-            printf("Student will wait for help %d more times.\n", helpNum); // This is debug statement
+            printf("Student will wait for assistance %d more times.\n", seeksRemaining);
          }    
          sem_post(&mutex);
           
       }
-     else
-         //sem_post(&mutex);
-         printf("No chairs are currently available for student %d. Student will program and ask for help later.\n", (int)sId);
-         sem_wait(&mutex);
-         r = ( rand() % 3 ) + 1;
-         sem_post(&mutex);
-         sleep(r);
+	  // else continue programming
+      else{
+         printf("No chairs are currently available for student %d. Student will program and ask for assistance later.\n", (int)sId);
+		 rPtime = ( rand() % 3 ) + 1;
+		 sleep(rPtime);
+	  }
          
       
    }
+   
+  
+   // wait on mutex lock for shared variable editing   
+   sem_wait(&mutex);
+   studentsDone++; // increment students
+   sem_post(&mutex);
    if(DEBUG)
    {
       printf("Student %d is done\n", sId);
-   }   
-   sem_wait(&mutex);
-   studDone++;
-   sem_post(&mutex);
-   //printf("StudDone %d is done\n", studDone); // Was a debug statement
- 
+   } 
    pthread_exit(0);
 }
