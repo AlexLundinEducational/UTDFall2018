@@ -28,3 +28,11 @@
 			max file 4GB
 			(2 ^ 32) / (2 ^ 12) = (2 ^ 20)
 			(2 ^ 20) / (2 ^ 2) = (2 ^ 18)?
+			
+		Solution
+			Dynamic Allocation with static allocation for small files
+	
+	Dynamic Allocation
+		each file gets a certain block of space
+		if file grows past it gets 1 indirect
+		if file grows past it gets 2 indirect
