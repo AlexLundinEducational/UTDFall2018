@@ -1,0 +1,11 @@
+11-01-2018
+	Summary
+	
+	Contiguous Allocation
+		Pros
+			Head won't have to move much
+			Calculating block location is easy, only have to know block start and the offest
+			
+		Cons
+			External fragmentation
+			May not be able to grow files

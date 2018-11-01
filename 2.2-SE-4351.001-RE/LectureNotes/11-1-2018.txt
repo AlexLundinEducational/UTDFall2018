@@ -9,3 +9,16 @@ Summary
 		
 Enterprise Modeling
 	Finished
+	
+Structural Analysis (slides 1-)
+
+	Slide 20
+	
+	Labels on datagrams
+		must be verb or verb phrase
+	
+	Types of requirements
+		Functional
+			
+		ERD
+			purely informational
