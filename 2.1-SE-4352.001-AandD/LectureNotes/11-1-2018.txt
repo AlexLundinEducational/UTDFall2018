@@ -1,0 +1,46 @@
+Reverse Engineering
+
+	Why Reverse Engineering?
+		recovery of lost info
+		reuse
+		
+	Design recovery
+	
+	Redocumentation
+		simple
+		unintrusive form of reconstruction
+		
+		
+	Views
+		structural
+		functional
+		behavioral
+		
+	Reengineering vs Reverse Engineering
+	
+	Reverse Engineering
+	
+	Reconstruction
+		original developers gone
+		recorded documents lost
+		original developers did not follow plan
+		form of reverse engineering
+		
+	Purposes:
+		ensure conformance between as built and as designed
+		
+	Extracting Architecture
+		human experts
+		recognizing known patterns
+		reconstructing file mappings (object file to a class file)
+		
+	Reconstruction Phases
+		Raw view extractions
+			source code, build scripts
+		Batabase construction
+		View fusion and manipulation
+			combine views from database
+			individual views might now be completted
+				static view might miss dynamic calling functions
+		Architecture Analysis
+			view fusion results in set of hypothesis about system
