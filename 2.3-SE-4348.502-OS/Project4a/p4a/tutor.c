@@ -1,3 +1,4 @@
+
 // includes for project p4a
 #include "globals.h"
 
@@ -6,9 +7,6 @@ int helpAccumulator;
 
 void * tutor (void * tId )
 {
-   // Signal(tutorReady) // signal tutor is ready
-//    Wait(CoordReady) // wait for coord to give them a student
-//    // argNumSeekHelp student
 
    int rHtime; 	// random amount of time tutor will assist student
    
@@ -22,8 +20,12 @@ void * tutor (void * tId )
       sem_post(&tutorReady);
 	  
 	  // continue to try to get semaphore, until try returns a value greater than 0
-      while((sem_trywait(&coordToTutor)) < 0)
+	  // value greater than or equal to 0 means
+	  // coodinator signaled by unlocking coordinatorToTutor semaphore
+      // meaning that the coordinator has found a student ready for this tutor
+      while((sem_trywait(&coordinatorToTutor)) < 0)
        {
+		  // do a thread exit check while trying to get the semaphore 
           if(studentsDone >= argNumStudents)
           {
             if(DEBUG)
@@ -36,20 +38,20 @@ void * tutor (void * tId )
             
           }
        }
+      
+	  // once control reaches here, then that means the sem_try returned value >= 0
+	  
+      rHtime = ( rand() % 3 ) + 1;
+      printf("Tutor %d helping student for %d seconds. Waiting students = %d\n", tId, rHtime, studentsWaiting);
+	  
+      sleep(rHtime);  
+
       // wait on mutex lock for shared variable editing
       sem_wait(&mutex);
-      rHtime = ( rand() % 3 ) + 1;
-      sem_post(&mutex);
-      printf("Tutor %d assisting student for %d miliseconds\nCurrently waiting students: %d\n", tId, rHtime, studentsWaiting);
-      sem_wait(&mutex);
-      sleep(rHtime);  
-      sem_post(&mutex);
-      
-      sem_wait(&mutex);
-      helpAccumulator++;
+      helpAccumulator++; // accumulates total times any tutor assists any student
       if(DEBUG)
       {
-         printf("Tutors assisted %d times\n", helpAccumulator); // accumulates total times any tutor assists any student
+         printf("Tutors assisted %d times\n", helpAccumulator); 
       } 
       sem_post(&mutex);   
    }

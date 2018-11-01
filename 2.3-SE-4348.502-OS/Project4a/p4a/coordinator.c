@@ -13,7 +13,7 @@ void * coordinator (void * cId )
       }   
       
 	  // continue to try to get semaphore, until try returns a value greater than 0
-      while((sem_trywait(&studReady)) < 0)
+      while((sem_trywait(&studentReady)) < 0)
       {
 		 // if all students are done, tell coordinator thread it's time to exit
          if(studentsDone >= argNumStudents)
@@ -29,7 +29,7 @@ void * coordinator (void * cId )
       }
       
 	  // control flow made it to here, so two things about students are true
-      // 1] students are ready because studReady is locked
+      // 1] students are ready because studentReady is locked
 	  // 2] some are not done yet because studentsDone < argNumStudents
       if(DEBUG)
       {
@@ -42,8 +42,8 @@ void * coordinator (void * cId )
       // once tutor is ready
 	  // unlocking the coordinator to tutor and student semaphores
 	  // *** seems like it makes sense to signal tutor first, then student
-	  sem_post(&coordToTutor);
-	  sem_post(&coordToStudent);
+	  sem_post(&coordinatorToTutor);
+	  sem_post(&coordinatorToStudent);
       
 
       if(DEBUG)

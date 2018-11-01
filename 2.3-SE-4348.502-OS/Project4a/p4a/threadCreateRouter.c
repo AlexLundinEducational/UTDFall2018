@@ -3,11 +3,8 @@
 #include "globals.h"
 
 #include <pthread.h>
-#include <semaphore.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
-
 
 // all threads are routed through here for creation
 // this allows one function to do the error reporting for all thread creations
@@ -21,7 +18,7 @@ void threadCreateRouter(pthread_t *thread, const pthread_attr_t *attr, void *(*s
    				
 	// if thread fails to create
     // print error message and exit
-    // because this thread can not be joined	
+    // because this thread can not be joined later
 	if (threadCreateSuccess != 0){
        fprintf(stderr, "pthread_create failed to create with argument = %d. errno = %d, %s\n",
                 arg, errno, strerror(errno));

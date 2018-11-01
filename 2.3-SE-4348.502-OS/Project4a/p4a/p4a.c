@@ -10,10 +10,10 @@
 
 
 // declarations of any globals that are used for the first time
-sem_t coordToStudent;
+sem_t coordinatorToStudent;
 sem_t tutorReady;
-sem_t studReady;
-sem_t coordToTutor;
+sem_t studentReady;
+sem_t coordinatorToTutor;
 sem_t mutex;
 int argNumChairs;
 int chairsAvailable;
@@ -21,10 +21,10 @@ int argNumSeekHelp;
 int argNumTutors;
 int argNumStudents;
 
-// thread create is done systematically, so there is no livelock
+// thread create is done systematically, so a created thread does not dependent on a uncreated thread
 // first coordinator, then all tutors, then all students
 
-// thread join is done systematically, so there is no deadlock
+// thread join is done systematically, so threads only join back to here, when nothing else is dependent on that thread
 // first all students, then all tutors, then the coordinator
 
 
@@ -87,12 +87,12 @@ int main(int argc, char *argv[])
    chairsAvailable = argNumChairs;
    
    // communication semaphores set to 0 at first
-   sem_init(&coordToStudent, 0, 0);
-   sem_init(&coordToTutor, 0, 0);
+   sem_init(&coordinatorToStudent, 0, 0);
+   sem_init(&coordinatorToTutor, 0, 0);
    
    // ready semaphores set to 0 at first
    sem_init(&tutorReady, 0, 0);
-   sem_init(&studReady, 0, 0);
+   sem_init(&studentReady, 0, 0);
    
    // mutual exclusion lock set to 1 at first
    sem_init(&mutex, 0, 1);
