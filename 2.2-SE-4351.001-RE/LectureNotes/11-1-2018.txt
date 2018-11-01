@@ -5,3 +5,7 @@ Summary
 		purpose is to do gradual work
 		purpose is to not put off all documentation until final
 		
+		Make sure to use the word ontology
+		
+Enterprise Modeling
+	Finished
