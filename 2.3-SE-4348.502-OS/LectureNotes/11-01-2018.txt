@@ -8,4 +8,23 @@
 			
 		Cons
 			External fragmentation
+				Solution
+				Indexed Table
 			May not be able to grow files
+			
+	Indexed Tables
+		Each file gets a index table
+		Part of the inode for the file
+		
+		Cons
+			Size
+			
+		Example
+			max file 1MB, block size 512 bytes
+			(2 ^ 20) / (2 ^ 9) = 2 ^ 11
+			
+			(2 ^ 11) / (2 ^ 2) = (2 ^ 9) = 8KB table size
+			
+			max file 4GB
+			(2 ^ 32) / (2 ^ 12) = (2 ^ 20)
+			(2 ^ 20) / (2 ^ 2) = (2 ^ 18)?
