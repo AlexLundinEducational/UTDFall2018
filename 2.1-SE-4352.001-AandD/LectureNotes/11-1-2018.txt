@@ -37,7 +37,21 @@ Reverse Engineering
 	Reconstruction Phases
 		Raw view extractions
 			source code, build scripts
-		Batabase construction
+			extract existing architecture
+				code, header files, build files
+				execution traces
+			capture interests from extracted information
+				variables, function names
+			dynamic	information 
+				might not be avaiable from source code
+				poylmorphism, function pointers, runtime parameterization, plugins
+			common tools
+				static
+					lexical analyziers, parsers, AST
+				dynamic
+					profiler, code instrumation tools
+		Database construction
+			
 		View fusion and manipulation
 			combine views from database
 			individual views might now be completted
