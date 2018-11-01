@@ -68,14 +68,31 @@ Reverse Engineering
 				Architect indicates relationships
 				Sonar J automatically detects and reports violations
 				
-		Dynamic Analysis
+	Dynamic Analysis
+	
+	Guidlines
+		have a goal
+		have a representation of architecture
+			even if it is very course, this will show what you want to extract
+			draw it ourselves if we have to
+		identify layers is a good place to start
+		existing documentation may not be accuracte
+		tools can support and shorten the process
+			include anyone who may have knowledge of system
+			
+	Know 4 phases of reconstruction for exam
+	
+	Module 11 Started
+		What are barries to high quality?
+			missunderstanding quality attributes
+			inadquate langauges for expressing design requirements
+			lack of documented designed
+			quality control aspects
+			
+		Interoperability
 		
-		Guidlines
-			have a goal
-			have a representation of architecture
-				even if it is very course, this will show what you want to extract
-				draw it ourselves if we have to
-			identify layers is a good place to start
-			existing documentation may not be accuracte
-			tools can support and shorten the process
-				include anyone who may have knowledge of system
+		Security
+		
+		Performances
+		
+		
