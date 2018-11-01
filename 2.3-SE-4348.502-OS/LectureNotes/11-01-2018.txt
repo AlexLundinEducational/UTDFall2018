@@ -1,6 +1,11 @@
 11-01-2018
 	Summary
-	
+	Project p4b
+		File size	
+			12 blocks at 128 a block
+			140 mb file size
+			140 * 512 mb
+		#define InodeLocation = Overheadlocation+(inode#/inodesperblock)
 	Contiguous Allocation
 		Pros
 			Head won't have to move much
@@ -36,3 +41,19 @@
 		each file gets a certain block of space
 		if file grows past it gets 1 indirect
 		if file grows past it gets 2 indirect
+		
+	Data region
+		8 blocks for overhead
+		56 blocks for user
+		inode is typically 265 mb
+		
+		so
+		we can support 56 files ( each file occupies a block)
+		we can support 56 files with a max file size of 4KB
+		we reserve blocks (3-7) for inodes on the files
+		we store a bitmap vectore to identify with inodes are ope n
+		
+	Finding open bit
+		read integers from bitmap vector
+		first int greater than 1 means there is a open slot in that word
+			find the first free block 
