@@ -31,3 +31,5 @@ rm -rf /cs4348-xv6/aml140830/p4a
 mkdir /cs4348-xv6/aml140830/p4a
 cd ~/cs4348-xv6
 scp -r ./p4a/* /cs4348-xv6/aml140830/p4a
+cd /cs4348-xv6
+setfacl -Rb aml140830
