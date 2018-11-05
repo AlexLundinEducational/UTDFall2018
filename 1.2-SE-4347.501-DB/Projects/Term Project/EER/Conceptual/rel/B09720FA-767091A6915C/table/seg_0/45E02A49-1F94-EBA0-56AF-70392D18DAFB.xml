@@ -26,8 +26,27 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="EMPLOYEE_ID" id="86724E0D-12BA-22D5-F698-3F61C51A86E4">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-04 23:39:34 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B26BE8C8-39ED-5DD2-8ED5-DB0CA2B041B8" name="EMPLOYEE_PK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-04 23:39:34 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86724E0D-12BA-22D5-F698-3F61C51A86E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="C989F960-809D-F23A-AFE7-9871CA8F030A" name="EMPLOYEE_PERSON_FK">
 <createdBy>kim</createdBy>
 <createdTime>2018-10-29 23:43:39 UTC</createdTime>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B53D22BC-3014-EC88-7346-C72A6C216AB3" containerWithKeyObject="D0703187-CFCA-F0CC-4F5F-488C05FCB3BA" localFKIndex="C85CF4F1-8497-8CC5-6212-46AE0ECBABC7" name="SHIFT_EMPLOYEE_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-04 23:40:27 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<referredTableLongName>EMPLOYEE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>45E02A49-1F94-EBA0-56AF-70392D18DAFB</referredTableID>
+<keyObject>B26BE8C8-39ED-5DD2-8ED5-DB0CA2B041B8</keyObject>
+<referredKeyID>B26BE8C8-39ED-5DD2-8ED5-DB0CA2B041B8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>EMPLOYEE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

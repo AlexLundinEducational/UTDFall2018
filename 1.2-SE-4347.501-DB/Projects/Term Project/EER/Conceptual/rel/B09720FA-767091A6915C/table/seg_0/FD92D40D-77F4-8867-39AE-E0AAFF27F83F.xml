@@ -17,8 +17,27 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="CUSTOMER_ID" id="ACCC2C89-C643-A213-63BB-0438690E794A">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-04 23:41:38 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="04C6AA3B-BEA5-6542-7CB6-77402CDA4C5C" name="CUSTOMER_PK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-04 23:41:38 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ACCC2C89-C643-A213-63BB-0438690E794A"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="9C36581A-43A7-6B51-7241-879557A884F1" name="CUSTOMER_PERSON_FK">
 <createdBy>kim</createdBy>
 <createdTime>2018-10-29 23:45:19 UTC</createdTime>

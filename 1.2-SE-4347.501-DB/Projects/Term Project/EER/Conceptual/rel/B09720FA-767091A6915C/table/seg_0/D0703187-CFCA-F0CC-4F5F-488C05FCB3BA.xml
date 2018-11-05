@@ -28,16 +28,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="0CD49763-8086-5528-8D21-27C818BF5E2A" name="SHIFT_PERSON_FK">
+<ind_PK_UK id="C900CB16-524B-082A-ABE3-F0ECEFA284ED" name="SHIFT_DEPARTMENT_FK">
 <createdBy>kim</createdBy>
 <createdTime>2018-10-29 23:46:01 UTC</createdTime>
 <ownerDesignName>Conceptual</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 </ind_PK_UK>
-<ind_PK_UK id="C900CB16-524B-082A-ABE3-F0ECEFA284ED" name="SHIFT_DEPARTMENT_FK">
-<createdBy>kim</createdBy>
-<createdTime>2018-10-29 23:46:01 UTC</createdTime>
+<ind_PK_UK id="C85CF4F1-8497-8CC5-6212-46AE0ECBABC7" name="SHIFT_EMPLOYEE_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-04 23:40:27 UTC</createdTime>
 <ownerDesignName>Conceptual</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
