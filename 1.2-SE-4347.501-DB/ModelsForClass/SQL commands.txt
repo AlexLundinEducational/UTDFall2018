@@ -23,3 +23,6 @@ stmt.executeUpdate("UPDATE PROJECT SET PRSTAFF = "
 UPDATE EMPLOYEE
   SET JOB = DEFAULT
   WHERE EMPNO = '000290'
+  
+ -- Drop all table statement generator
+ select 'drop table '||table_name||' cascade constraints;' from user_tables;
