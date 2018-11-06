@@ -1,0 +1,39 @@
+Summary
+
+	Project Deliverable 1
+		turn in what we have
+		purpose is to turn something in	
+		purpose is to do gradual work
+		purpose is to not put off all documentation until final
+		
+		Make sure to use the word ontology
+		Process Specification
+		Diagrams
+			Interactions between system and environment
+			Don't mention anything internal to system
+			These 3 are a minimum
+			1 Class Diagram
+			2 Sequence Diagram
+			3 Use cases
+				Users
+				Police
+			
+		Vision Doc
+			He mentioned 3 graphs
+			1
+			2 Software Interdep
+			3 Problem interdependency graph
+			
+		Process specification
+			Idef0
+			
+		Traceability matrix
+			create submatrix for each row to avoid a large, sparse matrix 
+			
+Classical Problem Solving: GORE (slides 1-15)
+
+	Slide 9
+		probably going to have discrete question like this
+	
+Non-Functional Requirements
+	Roadmap (Slide 41,44, 45, 61)
