@@ -6,6 +6,11 @@
 			140 mb file size
 			140 * 512 mb
 		#define InodeLocation = Overheadlocation+(inode#/inodesperblock)
+		
+		read fs.h
+		read file.h[
+		
+		
 	Contiguous Allocation
 		Pros
 			Head won't have to move much
@@ -51,9 +56,20 @@
 		we can support 56 files ( each file occupies a block)
 		we can support 56 files with a max file size of 4KB
 		we reserve blocks (3-7) for inodes on the files
-		we store a bitmap vectore to identify with inodes are ope n
+		we store a bitmap vector to identify with inodes are ope n
 		
 	Finding open bit
 		read integers from bitmap vector
 		first int greater than 1 means there is a open slot in that word
 			find the first free block 
+	
+	Bitmap
+		56 bits for data blocks
+		80 for inodes
+		
+		Disk 1TB = 2 ^ 40
+		block 4KB = 2 ^ 12
+		
+		bits = (2 ^ 40 / 2 ^ 12) = 2 ^ 28
+		
+		byte = (2 ^ 25) = 32 MB

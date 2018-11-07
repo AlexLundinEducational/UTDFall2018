@@ -1,0 +1,111 @@
+security
+crack
+script kiddies
+criminals
+cracker vs hacker
+	hacker used to discover volunarabilities of system
+	script kiddies, knows how to execute program
+	Criminals: sell bots, spam, sell credit card numbers
+	
+	virus
+	worm
+	logicbomb
+	trojon horse
+	social engineering
+	phising
+	pharming
+		-link provided in email leads to fack webpage
+	BotNet
+		-botnet
+	maninthemiddleattack
+	rootkit
+		-upon penetrating a computer hacker installs program called rootkit
+		
+	Password Cracking
+	
+	break-in detection
+	safe and secure user practices
+	encryption, description
+	single shared key sysmmetric encryption
+	
+	ipv4 vs ipv6
+	orginal vs enhanse
+	
+appear in system log file if passwd typed as username
+good firewall, popup blocker backup information
+tips, accedent, internal audit, internal controls, external audit, notified by police
+
+***********module 8
+mvc web architecture
+**** draw mvc on exam
+-yes dividing and controls
+-yes cohesion
+-yes coupling
+-yes/no reusable dependent on design, highlevel toolkit is posible depends
+-yes reuse    can user reusable componenet
+-yes flexible
+-yes/no obsolence depednent on design, wrapper might be needed depends
+-no  portability
+-yes testability
+-yes defensively
+
+pipe and filter
+yes divide and conquer
+yes cohession
+yes functiality/coupling
+yes abstration
+yes resuability
+yes resuable componenet
+yes component can be added and removed, flexible
+no obsolencedepends on filter
+no portability
+yes testability
+no defensively
+
+layered, strict
+yes	divide and conquer
+yes	cohesion
+yes	coupling only connection is api
+yes abstration
+yes	resuability
+yes	reuse componenet
+yes	flexible
+yes	obsolence
+yes	portability , dependent are on lower layer
+yes	testability
+yes	defensively api can do check
+
+non-strict layers
+yes
+yes
+yes
+yes
+may very
+yes
+yes
+yes
+depends mostly yes
+yes
+yes
+
+/***********************
+software security
+goals 
+regulating access to assets
+risk for assets
+
+/***********************
+aaaa authentication, access control/authorization, Audit, action
+last 3 as can be rewriten prevenction, detection, reaction
+
+sadboxing - able to code, test language and run it against the code
+email potential threats
+evesdropping
+modifing email
+spoffing email
+attachs against the mail server
+email as an attack dispersion channel
+
+
+	
+ 
