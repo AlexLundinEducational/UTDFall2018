@@ -1,3 +1,8 @@
+I'm sorry I submitted late, it won't happen again
+	I'm working part time in industry currently and it's been a busy weekend...
+	This is a resubmission where I sped up the algorithim that already worked
+	The processesing time is better on long problems now
+
 s1.py 
 	is the script driver for the search
 	edit the inputFileName variable to change the name of the input file for reading
