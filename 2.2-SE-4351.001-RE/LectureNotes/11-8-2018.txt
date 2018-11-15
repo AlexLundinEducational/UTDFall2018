@@ -1,0 +1,10 @@
+11-8-2018	
+	Sig no functional req
+		Softgoal Interdependency graphs
+	UML for functional req
+	
+	Project
+		Map F, NF, Process and Product requirements
+		
+	Integrity
+		
