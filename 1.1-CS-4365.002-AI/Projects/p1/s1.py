@@ -29,6 +29,26 @@ def fileReader():
    # return the converted stringAccumulator
    return stringAccumulator  
    
+def manhattan(node):
+	state = node.state
+	# Alex Lundin
+	# Edited manhattan index_goal and index to reflex goal state from assignment
+	index_goal = {0:[0,0], 1:[0,1], 2:[0,2], 3:[1,0], 4:[1,1], 5:[1,2], 6:[2,0], 7:[2,1], 8:[2,2]}
+	index_state = {}
+	index = [[0,0], [0,1], [0,2], [1,0], [1,1], [1,2], [2,0], [2,1], [2,2]]
+	x, y = 0, 0
+	
+	for i in range(len(state)):
+		index_state[state[i]] = index[i]
+	
+	mhd = 0
+	
+	for i in range(8):
+		for j in range(2):
+			mhd = abs(index_goal[i][j] - index_state[i][j]) + mhd
+	
+	return mhd
+   
 # Main program for script file   
 if __name__ == '__main__':
     # sys.stdout.write("Script started\n")
@@ -36,5 +56,5 @@ if __name__ == '__main__':
 	# call fileReader and store return value into boardValues
     boardValues = fileReader()
 	# pass input to RBFS file
-    recursive_best_first_search(EightPuzzle((boardValues)))
+    recursive_best_first_search(EightPuzzle((boardValues)), h=manhattan)
 	

@@ -144,10 +144,25 @@ class Node:
     def __lt__(self, node):
         return self.state < node.state
 
+	# Alex Lundin
+	# Edited node expansion to not allow anything from the path Home to be expanded
+	# This ensures the algorithm can not undo good moves it made it the past
+	# This reduces the number of repeated states
     def expand(self, problem):
         """List the nodes reachable in one step from this node."""
-        return [self.child_node(problem, action)
-                for action in problem.actions(self.state)]
+        reachAbleNodes = list()
+
+		# don't add any nodes that are on the path home to the set of reachable nodes
+        pathHome = self.path()
+        for action in problem.actions(self.state):
+            tempNode = self.child_node(problem, action)
+            addIt = 1
+            for p1 in pathHome:
+               if  tempNode == p1:
+                  addIt = 0
+            if addIt == 1:
+               reachAbleNodes.append(tempNode)
+        return reachAbleNodes
 
     def child_node(self, problem, action):
         """[Figure 3.10]"""
@@ -169,6 +184,8 @@ class Node:
             node = node.parent
         return list(reversed(path_back))
 
+    def parent_node(self):
+        return node.parent
     # We want for a queue of nodes in breadth_first_graph_search or
     # astar_search to have no duplicated states, so we treat nodes
     # with the same state as equal. [Problem: this may not be what you
@@ -268,30 +285,44 @@ class EightPuzzle(Problem):
 
 
 
-def recursive_best_first_search(problem, h=None):
+def recursive_best_first_search(problem, h):
     """[Figure 3.26]"""
-    h = memoize(h or problem.h, 'h')
+
 
 	
     def RBFS(problem, node, flimit):	
 	
         if problem.goal_test(node.state):
             return node, 0   # (The second value is immaterial)
+			
+		# Alex Lundin
+		# Edited expand method in node class
+		# now expansion does NOT include any nodes that are already on the solution path of the current node
+		# this reduces repeated states
         successors = node.expand(problem)
         if len(successors) == 0:
             return None, infinity
+			
         for s in successors:
-            s.f = max(s.path_cost + h(s), node.f)
+               s.f = max(s.path_cost + h(s), node.f)
+ 
         while True:
             # Order by lowest f value
             successors.sort(key=lambda x: x.f)
             best = successors[0]
+			# if the best avaiable node is worse than the flimit
             if best.f > flimit:
                 return None, best.f
+			# if there is atleast one more node to expand
             if len(successors) > 1:
+				# set the alternative value
                 alternative = successors[1].f
+			# else there are no more nodes to expand
             else:
+				# set alternative to infinity
                 alternative = infinity
+			# when program makes it to here, then recur
+			   
             result, best.f = RBFS(problem, best, min(flimit, alternative))
             if result is not None:
                 return result, best.f
