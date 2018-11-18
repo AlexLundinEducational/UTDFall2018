@@ -1,0 +1,61 @@
+Summary
+	We covered commonly missed questions
+	They are noted at each point in the class dicussion they pertain to
+	
+A* Example 
+	Search Qualities
+		No pruning which yeilds a large search space
+		Correct an optimal
+		
+RBFS
+	AKA memory limited A*
+	Search qualities
+		pruning
+		correct and optimal
+		
+Min/Max
+	Algorithim 
+		assume the algorithim, to begin with, does not know anything about tree
+		uses depth first search to first leaf
+		propogates min and max value from each level below
+
+	DFS is used for Min/Max Tree population
+		visits leaves left to right
+	
+Min/Max Example
+	berkley webpage in class
+		http://inst.eecs.berkeley.edu/~cs61b/fa14/ta-materials/apps/ab_tree_practice/
+	
+	demonstrated:
+		DFS traversal, must visit each leaf, left to right to see the value at each node
+		tree has no knowledge of node values to begin with
+		pruning takes place when it's obvious to either min or max, that propogating a value is irrelevant because the node above will block it
+		setting alpha and beta values at each node
+		
+High level quiz notes
+	list full paths in brackets {} on each optional node to expand in the step
+		A* 
+			-only 1 option on the intial step
+			-after the intial step then all nodes on the frontier are listed
+			Step 0 (notice how step 0 has only 1 option)
+				{A}: f(A) = 1 + 7 = 8
+			Step 1 (notice how all steps after have 2 options)
+				{A,S}: f(S)= 1 + 7 = 8
+				{A,B}: f(B)= 9 + 9 = 18
+		RBFS 
+			-only 1 node option on the first step
+			-contains many node options on steps after
+			-contains the f limit node, if one has been stored.
+			Step 0 (notice how step 0 has only 1 option)
+				{A}: f(A) = 1 + 7 = 8
+			.....
+			.....
+			.....
+			Step 3: 
+				(notice how paths to each node are stored next to the node, in set notation)
+				(notice only 1 flimt is stored)
+				{A,S,B,C,G}: f(G) = 1 + 1 + 6 + 5 + 0 = 13
+				{A,S,B}:	 f(B) = 14, flimit(14)
+				{A}
+	show min max alpha betas at each node
+	show pruning
