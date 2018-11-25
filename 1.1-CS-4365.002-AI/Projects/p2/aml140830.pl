@@ -1,12 +1,10 @@
 married(profPlum,msGreen).
 affair(mrBody,msGreen).
 affair(missScarlet,mrBody).
-lover(X,Y):-affair(X,Y).
-lover(Y,X):-affair(X,Y).
 spouse(X,Y):-married(X,Y).
 spouse(Y,X):-married(X,Y).
-hatred(X,Y,myBody):-spouse(X,Y),lover(Y,mrBody).
+hatred(X,Y):-spouse(X,Z),affair(Y,Z).
 rich(mrBody).
 greedy(colMustard).
 not(rich(colMustard)).
-greed(suspect,victim):-not(rich(suspect)),rich(victim).
+greed(X,Y):-not(rich(X)),rich(Y).
