@@ -1,10 +1,23 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Part A - Facts and Rules                          *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * */
 married(profPlum,msGreen).
-affair(mrBody,msGreen).
-affair(missScarlet,mrBody).
+affair(mrBoddy,msGreen).
+affair(missScarlet,mrBoddy).
 spouse(X,Y):-married(X,Y).
 spouse(Y,X):-married(X,Y).
 hatred(X,Y):-spouse(X,Z),affair(Y,Z).
-rich(mrBody).
+rich(mrBoddy).
 greedy(colMustard).
-not(rich(colMustard)).
 greed(X,Y):-not(rich(X)),rich(Y).
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Part B - Suspect Predicate                        *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * */
+ suspect(X,Y):-
+				hatred(X,Y);
+				greed(X,Y).
+/* * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Part C - Single Fact                              *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*not(rich(colMustard)). */
