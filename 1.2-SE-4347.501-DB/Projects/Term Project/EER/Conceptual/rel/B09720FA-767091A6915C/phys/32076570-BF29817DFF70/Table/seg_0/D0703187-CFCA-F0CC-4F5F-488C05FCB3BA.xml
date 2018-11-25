@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="SHIFT" directorySegmentName="seg_0" id="D0703187-CFCA-F0CC-4F5F-488C05FCB3BA">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-25 02:16:41 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="END_TIME" id="52F0B9A0-F331-ED86-D818-8C9EA4F056C0">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-25 02:16:41 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="START_TIME" id="83784E8D-D2CF-A67E-F510-38B33C097C15">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-25 02:16:41 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SHIFT_EMPLOYEE_FK" id="C85CF4F1-8497-8CC5-6212-46AE0ECBABC7">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-25 02:16:41 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SHIFT_DEPARTMENT_FK" id="C900CB16-524B-082A-ABE3-F0ECEFA284ED">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-25 02:16:41 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+</TableProxyOraclev11g>

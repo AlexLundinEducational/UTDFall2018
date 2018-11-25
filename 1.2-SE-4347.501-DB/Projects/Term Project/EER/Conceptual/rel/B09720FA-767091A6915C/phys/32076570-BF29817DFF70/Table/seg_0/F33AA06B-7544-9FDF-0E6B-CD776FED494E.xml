@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="POTENTIAL_EMPLOYEE" directorySegmentName="seg_0" id="F33AA06B-7544-9FDF-0E6B-CD776FED494E">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-25 02:16:41 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="POTENTIAL_EMPLOYEE_ID" id="93D706A2-2BB8-96D2-5A0E-7447ACD82834">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-25 02:16:41 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="POTENTIAL_EMPLOYEE_PERSON_FK" id="4F439DBB-499F-BB0E-F184-70A9CEE4F87B">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-25 02:16:41 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="POTENTIAL_EMPLOYEE_PK" id="3AF89EC5-E27D-FCE3-E8A1-8D0E8A467C96">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-25 02:16:41 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

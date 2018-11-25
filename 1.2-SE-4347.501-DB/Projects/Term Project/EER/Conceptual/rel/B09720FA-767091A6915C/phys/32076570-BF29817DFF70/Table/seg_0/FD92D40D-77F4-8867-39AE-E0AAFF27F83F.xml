@@ -1,0 +1,38 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="CUSTOMER" directorySegmentName="seg_0" id="FD92D40D-77F4-8867-39AE-E0AAFF27F83F">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-25 02:16:41 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PREFERED_SALESMAN" id="5A864CFC-91F5-9AC9-ECBA-7CFAFE91542E">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-25 02:16:41 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CUSTOMER_ID" id="ACCC2C89-C643-A213-63BB-0438690E794A">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-25 02:16:41 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CUSTOMER_PERSON_FK" id="9C36581A-43A7-6B51-7241-879557A884F1">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-25 02:16:41 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CUSTOMER_PK" id="04C6AA3B-BEA5-6542-7CB6-77402CDA4C5C">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-25 02:16:41 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

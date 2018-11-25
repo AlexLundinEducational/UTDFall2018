@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.multidimensional.MultidimensionalDesign>
+   <object objectType="Dimension" objectID="2F67013E-C001-038D-A353-ABC2A675074D" name="Dim_1" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.multidimensional.Dimension" propertyParentId="141FD833-E4CA-BC85-8B8F-73AD2E719CDB" propertySourceId="" propertyTargetId=""/>
+</oracle.dbtools.crest.model.design.multidimensional.MultidimensionalDesign>
