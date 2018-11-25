@@ -13,15 +13,20 @@
 <createdTime>2018-10-29 23:25:23 UTC</createdTime>
 <ownerDesignName>Conceptual</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="CUSTOMER_ID" id="ACCC2C89-C643-A213-63BB-0438690E794A">
 <createdBy>Alex</createdBy>
 <createdTime>2018-11-04 23:41:38 UTC</createdTime>
 <ownerDesignName>Conceptual</ownerDesignName>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>

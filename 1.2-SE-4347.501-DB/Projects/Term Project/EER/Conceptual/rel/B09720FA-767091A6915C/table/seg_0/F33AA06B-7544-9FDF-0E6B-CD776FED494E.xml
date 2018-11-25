@@ -12,7 +12,9 @@
 <createdBy>Alex</createdBy>
 <createdTime>2018-11-04 23:41:14 UTC</createdTime>
 <ownerDesignName>Conceptual</ownerDesignName>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>

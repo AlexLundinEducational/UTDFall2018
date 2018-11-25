@@ -13,16 +13,21 @@
 <createdTime>2018-10-29 23:25:37 UTC</createdTime>
 <ownerDesignName>Conceptual</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="SUPERVISOR" id="9E13EDC8-602A-398F-D42C-26BBCADEB223">
+<Column name="SUPERVISOR_ID" id="9E13EDC8-602A-398F-D42C-26BBCADEB223">
 <createdBy>kim</createdBy>
 <createdTime>2018-10-29 23:29:46 UTC</createdTime>
 <ownerDesignName>Conceptual</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -30,7 +35,9 @@
 <createdBy>Alex</createdBy>
 <createdTime>2018-11-04 23:39:34 UTC</createdTime>
 <ownerDesignName>Conceptual</ownerDesignName>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>

@@ -12,8 +12,11 @@
 <createdBy>kim</createdBy>
 <createdTime>2018-10-29 23:22:55 UTC</createdTime>
 <ownerDesignName>Conceptual</ownerDesignName>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="LAST_NAME" id="0A161DA6-215B-1D12-6F2E-9AB032E29395">
@@ -21,15 +24,20 @@
 <createdTime>2018-10-29 23:22:55 UTC</createdTime>
 <ownerDesignName>Conceptual</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="PERSONAL_ID" id="E35455AB-FD18-8283-87EB-83E51DF2BA80">
 <createdBy>kim</createdBy>
 <createdTime>2018-10-29 23:24:09 UTC</createdTime>
 <ownerDesignName>Conceptual</ownerDesignName>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -38,7 +46,9 @@
 <createdTime>2018-10-29 23:24:09 UTC</createdTime>
 <ownerDesignName>Conceptual</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -47,8 +57,11 @@
 <createdTime>2018-10-29 23:24:09 UTC</createdTime>
 <ownerDesignName>Conceptual</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="ADDRESS_LINE_1" id="1D193233-8173-137E-FE14-A909B8255AF8">
@@ -56,8 +69,11 @@
 <createdTime>2018-10-29 23:24:09 UTC</createdTime>
 <ownerDesignName>Conceptual</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="CITY" id="8973003F-1034-8C77-F395-E61F8296D993">
@@ -65,8 +81,11 @@
 <createdTime>2018-10-29 23:24:09 UTC</createdTime>
 <ownerDesignName>Conceptual</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="ADDRESS_LINE_2" id="B49C7710-A66A-D252-9A76-B71983D9D9E8">
@@ -74,8 +93,11 @@
 <createdTime>2018-10-29 23:24:54 UTC</createdTime>
 <ownerDesignName>Conceptual</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="STATE" id="4016D442-7367-3B1B-C915-5C36C8F82005">
@@ -83,8 +105,11 @@
 <createdTime>2018-10-29 23:24:54 UTC</createdTime>
 <ownerDesignName>Conceptual</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="ZIP_CODE" id="0327D261-D360-C210-16A0-0D518D89946A">
@@ -92,7 +117,9 @@
 <createdTime>2018-10-29 23:24:54 UTC</createdTime>
 <ownerDesignName>Conceptual</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -101,7 +128,9 @@
 <createdTime>2018-10-29 23:24:54 UTC</createdTime>
 <ownerDesignName>Conceptual</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
