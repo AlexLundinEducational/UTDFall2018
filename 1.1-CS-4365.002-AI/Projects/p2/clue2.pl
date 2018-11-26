@@ -42,6 +42,5 @@ suspect(Killer, mrBoddy) :-
     suspect_found(Killer).
 	
 /* * * * * * * * * * * * * * * * * * * * * * * * * * *
- * Part C - Extra Rule                               *
+ * Part C - Extra Rule    rich(colMustard).                             *
  * * * * * * * * * * * * * * * * * * * * * * * * * * */
-rich(colMustard). 
