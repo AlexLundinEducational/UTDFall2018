@@ -44,4 +44,4 @@ suspect(Killer, mrBoddy) :-
 /* * * * * * * * * * * * * * * * * * * * * * * * * * *
  * Part C - Extra Rule                               *
  * * * * * * * * * * * * * * * * * * * * * * * * * * */
-rich(colMustard). 
+/*rich(colMustard).*/ 
