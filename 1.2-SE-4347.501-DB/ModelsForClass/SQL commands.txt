@@ -26,3 +26,8 @@ UPDATE EMPLOYEE
   
  -- Drop all table statement generator
  select 'drop table '||table_name||' cascade constraints;' from user_tables;
+ 
+ -- See all available services, must have test defined as such
+ -- https://stackoverflow.com/questions/10786782/ora-12514-tnslistener-does-not-currently-know-of-service-requested-in-connect-d
+ select value from v$parameter where name='service_names' -- Drop all table statement generator
+ 

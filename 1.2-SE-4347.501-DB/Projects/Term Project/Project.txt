@@ -1,0 +1,18 @@
+22 Pages
+
+EER
+	
+Relational schema 
+	is excel
+	3rd normal form
+	
+Database structure / Logical schema
+	heading
+	
+Table Creation SQL
+
+State of db
+
+Views
+
+Dependency Diagram
