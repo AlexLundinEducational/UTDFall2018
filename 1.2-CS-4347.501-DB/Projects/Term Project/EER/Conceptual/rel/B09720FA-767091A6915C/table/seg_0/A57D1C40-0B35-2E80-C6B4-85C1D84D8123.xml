@@ -1,0 +1,42 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A57D1C40-0B35-2E80-C6B4-85C1D84D8123" name="INTERVIEWEE">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-04 23:28:17 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="INTERVIEWEE_ID" id="E424D84A-5C65-B8C1-6297-11DA21C80907">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-05 01:28:33 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="93BA0D5B-D94E-DBCA-415E-836FE59AAA75" name="INTERVIEWEE_PK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-05 01:28:41 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E424D84A-5C65-B8C1-6297-11DA21C80907"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9228DF64-B829-3842-A239-FA9024701071" name="INTERVIEWEE_POTENTIAL_EMPLOYEE_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-04 23:42:55 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

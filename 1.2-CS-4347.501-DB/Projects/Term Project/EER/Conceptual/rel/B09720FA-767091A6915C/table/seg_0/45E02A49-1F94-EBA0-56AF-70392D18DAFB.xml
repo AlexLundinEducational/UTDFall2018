@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="45E02A49-1F94-EBA0-56AF-70392D18DAFB" name="EMPLOYEE">
+<createdBy>kim</createdBy>
+<createdTime>2018-10-29 23:17:44 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TITLE" id="BEA43382-0681-683B-61C9-7FB407C0AC52">
+<createdBy>kim</createdBy>
+<createdTime>2018-10-29 23:25:37 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUPERVISOR_ID" id="9E13EDC8-602A-398F-D42C-26BBCADEB223">
+<createdBy>kim</createdBy>
+<createdTime>2018-10-29 23:29:46 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLOYEE_ID" id="86724E0D-12BA-22D5-F698-3F61C51A86E4">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-04 23:39:34 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B26BE8C8-39ED-5DD2-8ED5-DB0CA2B041B8" name="EMPLOYEE_PK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-04 23:39:34 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86724E0D-12BA-22D5-F698-3F61C51A86E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C989F960-809D-F23A-AFE7-9871CA8F030A" name="EMPLOYEE_PERSON_FK">
+<createdBy>kim</createdBy>
+<createdTime>2018-10-29 23:43:39 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

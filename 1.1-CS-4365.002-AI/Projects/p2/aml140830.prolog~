@@ -1,0 +1,8 @@
+affair(myBody,msGreen).
+married(profPlum,msGreen).
+rich(mrBody).
+greedy(colMustard).
+affair(missScarlet,mrBody).
+married(X,Y) :- spouse(Y,X).
+hatred(suspect,victim) :- affair(victim, spouse(suspect)).
+greed(suspect,victim) :- poor(suspect) & rich(victim)

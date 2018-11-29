@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="JOB_POSITION" directorySegmentName="seg_0" id="64034D9E-D7BC-83E9-77C0-3B36970D9621">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-25 02:16:41 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="JOB_ID" id="1FDFF1E8-F743-C775-2EDC-7C16F149FB8F">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-25 02:16:41 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="POSTED_DATE" id="ABA7361C-49A9-7A6A-139E-168C76CCA897">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-25 02:16:41 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="JOB_DESCRIPTION" id="F9FAA47F-7429-F513-3020-ADB9FCD4BD99">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-25 02:16:41 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="JOB_POSITION_DEPARTMENT_FK" id="8E0E70F5-0FD0-DE74-213A-3488AAF3CB33">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-25 02:16:41 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="JOB_POSITION_PK" id="9A070CC7-1A44-A2E9-3258-2A0C7D00A9AB">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-25 02:16:41 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

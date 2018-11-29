@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4360E556-B2A4-BBC6-40A9-31268BD35DB8" name="INTERVIEW">
+<createdBy>kim</createdBy>
+<createdTime>2018-10-29 23:20:05 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="JOB_POSITION" id="2415AB33-C708-D166-7E2A-3E27405EF0F4">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-04 23:27:23 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INTERVEIW_TIME" id="F8A30307-2754-4A88-A98D-FFDFD2B19AD7">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-04 23:27:23 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ED22020F-49A5-4615-C6D6-206364C87F21" name="INTERVIEW_INTERVIEWEE_FKv2">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-04 23:30:59 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="D89C3FB3-AAFA-5C8F-81E8-41E6D7FC0CA6" name="INTERVIEW_INTERVIEWEE_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-05 01:29:19 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="67958B0D-2EB7-2E5E-E415-2297E3730576" name="INTERVIEW_INTERVIEWER_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-05 01:29:19 UTC</createdTime>
+<ownerDesignName>Conceptual</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>
