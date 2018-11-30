@@ -5,31 +5,31 @@ cd "./GitHub/UTDFall2018/2.3-SE-4348.502-OS/Project1/phase3"
 csjaws
 cd "/cs4348-xv6/src"
 cd "/cs4348-xv6/src/testscripts"
-cd "/cs4348-xv6/src/testscripts/p4a"
+cd "/cs4348-xv6/src/testscripts/p5"
 cd "/cs4348-xv6/aml140830"
-cd "/cs4348-xv6/aml140830/p4a"
+cd "/cs4348-xv6/aml140830/p5"
 
 cs1
 cd ~/cs4348-xv6
-cd ~/cs4348-xv6/p4a
-cd ~/cs4348-xv6/p4a
+cd ~/cs4348-xv6/p5
+cd ~/cs4348-xv6/p5
 
 copy from csjaws to local and pull out test scripts
 cd /cs4348-xv6
 rm -rf ~/cs4348-xv6/src
 scp -r ./src ~/cs4348-xv6
 cd ~/cs4348-xv6/src
-mkdir ~/cs4348-xv6/p4a && tar xf xv6.tar.gz -C ~/cs4348-xv6/p4a --strip-components 1
-scp -r ./testscripts/p4a/* ~/cs4348-xv6/p4a/user
+mkdir ~/cs4348-xv6/p5 && tar xf xv6.tar.gz -C ~/cs4348-xv6/p5 --strip-components 1
+scp -r ./testscripts/p5/* ~/cs4348-xv6/p5/user
 
 copy from csjaws to csjaws
-mkdir /cs4348-xv6/aml140830/p4a && tar xf xv6.tar.gz -C /cs4348-xv6/aml140830/p4a --strip-components 1
-scp -r ./testscripts/p4a/* /cs4348-xv6/aml140830/p4a/user/
+mkdir /cs4348-xv6/aml140830/p5 && tar xf xv6.tar.gz -C /cs4348-xv6/aml140830/p5 --strip-components 1
+scp -r ./testscripts/p5/* /cs4348-xv6/aml140830/p5/user/
 
 copy from local to csjaws
-rm -rf /cs4348-xv6/aml140830/p4a
-mkdir /cs4348-xv6/aml140830/p4a
+rm -rf /cs4348-xv6/aml140830/p5
+mkdir /cs4348-xv6/aml140830/p5
 cd ~/cs4348-xv6
-scp -r ./p4a/* /cs4348-xv6/aml140830/p4a
+scp -r ./p5/* /cs4348-xv6/aml140830/p5
 cd /cs4348-xv6
 setfacl -Rb aml140830
