@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DEC17A05-DFDD-9796-CAA5-BD527382BE5B" name="JOB POSITION">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:20:44 UTC</createdTime>
+<generatorID>64034D9E-D7BC-83E9-77C0-3B36970D9621</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="JOB ID" id="66B93FB1-D106-DB2D-007B-B0A1D80A93AC">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:20:44 UTC</createdTime>
+<generatorID>1FDFF1E8-F743-C775-2EDC-7C16F149FB8F</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="JOB DESCRIPTION" id="83E609D7-3298-E8FA-EA75-2085D86CF873">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:20:44 UTC</createdTime>
+<generatorID>F9FAA47F-7429-F513-3020-ADB9FCD4BD99</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="POSTED DATE" id="5EEDE2FB-F69D-F62B-872A-8AE854185D34">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:20:44 UTC</createdTime>
+<generatorID>ABA7361C-49A9-7A6A-139E-168C76CCA897</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DEPARTMENT ID" id="B445591D-A941-3A5F-36EF-344EE74F9D83">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:20:44 UTC</createdTime>
+<generatorID>D3582BEF-77FE-740E-937F-ADB3C7F8C0AE</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<referedAttribute>BE8EAEE8-921E-B245-FC46-7B32F9F4EDF0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3F28674C-F58B-7CBD-7823-A58621EA60FD" name="JOB POSITION PK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:20:44 UTC</createdTime>
+<generatorID>9A070CC7-1A44-A2E9-3258-2A0C7D00A9AB</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>66B93FB1-D106-DB2D-007B-B0A1D80A93AC</attributeRef>
+<attributeRef>B445591D-A941-3A5F-36EF-344EE74F9D83</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

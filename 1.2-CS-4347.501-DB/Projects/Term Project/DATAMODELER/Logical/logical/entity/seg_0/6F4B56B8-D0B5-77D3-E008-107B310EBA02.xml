@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6F4B56B8-D0B5-77D3-E008-107B310EBA02" name="VENDOR">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:34:51 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="VENDOR_ID" id="B631828E-21C2-181D-118D-7E706C80A713">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:35:05 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NAME" id="3650A135-4723-F6DF-AEDA-918357FD6ED9">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:35:14 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ADDRESS" id="EA8CF1A4-80DF-4E7D-4AAB-F3642EE98393">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:35:21 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ACCOUNT NUMBER" id="F1B2234D-1BFE-8CE8-DEBE-437C80F95A78">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:35:29 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREDIT RATING" id="2C2AB728-6ACF-39F7-6A5E-B0D9366A9F96">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:35:45 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="URL" id="9668FA28-1F89-93F0-B36D-F88E5645A40D">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:35:57 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A5B0CBF7-99F6-8E6C-BDA0-FCF22A2E5BE4" name="VENDOR PK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:42:25 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B631828E-21C2-181D-118D-7E706C80A713</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

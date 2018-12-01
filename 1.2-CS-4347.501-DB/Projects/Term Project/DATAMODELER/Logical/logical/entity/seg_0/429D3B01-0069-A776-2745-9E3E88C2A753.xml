@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="429D3B01-0069-A776-2745-9E3E88C2A753" name="INTERVIEWER">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:20:44 UTC</createdTime>
+<generatorID>35FB3CF9-DDB8-ACF6-A0E8-019482A21325</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="JOB ID" id="CBD023EF-4275-EEDD-6EE0-54E025AC43DA">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:20:44 UTC</createdTime>
+<generatorID>652FFBD4-C1E8-D6B7-6A1D-9195545A4AB0</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="GRADE" id="C3879458-A418-B7CF-70FE-6F7E5897EC44">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:20:44 UTC</createdTime>
+<generatorID>DE62FEB3-7889-A607-013F-521609A3A090</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INTERVIEWER ID" id="9901FB34-7134-E21A-35C4-4371F1904493">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:20:44 UTC</createdTime>
+<generatorID>26A72963-2A0F-E7CC-10C0-DBAF64255A65</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EMPLOYEE ID" id="EB6F54FD-0767-6F57-42E5-610A49EB6AB7">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:20:44 UTC</createdTime>
+<generatorID>7CBDBF08-22FF-71D4-949D-E04DE79F6D8A</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<referedAttribute>8EE30CBA-7A91-A739-E95F-3B4944ED1B58</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PERSONAL ID" id="FF07E78D-EF5D-4939-7845-7D2ED93C7CB6">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:20:44 UTC</createdTime>
+<generatorID>7CBDBF08-22FF-71D4-949D-E04DE79F6D8A</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<referedAttribute>A3963EC3-BF54-EE1B-2B18-4A05B8C45A6A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="538F740A-73AD-C8FD-2C44-EA937CA2D709" name="INTERVIEWER PK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:20:44 UTC</createdTime>
+<generatorID>5A91DB47-065B-0988-6F71-4CF9A12CB069</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9901FB34-7134-E21A-35C4-4371F1904493</attributeRef>
+<attributeRef>EB6F54FD-0767-6F57-42E5-610A49EB6AB7</attributeRef>
+<attributeRef>FF07E78D-EF5D-4939-7845-7D2ED93C7CB6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

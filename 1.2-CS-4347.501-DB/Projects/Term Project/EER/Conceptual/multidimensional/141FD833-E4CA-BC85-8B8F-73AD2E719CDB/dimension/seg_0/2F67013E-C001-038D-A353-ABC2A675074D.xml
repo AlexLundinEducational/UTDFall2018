@@ -1,7 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<Dimension class="oracle.dbtools.crest.model.design.multidimensional.Dimension" name="Dim_1" directorySegmentName="seg_0" id="2F67013E-C001-038D-A353-ABC2A675074D">
-<createdBy>Alex</createdBy>
-<createdTime>2018-11-25 02:47:24 UTC</createdTime>
-<ownerDesignName>Conceptual</ownerDesignName>
-<nameInOracleAW>DIM_1</nameInOracleAW>
-</Dimension>

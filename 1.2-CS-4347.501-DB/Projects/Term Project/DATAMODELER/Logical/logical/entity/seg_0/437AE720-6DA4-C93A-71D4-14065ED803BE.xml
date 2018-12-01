@@ -1,0 +1,160 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="437AE720-6DA4-C93A-71D4-14065ED803BE" name="INTERVIEW">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:20:44 UTC</createdTime>
+<generatorID>4360E556-B2A4-BBC6-40A9-31268BD35DB8</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="JOB POSITION" id="A4EF7442-3719-F1BE-4F73-699CD16DCA38">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:20:44 UTC</createdTime>
+<generatorID>2415AB33-C708-D166-7E2A-3E27405EF0F4</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INTERVEIW TIME" id="027E0AFB-291C-D31D-2588-EAE7FA3E2E17">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:20:44 UTC</createdTime>
+<generatorID>F8A30307-2754-4A88-A98D-FFDFD2B19AD7</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INTERVIEWEE ID" id="649DE18A-7491-DDD8-F76E-CA75B3BB63CC">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:20:44 UTC</createdTime>
+<generatorID>87C2B994-3488-5D16-0181-06C30E045805</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<referedAttribute>C74ABCFA-7873-728B-C310-DBE677F33522</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="JOB ID" id="8FB27197-6E0B-5104-0D8A-E58867408151">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:20:44 UTC</createdTime>
+<generatorID>63ED2E1F-76D6-DAE0-16EE-A883FD5A28D1</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<referedAttribute>66B93FB1-D106-DB2D-007B-B0A1D80A93AC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INTERVIEWER ID" id="09264411-58A5-CDD1-014D-D3A38DE684A0">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:20:44 UTC</createdTime>
+<generatorID>83443C2D-6852-AEF1-2014-8CDF4022E7E2</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<referedAttribute>9901FB34-7134-E21A-35C4-4371F1904493</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="POTENTIAL EMPLOYEE ID" id="3E747E85-F153-2DCE-65DD-7ECB6DD3913B">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:20:44 UTC</createdTime>
+<generatorID>87C2B994-3488-5D16-0181-06C30E045805</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<referedAttribute>954FEC8B-75BA-EC45-D579-65C604F8F006</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EMPLOYEE ID" id="D53218F7-D373-E26A-8381-CA214322855A">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:20:44 UTC</createdTime>
+<generatorID>83443C2D-6852-AEF1-2014-8CDF4022E7E2</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<referedAttribute>EB6F54FD-0767-6F57-42E5-610A49EB6AB7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PERSONAL ID" id="BF3E912B-C20B-3C80-69D3-EF1E5B6CF5F7">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:20:44 UTC</createdTime>
+<generatorID>83443C2D-6852-AEF1-2014-8CDF4022E7E2</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<referedAttribute>FF07E78D-EF5D-4939-7845-7D2ED93C7CB6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DEPARTMENT ID" id="3C851761-9364-F467-A109-354D35DCF29F">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:20:44 UTC</createdTime>
+<generatorID>63ED2E1F-76D6-DAE0-16EE-A883FD5A28D1</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<referedAttribute>B445591D-A941-3A5F-36EF-344EE74F9D83</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PERSONAL ID1" id="1DA0D942-6652-1C52-8895-3B0832C6F405">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:20:44 UTC</createdTime>
+<generatorID>87C2B994-3488-5D16-0181-06C30E045805</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<referedAttribute>FFE99AFE-4204-E679-D000-17CA29464E08</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

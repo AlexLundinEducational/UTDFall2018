@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="35FB3CF9-DDB8-ACF6-A0E8-019482A21325" name="INTERVIEWER">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-04 23:27:32 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="JOB_ID" id="652FFBD4-C1E8-D6B7-6A1D-9195545A4AB0">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-04 23:28:15 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GRADE" id="DE62FEB3-7889-A607-013F-521609A3A090">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-05 01:13:05 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INTERVIEWER_ID" id="26A72963-2A0F-E7CC-10C0-DBAF64255A65">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-05 01:28:09 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5A91DB47-065B-0988-6F71-4CF9A12CB069" name="INTERVIEWER_PK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-05 01:28:20 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26A72963-2A0F-E7CC-10C0-DBAF64255A65"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B0B7A5E0-5138-2018-A1EE-5F1769778073" name="INTERVIEWER_EMPLOYEE_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-11-04 23:43:05 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

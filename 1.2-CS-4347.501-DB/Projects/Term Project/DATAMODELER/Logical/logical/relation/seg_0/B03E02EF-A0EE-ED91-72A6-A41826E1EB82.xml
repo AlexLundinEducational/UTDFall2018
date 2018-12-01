@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SHIFT_EMPLOYEE_FK" directorySegmentName="seg_0" id="B03E02EF-A0EE-ED91-72A6-A41826E1EB82">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:20:44 UTC</createdTime>
+<generatorID>B53D22BC-3014-EC88-7346-C72A6C216AB3</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<sourcePk>37ECE2D6-BC10-87DA-3CAF-6B4280D6A4FF</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6527676B-FF4F-28A4-511B-290F03042531</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>862FFA78-AAD4-9123-A1C8-45839DA29ED0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

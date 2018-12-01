@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="POTENTIAL_EMPLOYEE_PERSON_FK" directorySegmentName="seg_0" id="54357E44-92E6-A2AE-B286-F368A4F66D47">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-01 21:20:44 UTC</createdTime>
+<generatorID>AF37D2CE-17F8-C0F7-2474-1F7B352FCEDC</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<sourcePk>535CF86E-1D68-26D2-7FB0-BB0182CEB7D2</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>596557E6-5F1C-06DE-9940-EC1D04F06E38</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FC51C16D-DAA6-1EBD-21AF-CF2DA9BD5ADC</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
