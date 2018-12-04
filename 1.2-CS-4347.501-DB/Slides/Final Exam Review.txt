@@ -1,0 +1,17 @@
+1-10
+
+21-30
+Advantanges of DB approach
+	Controlled Redundancy for concurrent access
+	restrict unauthorized access
+	persistent storage for program objects
+	provide storage structures
+
+31-40
+	Data model
+		concepts that describe:
+			structure, operations, and constraints
+
+41-50
+
+51-60
