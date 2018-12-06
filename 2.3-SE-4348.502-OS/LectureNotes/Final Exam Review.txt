@@ -1,0 +1,10 @@
+Readers writers
+	critical section
+		multiple readers allowed
+		single writer only
+		
+	mutex
+		starts as 1
+		this way when first sem_wait(mutex) decrements to 0
+		
+Relation between inode and bitmap

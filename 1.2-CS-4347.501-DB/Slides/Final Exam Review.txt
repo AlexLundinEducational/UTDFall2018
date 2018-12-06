@@ -8,10 +8,35 @@ Advantanges of DB approach
 	provide storage structures
 
 31-40
-	Data model
-		concepts that describe:
-			structure, operations, and constraints
+
 
 41-50
-
+Data model
+	concepts that describe:
+		structures
+			elements, data types and relationships
+		operations
+			CRUD
+			user-defined (compute_gpa)
+		constraints
+			specify what is valid data
+			
+	types	
+		conceptual
+			close to way users percieve
+		physical
+			how data is stored
+		implementation
+			relational diagrams
+			in betweeen conceptual and physical
+		self describing
+			XML, heading is with each piece of data
+Schema
+	description of DB
+	structure, data types, constraints
+	intension
+State
+	concents of DB at a given moment
+	extension
+	
 51-60
