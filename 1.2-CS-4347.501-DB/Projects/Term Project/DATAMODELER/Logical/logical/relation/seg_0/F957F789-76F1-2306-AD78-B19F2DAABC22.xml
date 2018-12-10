@@ -1,18 +1,18 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SHIFT_EMPLOYEE_FK" directorySegmentName="seg_0" id="B03E02EF-A0EE-ED91-72A6-A41826E1EB82">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="DEPARTMENT_SHIFT_PK" directorySegmentName="seg_0" id="F957F789-76F1-2306-AD78-B19F2DAABC22">
 <createdBy>Alex</createdBy>
-<createdTime>2018-12-01 21:20:44 UTC</createdTime>
-<generatorID>B53D22BC-3014-EC88-7346-C72A6C216AB3</generatorID>
+<createdTime>2018-12-10 00:15:52 UTC</createdTime>
 <ownerDesignName>Logical</ownerDesignName>
 <engineerTo>
 <item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
 </engineerTo>
-<sourcePk>37ECE2D6-BC10-87DA-3CAF-6B4280D6A4FF</sourcePk>
-<identifying>false</identifying>
+<sourcePk>0291B9B8-6341-D834-3BC6-8A902B548A93</sourcePk>
+<targetPk>8B94C136-8290-6051-B27F-6D456B4679FC</targetPk>
+<identifying>true</identifying>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
-<sourceEntity>6527676B-FF4F-28A4-511B-290F03042531</sourceEntity>
+<sourceEntity>6B2AA208-420F-2526-C423-33C15E724D8D</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
 <targetEntity>862FFA78-AAD4-9123-A1C8-45839DA29ED0</targetEntity>
 <transferable>true</transferable>

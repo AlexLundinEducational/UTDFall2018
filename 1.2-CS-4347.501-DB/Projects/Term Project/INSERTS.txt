@@ -1,0 +1,33 @@
+--- employees
+INSERT INTO person (first_name, last_name, personal_id, age, gender, address_line_1, city, address_line_2, state, zip_code, phone_number)  VALUES ('Alex','Lundin',1, 26, 'M', '123 Street', 'McKinney', '456 Street', 'TX', 75070, 4663945275);
+INSERT INTO person (first_name, last_name, personal_id, age, gender, address_line_1, city, address_line_2, state, zip_code, phone_number)  VALUES ('John','Smith',2, 26, 'M', '123 Street', 'McKinney', '456 Street', 'TX', 75070, 4663945275);
+INSERT INTO person (first_name, last_name, personal_id, age, gender, address_line_1, city, address_line_2, state, zip_code, phone_number)  VALUES ('Suezy','Q',3, 26, 'F', '123 Street', 'McKinney', '456 Street', 'TX', 75070, 4663945275);
+--- sales
+INSERT INTO person (first_name, last_name, personal_id, age, gender, address_line_1, city, address_line_2, state, zip_code, phone_number)  VALUES ('ZZ','Top',5, 26, 'M', '123 Street', 'McKinney', '456 Street', 'TX', 75070, 4663945275);
+INSERT INTO person (first_name, last_name, personal_id, age, gender, address_line_1, city, address_line_2, state, zip_code, phone_number)  VALUES ('James','Bond',6, 26, 'M', '123 Street', 'McKinney', '456 Street', 'TX', 75070, 4663945275);
+INSERT INTO person (first_name, last_name, personal_id, age, gender, address_line_1, city, address_line_2, state, zip_code, phone_number)  VALUES ('Batman','Wayne',7, 26, 'M', '123 Street', 'McKinney', '456 Street', 'TX', 75070, 4663945275);
+--- pot emp
+INSERT INTO person (first_name, last_name, personal_id, age, gender, address_line_1, city, address_line_2, state, zip_code, phone_number)  VALUES ('Sarah','Smith',4, 26, 'F', '123 Street', 'McKinney', '456 Street', 'TX', 75070, 4663945275);
+INSERT INTO person (first_name, last_name, personal_id, age, gender, address_line_1, city, address_line_2, state, zip_code, phone_number)  VALUES ('Hellen','Cole',8, 26, 'F', '123 Street', 'McKinney', '456 Street', 'TX', 75070, 4663945275);
+
+--- customers
+INSERT INTO CUSTOMER (PREFERED_SALESMAN, CUSTOMER_ID, PERSONAL_ID) VALUES ('Batman', 1, 1);
+INSERT INTO CUSTOMER (PREFERED_SALESMAN, CUSTOMER_ID, PERSONAL_ID) VALUES ('James Bond', 2, 2);
+INSERT INTO CUSTOMER (PREFERED_SALESMAN, CUSTOMER_ID, PERSONAL_ID) VALUES ('ZZ Top', 3, 3);
+--- salary
+INSERT INTO MONTHLY_SALARY (TRANSACTION_NUMER, AMOUNT, monthly_salary_id) VALUES (1, 50000, 1);
+INSERT INTO MONTHLY_SALARY (TRANSACTION_NUMER, AMOUNT, monthly_salary_id) VALUES (2, 60000, 2);
+--- employees
+INSERT INTO EMPLOYEE (EMPLOYEE_ID, PERSONAL_ID, MONTHLY_SALARY_ID) VALUES (1, 5, 1);
+INSERT INTO EMPLOYEE (EMPLOYEE_ID, PERSONAL_ID, MONTHLY_SALARY_ID) VALUES (2, 6, 2);
+--- pot employees
+INSERT INTO POTENTIAL_EMPLOYEE (potential_employee_id, PERSONAL_ID) VALUES (1, 4);
+INSERT INTO POTENTIAL_EMPLOYEE (potential_employee_id, PERSONAL_ID) VALUES (2, 8);
+--- interviewee
+INSERT INTO interviewee (interviewee_id, potential_employee_id) VALUES (1, 1);
+INSERT INTO interviewee (interviewee_id, potential_employee_id) VALUES (2, 2);
+--- interviewer
+INSERT INTO interviewer (job_id, interviewer_id, employee_id) VALUES (12345, 1, 1);
+INSERT INTO interviewer (job_id, interviewer_id, employee_id) VALUES (11111, 2, 2);
+--- interview
+INSERT INTO interview (job_position, interview_time, interviewee_id, job_id, interviewer_id, interview_id, grade) VALUES (job_position, interview_time, interviewee_id,job_id,interviewer_id,interview_id,grade);

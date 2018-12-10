@@ -40,6 +40,36 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="EMPLOYEE_EMPLOYEE_ID" id="42F133B6-8FAD-F5BB-17CF-68452146308A">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>EB6F54FD-0767-6F57-42E5-610A49EB6AB7</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="80BEB60E-0C08-369A-DBD6-B983454BDE1C" referredColumn="86724E0D-12BA-22D5-F698-3F61C51A86E4"/>
+</associations>
+</Column>
+<Column name="EMPLOYEE_PERSON_PERSONAL_ID" id="C4E90BD7-9418-3ABF-C750-37F7EDE0F818">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>FF07E78D-EF5D-4939-7845-7D2ED93C7CB6</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="80BEB60E-0C08-369A-DBD6-B983454BDE1C" referredColumn="DED78637-4CE8-854F-9DE2-3913D8187E8C"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="5A91DB47-065B-0988-6F71-4CF9A12CB069" name="INTERVIEWER_PK">
@@ -51,6 +81,8 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="26A72963-2A0F-E7CC-10C0-DBAF64255A65"/>
+<colUsage columnID="42F133B6-8FAD-F5BB-17CF-68452146308A"/>
+<colUsage columnID="C4E90BD7-9418-3ABF-C750-37F7EDE0F818"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="B0B7A5E0-5138-2018-A1EE-5F1769778073" name="INTERVIEWER_EMPLOYEE_FK">
@@ -59,6 +91,10 @@
 <ownerDesignName>Logical</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42F133B6-8FAD-F5BB-17CF-68452146308A"/>
+<colUsage columnID="C4E90BD7-9418-3ABF-C750-37F7EDE0F818"/>
+</indexColumnUsage>
 </ind_PK_UK>
 </indexes>
 </Table>

@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="68B67C63-C4A7-7712-7A86-1E7A3686E1E8" name="SALES_RECORD">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>CBA4BB20-B5D8-3A5E-7FD0-5E838BE278DF</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SALE_TIME" id="C884A612-267C-0B4C-3230-95261CEE7105">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>5DC382B2-6C42-DFE5-48EE-A1468E7A20D3</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALES_RECORD_ID" id="EACC8892-F8C6-8580-B945-86680E797869">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="SALES_ID" id="F996CD81-45F3-DB1C-6171-449CE092FF02">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:37:33 UTC</createdTime>
+<generatorID>751B8700-E5F9-0CDF-B474-7F57E9A61ABF</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CDEADA36-B8FB-66B1-EC9F-82C0AF6A6887" name="SALES_RECORD_PKv2">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:37:33 UTC</createdTime>
+<generatorID>E28AE523-0992-F7A3-F7AE-91DE0FEA41EB</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F996CD81-45F3-DB1C-6171-449CE092FF02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="47678ADD-CF44-CAB2-DBB6-CFD5D30F249D" name="SALES_RECORD_PK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="EACC8892-F8C6-8580-B945-86680E797869"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

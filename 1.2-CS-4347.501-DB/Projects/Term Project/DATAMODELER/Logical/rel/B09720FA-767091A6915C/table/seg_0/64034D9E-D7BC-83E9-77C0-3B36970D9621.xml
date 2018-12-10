@@ -41,6 +41,21 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="DEPARTMENT_DEPARTMENT_ID" id="6837EE16-9590-EB58-976C-2E6570FD7ED9">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>B445591D-A941-3A5F-36EF-344EE74F9D83</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="572BC03E-0D18-B6C5-5E65-0310B038E81B" referredColumn="6ACB66F4-37EE-05D1-C965-83030D842500"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="9A070CC7-1A44-A2E9-3258-2A0C7D00A9AB" name="JOB_POSITION_PK">
@@ -52,6 +67,7 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="1FDFF1E8-F743-C775-2EDC-7C16F149FB8F"/>
+<colUsage columnID="6837EE16-9590-EB58-976C-2E6570FD7ED9"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="8E0E70F5-0FD0-DE74-213A-3488AAF3CB33" name="JOB_POSITION_DEPARTMENT_FK">
@@ -60,6 +76,9 @@
 <ownerDesignName>Logical</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6837EE16-9590-EB58-976C-2E6570FD7ED9"/>
+</indexColumnUsage>
 </ind_PK_UK>
 </indexes>
 </Table>

@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="INTERVIEW_INTERVIEWEE_FK" directorySegmentName="seg_0" id="87C2B994-3488-5D16-0181-06C30E045805">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="INTER_INTERVIEWEE_FK" directorySegmentName="seg_0" id="87C2B994-3488-5D16-0181-06C30E045805">
 <createdBy>Alex</createdBy>
 <createdTime>2018-12-01 21:20:44 UTC</createdTime>
 <generatorID>A5E2F51F-EAE6-A4C0-3E3F-4748E7EB8511</generatorID>

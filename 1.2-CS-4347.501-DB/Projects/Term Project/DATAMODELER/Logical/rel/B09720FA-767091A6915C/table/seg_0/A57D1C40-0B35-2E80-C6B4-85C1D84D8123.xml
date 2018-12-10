@@ -18,6 +18,36 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="POTENTIAL_EMPLOYEE_POTENTIAL_EMPLOYEE_ID" id="26E292CB-25B1-3FD9-3729-7BB7720ACDD3">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>954FEC8B-75BA-EC45-D579-65C604F8F006</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D78C95BE-9FBF-4E87-7924-8EBDF2745806" referredColumn="93D706A2-2BB8-96D2-5A0E-7447ACD82834"/>
+</associations>
+</Column>
+<Column name="POTENTIAL_EMPLOYEE_PERSON_PERSONAL_ID" id="A54EFD47-5FA1-1F98-8794-6D053C63B892">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>FFE99AFE-4204-E679-D000-17CA29464E08</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D78C95BE-9FBF-4E87-7924-8EBDF2745806" referredColumn="15407C23-AF0C-BAC8-8E10-194720CD6A33"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="93BA0D5B-D94E-DBCA-415E-836FE59AAA75" name="INTERVIEWEE_PK">
@@ -29,6 +59,8 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="E424D84A-5C65-B8C1-6297-11DA21C80907"/>
+<colUsage columnID="26E292CB-25B1-3FD9-3729-7BB7720ACDD3"/>
+<colUsage columnID="A54EFD47-5FA1-1F98-8794-6D053C63B892"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="9228DF64-B829-3842-A239-FA9024701071" name="INTERVIEWEE_POTENTIAL_EMPLOYEE_FK">
@@ -37,6 +69,10 @@
 <ownerDesignName>Logical</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26E292CB-25B1-3FD9-3729-7BB7720ACDD3"/>
+<colUsage columnID="A54EFD47-5FA1-1F98-8794-6D053C63B892"/>
+</indexColumnUsage>
 </ind_PK_UK>
 </indexes>
 </Table>

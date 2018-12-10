@@ -18,6 +18,21 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="PERSON_PERSONAL_ID" id="15407C23-AF0C-BAC8-8E10-194720CD6A33">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>10CBA3C6-0E7D-5DD8-CED7-DD6E77FC0DD4</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AF37D2CE-17F8-C0F7-2474-1F7B352FCEDC" referredColumn="E35455AB-FD18-8283-87EB-83E51DF2BA80"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="3AF89EC5-E27D-FCE3-E8A1-8D0E8A467C96" name="POTENTIAL_EMPLOYEE_PK">
@@ -29,6 +44,7 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="93D706A2-2BB8-96D2-5A0E-7447ACD82834"/>
+<colUsage columnID="15407C23-AF0C-BAC8-8E10-194720CD6A33"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="4F439DBB-499F-BB0E-F184-70A9CEE4F87B" name="POTENTIAL_EMPLOYEE_PERSON_FK">
@@ -37,6 +53,9 @@
 <ownerDesignName>Logical</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="15407C23-AF0C-BAC8-8E10-194720CD6A33"/>
+</indexColumnUsage>
 </ind_PK_UK>
 </indexes>
 </Table>

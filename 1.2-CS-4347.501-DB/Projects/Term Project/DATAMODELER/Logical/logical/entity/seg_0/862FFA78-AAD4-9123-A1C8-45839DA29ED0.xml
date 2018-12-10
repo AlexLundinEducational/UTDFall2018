@@ -44,10 +44,22 @@
 <logicalDatatype>LOGDT015</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="DEPARTMENT ID" id="BF016D44-ED28-B118-E742-54FB34BC76E6">
+<Attribute name="SHIFT_ID" id="EA5B102B-AF9A-3528-F908-EEAB490C0DAE">
 <createdBy>Alex</createdBy>
-<createdTime>2018-12-01 21:20:44 UTC</createdTime>
-<generatorID>3A555BC6-C896-E42F-FD17-BC577DF47F28</generatorID>
+<createdTime>2018-12-10 00:09:16 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DEPARTMENT ID" id="C9111E9D-93B0-D306-0C7A-BD57180CC6C3">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:15:52 UTC</createdTime>
+<generatorID>F957F789-76F1-2306-AD78-B19F2DAABC22</generatorID>
 <ownerDesignName>Logical</ownerDesignName>
 <engineerTo>
 <item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
@@ -58,10 +70,10 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="EMPLOYEE ID" id="000965B0-BB19-3EA9-4896-6017E0C02231">
+<Attribute name="EMPLOYEE ID" id="AD30B2B3-93B7-B08C-9AD1-9DF43DEA1250">
 <createdBy>Alex</createdBy>
-<createdTime>2018-12-01 21:20:44 UTC</createdTime>
-<generatorID>B03E02EF-A0EE-ED91-72A6-A41826E1EB82</generatorID>
+<createdTime>2018-12-10 00:16:21 UTC</createdTime>
+<generatorID>43B36690-1F0C-4EEC-AF46-39B2A0977925</generatorID>
 <ownerDesignName>Logical</ownerDesignName>
 <engineerTo>
 <item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
@@ -72,10 +84,10 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="PERSONAL ID" id="D29FB45A-4598-9378-2570-EE03F94DBF1B">
+<Attribute name="PERSONAL ID" id="CDB95FC1-7C76-59C4-7327-2029E4113BC7">
 <createdBy>Alex</createdBy>
-<createdTime>2018-12-01 21:20:44 UTC</createdTime>
-<generatorID>B03E02EF-A0EE-ED91-72A6-A41826E1EB82</generatorID>
+<createdTime>2018-12-10 00:16:21 UTC</createdTime>
+<generatorID>43B36690-1F0C-4EEC-AF46-39B2A0977925</generatorID>
 <ownerDesignName>Logical</ownerDesignName>
 <engineerTo>
 <item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
@@ -87,4 +99,19 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8B94C136-8290-6051-B27F-6D456B4679FC" name="SHIFT PK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:09:21 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EA5B102B-AF9A-3528-F908-EEAB490C0DAE</attributeRef>
+<attributeRef>C9111E9D-93B0-D306-0C7A-BD57180CC6C3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

@@ -26,7 +26,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="STYLE" id="8C549D04-E4B4-6686-0863-E71509EC696C">
 <createdBy>Alex</createdBy>
@@ -39,7 +40,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="LIST WEIGHT" id="5AF526C9-D6C6-53C2-0FA3-6692FC7AED86">
 <createdBy>Alex</createdBy>
@@ -52,7 +54,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="PRODUCT_ID" id="30CA3C3B-2281-3EDE-E63C-D74F26223142">
 <createdBy>Alex</createdBy>
@@ -77,7 +80,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -85,8 +89,9 @@
 <createdBy>Alex</createdBy>
 <createdTime>2018-12-01 21:41:31 UTC</createdTime>
 <ownerDesignName>Logical</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

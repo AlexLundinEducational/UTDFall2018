@@ -22,7 +22,6 @@
 <engineerTo>
 <item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -55,4 +54,18 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="ADA0948E-37E8-7ADF-32A5-645CBD5D6602" name="MONTHLY SALARY PK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:34:27 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C391A90D-D8FE-025A-05AC-196DEC69BC4C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

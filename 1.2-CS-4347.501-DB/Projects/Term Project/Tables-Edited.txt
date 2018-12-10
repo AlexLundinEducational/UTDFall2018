@@ -1,0 +1,216 @@
+CREATE TABLE person (
+    first_name       VARCHAR2(30) NOT NULL,
+    last_name        VARCHAR2(30),
+    personal_id      INTEGER NOT NULL,
+    age              INTEGER,
+    gender           VARCHAR2(1),
+    address_line_1   VARCHAR2(30),
+    city             VARCHAR2(30),
+    address_line_2   VARCHAR2(30),
+    state            VARCHAR2(30),
+    zip_code         INTEGER,
+    phone_number     INTEGER,
+	primary key (personal_id)
+	
+);
+
+CREATE TABLE customer (
+    prefered_salesman    VARCHAR2(30),
+    customer_id          INTEGER NOT NULL,
+	personal_id      INTEGER NOT NULL,
+	primary key (customer_id),
+	foreign key (personal_id) references person
+);
+
+CREATE TABLE monthly_salary (
+    transaction_numer   INTEGER NOT NULL,
+    pay_date            DATE,
+    amount              FLOAT,
+    monthly_salary_id   NUMBER NOT NULL,
+    primary key (monthly_salary_id)
+);
+
+CREATE TABLE employee (
+    title                              VARCHAR2(30),
+    supervisor_id                      INTEGER,
+    employee_id                        INTEGER NOT NULL,
+    monthly_salary_id   NUMBER,
+    transaction_numer                  INTEGER,
+	personal_id      INTEGER NOT NULL,
+	primary key (employee_id),
+	foreign key (personal_id) references person,
+	foreign key (monthly_salary_id) references monthly_salary
+);
+
+
+CREATE TABLE potential_employee (
+    potential_employee_id   INTEGER NOT NULL,
+	personal_id      INTEGER NOT NULL,
+	primary key (potential_employee_id),
+	foreign key (personal_id) references person
+);
+
+
+CREATE TABLE interviewee (
+    interviewee_id                             INTEGER NOT NULL,
+	potential_employee_id   INTEGER NOT NULL,
+	primary key (interviewee_id),
+	foreign key (potential_employee_id) references potential_employee
+
+);
+
+CREATE TABLE interviewer (
+    job_id                        INTEGER,
+    interviewer_id                INTEGER NOT NULL,
+	employee_id                        INTEGER NOT NULL,
+	primary key (interviewer_id),
+	foreign key (employee_id) references employee
+);
+
+
+CREATE TABLE interview (
+    job_position                                           INTEGER,
+    interview_time                                         TIMESTAMP,
+    interviewee_id                             INTEGER NOT NULL,
+    job_id                                    INTEGER NOT NULL,
+    interviewer_id                             INTEGER NOT NULL,
+	interview_id                             INTEGER NOT NULL,
+	grade                         NUMBER,
+	primary key (interview_id),
+	foreign key (interviewer_id) references interviewer,
+	foreign key (interviewee_id) references interviewee
+);
+
+CREATE TABLE department (
+    department_id     INTEGER NOT NULL,
+    department_name   VARCHAR2(30 CHAR),
+	primary key (department_id)
+);
+
+CREATE TABLE job_position (
+    job_id                     INTEGER NOT NULL,
+    job_description            VARCHAR2(30),
+    posted_date                TIMESTAMP,
+    department_id   INTEGER NOT NULL,
+	primary key (job_id),
+	foreign key (department_id) references department
+);
+
+
+CREATE TABLE product (
+    p_size         VARCHAR2(25),
+    p_style          VARCHAR2(25),
+    list_weight    VARCHAR2(25),
+    product_id     INTEGER NOT NULL,
+    product_type   VARCHAR2(25),
+	  product_name    VARCHAR2(25),
+	part_id    INTEGER NOT NULL,
+	primary key (product_id),
+	foreign key (part_id) references part
+);
+
+CREATE TABLE part (
+    price      NUMBER,
+    part_id    NUMBER NOT NULL,
+	primary key (part_id)
+);
+
+CREATE TABLE vendor (
+    vendor_id        INTEGER NOT NULL,
+    name             VARCHAR2(25),
+    address          VARCHAR2(25),
+    account_number   INTEGER,
+    credit_rating    INTEGER,
+    url              VARCHAR2(25),
+	primary key (vendor_id)
+);
+
+CREATE TABLE catalog (
+	catalog_id    NUMBER NOT NULL,
+	part_id    NUMBER NOT NULL,
+	vendor_id        INTEGER NOT NULL,
+	primary key (catalog_id),
+	foreign key (part_id) references part,
+	foreign key (vendor_id) references vendor
+	
+);
+
+
+
+
+CREATE TABLE sales_record (
+    sale_time         DATE,
+    sales_record_id   NUMBER NOT NULL,
+    sales_id          INTEGER NOT NULL,
+    employee_id                   INTEGER NOT NULL,
+    customer_id                   INTEGER NOT NULL,
+    product_id     INTEGER NOT NULL,
+    primary key (sales_id),
+    foreign key (employee_id) references employee,
+    foreign key (customer_id) references customer,
+    foreign key (product_id) references product
+);
+
+
+
+CREATE TABLE shift (
+    end_time                      TIMESTAMP,
+    start_time                    TIMESTAMP,
+    employee_id                   INTEGER NOT NULL,
+    shift_id                      INTEGER NOT NULL,
+    department_id      INTEGER NOT NULL,
+	primary key (shift_id ),
+	foreign key (department_id) references department,
+	foreign key (employee_id) references employee
+);
+
+
+CREATE TABLE site (
+    site_id         INTEGER NOT NULL,
+    site_location   VARCHAR2(20),
+    site_name       VARCHAR2(20),
+	primary key (site_id)
+);
+
+
+
+
+
+
+
+
+
+CREATE SEQUENCE monthly_salary_id START WITH 1 NOCACHE ORDER;
+
+CREATE OR REPLACE TRIGGER monthly_salary_id BEFORE
+    INSERT ON monthly_salary
+    FOR EACH ROW
+    WHEN ( new.monthly_salary_id IS NULL )
+BEGIN
+    :new.monthly_salary_id := monthly_salary_id.nextval;
+END;
+/
+
+CREATE SEQUENCE part_id_seq START WITH 1 NOCACHE ORDER;
+
+CREATE OR REPLACE TRIGGER part_id_trg BEFORE
+    INSERT ON part
+    FOR EACH ROW
+    WHEN ( new.part_id IS NULL )
+BEGIN
+    :new.part_id := part_id_seq.nextval;
+END;
+/
+
+CREATE SEQUENCE sales_record_id START WITH 1 NOCACHE ORDER;
+
+CREATE OR REPLACE TRIGGER sales_record_id BEFORE
+    INSERT ON sales_record
+    FOR EACH ROW
+    WHEN ( new.sales_record_id IS NULL )
+BEGIN
+    :new.sales_record_id := sales_record_id.nextval;
+END;
+/
+
+

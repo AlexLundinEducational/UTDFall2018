@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="61433CCD-4160-51A5-B053-1EB8D11479B0" name="PRODUCT_SALES_RECORD_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PRODUCT_PRODUCT_ID" id="71318171-8887-8023-2119-B8FDFA9E6BF2">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="04B315E2-ACAB-A4F0-E7A1-B39C5E558002" referredColumn="CA2D9F24-005A-0675-7659-B177706AA996"/>
+</associations>
+</Column>
+<Column name="SALES_RECORD_SALES_RECORD_ID" id="27AAEF89-AFC6-6960-3678-D7CC121CA68D">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F3A01F57-CACD-A984-6C3C-0960E285BDCE" referredColumn="EACC8892-F8C6-8580-B945-86680E797869"/>
+</associations>
+</Column>
+<Column name="SALES_RECORD_SALES_ID" id="38945881-5CC4-28CC-73C2-F6C111827C65">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:50:15 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8A494467-E704-3DA4-F913-C3643631C4CC" referredColumn="F996CD81-45F3-DB1C-6171-449CE092FF02"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E1DB3BB1-5B7B-6C28-A767-12AEE8E738E4" name="Relation_19_PK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71318171-8887-8023-2119-B8FDFA9E6BF2"/>
+<colUsage columnID="27AAEF89-AFC6-6960-3678-D7CC121CA68D"/>
+<colUsage columnID="38945881-5CC4-28CC-73C2-F6C111827C65"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4531E5EF-E0F2-D15F-E78E-C0B52554AF5B" name="Relation_19_PRODUCT_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>563695E0-1C80-1E7F-CE6B-D0E1A3E64CEF</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71318171-8887-8023-2119-B8FDFA9E6BF2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FA93C419-E4E4-B971-9A65-A405E46817EE" name="Relation_19_SALES_RECORD_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>563695E0-1C80-1E7F-CE6B-D0E1A3E64CEF</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="27AAEF89-AFC6-6960-3678-D7CC121CA68D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B303A0E1-F99C-9576-1D06-ACA3A9F27F5A" name="Relation_19_SALES_RECORD_FKv1">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:50:15 UTC</createdTime>
+<generatorID>563695E0-1C80-1E7F-CE6B-D0E1A3E64CEF</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="38945881-5CC4-28CC-73C2-F6C111827C65"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

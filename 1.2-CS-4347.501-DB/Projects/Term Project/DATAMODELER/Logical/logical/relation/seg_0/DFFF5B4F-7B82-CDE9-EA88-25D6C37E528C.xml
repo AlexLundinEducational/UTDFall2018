@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_13" directorySegmentName="seg_0" id="DFFF5B4F-7B82-CDE9-EA88-25D6C37E528C">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="EMPLOYEE_MONTHLY_SALARY_FK" directorySegmentName="seg_0" id="DFFF5B4F-7B82-CDE9-EA88-25D6C37E528C">
 <createdBy>Alex</createdBy>
 <createdTime>2018-12-01 21:29:09 UTC</createdTime>
 <ownerDesignName>Logical</ownerDesignName>
@@ -7,6 +7,7 @@
 <item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
 </engineerTo>
 <sourcePk>37ECE2D6-BC10-87DA-3CAF-6B4280D6A4FF</sourcePk>
+<targetPk>ADA0948E-37E8-7ADF-32A5-645CBD5D6602</targetPk>
 <identifying>false</identifying>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>

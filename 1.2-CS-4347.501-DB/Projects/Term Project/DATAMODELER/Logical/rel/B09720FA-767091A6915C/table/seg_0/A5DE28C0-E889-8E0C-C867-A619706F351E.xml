@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A5DE28C0-E889-8E0C-C867-A619706F351E" name="CATALOG">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:18:22 UTC</createdTime>
+<generatorID>DE86D4FC-14C2-239C-C41D-34A2D7335F00</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ENTRY" id="EA09D271-C704-9C38-B1AE-05ADBA40F141">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:18:22 UTC</createdTime>
+<generatorID>7E01E373-627B-F662-74B3-D00846438885</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRODUCT_PRODUCT_ID" id="FF0DDD90-A0D9-D641-6321-4EE9EEE6EB3E">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:18:22 UTC</createdTime>
+<generatorID>B1CFD3CF-74DC-A165-7999-32FB8C93E0C9</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4D8A9DDE-5F7B-18BF-0DAE-20919DEA061C" referredColumn="CA2D9F24-005A-0675-7659-B177706AA996"/>
+</associations>
+</Column>
+<Column name="VENDOR_VENDOR_ID" id="8B38E355-1A59-3B4F-6E2D-A3046D8E7507">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:18:22 UTC</createdTime>
+<generatorID>29033A7E-E610-055A-73BD-06E4C15AA383</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DF06E13D-342A-63C8-E0B3-014CB0469EF0" referredColumn="11919C06-CE51-D6A7-4E71-AA96E50DC3C1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9EC1293F-DBBE-ABDF-1641-3004D4352DB6" name="CATALOG_PK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:18:22 UTC</createdTime>
+<generatorID>2910A1E6-D00B-4D9F-2726-C2F1354CF686</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA09D271-C704-9C38-B1AE-05ADBA40F141"/>
+<colUsage columnID="8B38E355-1A59-3B4F-6E2D-A3046D8E7507"/>
+<colUsage columnID="FF0DDD90-A0D9-D641-6321-4EE9EEE6EB3E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0B056ADF-9A04-36BE-D82E-8D024F4317C4" name="CATALOG_PRODUCT_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:18:22 UTC</createdTime>
+<generatorID>A426A634-4AF4-3FE5-3439-953770C9C494</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF0DDD90-A0D9-D641-6321-4EE9EEE6EB3E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="85E26DA3-F8F3-E9C2-8FFC-D20EC17B7B52" name="CATALOG_VENDOR_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:18:22 UTC</createdTime>
+<generatorID>B48D24D9-D32F-8813-6179-44BE54089EE9</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B38E355-1A59-3B4F-6E2D-A3046D8E7507"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

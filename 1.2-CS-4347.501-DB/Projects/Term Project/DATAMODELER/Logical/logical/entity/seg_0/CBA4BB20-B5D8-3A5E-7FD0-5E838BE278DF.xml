@@ -23,8 +23,36 @@
 <item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SALES_ID" id="751B8700-E5F9-0CDF-B474-7F57E9A61ABF">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:34:02 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E28AE523-0992-F7A3-F7AE-91DE0FEA41EB" name="SALES RECORD PK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:34:13 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>751B8700-E5F9-0CDF-B474-7F57E9A61ABF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

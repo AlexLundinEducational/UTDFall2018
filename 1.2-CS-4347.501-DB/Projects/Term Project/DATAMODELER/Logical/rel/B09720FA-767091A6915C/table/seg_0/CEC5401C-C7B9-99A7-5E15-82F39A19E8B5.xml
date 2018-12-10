@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CEC5401C-C7B9-99A7-5E15-82F39A19E8B5" name="PRODUCT_PART_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PRODUCT_PRODUCT_ID" id="E9B4FEAA-9EE2-9EB1-B330-F2A882415BEC">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9ED5F2AE-573E-26A4-57E5-B6B9C4BEC795" referredColumn="CA2D9F24-005A-0675-7659-B177706AA996"/>
+</associations>
+</Column>
+<Column name="PART_PART_ID" id="2DFA5682-F21A-52DA-46C8-634FC93E4F74">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D3827BCC-E5B3-DD7D-F404-54A494DD9650" referredColumn="81D4B9AA-35EE-25D7-4202-213850741776"/>
+</associations>
+</Column>
+<Column name="PART_PART_ID2" id="C8C441BD-BD12-9007-CA5E-204B5A4F8E5D">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:50:15 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EA9A3B30-A760-D54C-3081-E06DEAC77CAB" referredColumn="8D8E2E11-BDBF-0657-15A2-36D5B1BE1A84"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2CE6308E-839D-93CB-4178-60FC0892ED3D" name="Relation_17_PK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E9B4FEAA-9EE2-9EB1-B330-F2A882415BEC"/>
+<colUsage columnID="2DFA5682-F21A-52DA-46C8-634FC93E4F74"/>
+<colUsage columnID="C8C441BD-BD12-9007-CA5E-204B5A4F8E5D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="62BDB910-4B32-CF09-E927-6E1F450187D2" name="Relation_17_PRODUCT_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>DB7A2370-E1EE-FC24-7494-9583716DCBF1</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E9B4FEAA-9EE2-9EB1-B330-F2A882415BEC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F076FA85-10B0-38F3-2CF0-7FD55ED7B350" name="Relation_17_PART_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>DB7A2370-E1EE-FC24-7494-9583716DCBF1</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2DFA5682-F21A-52DA-46C8-634FC93E4F74"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E70D2AB7-86AB-30F7-DBAE-4EF2784FC876" name="Relation_17_PART_FKv1">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:50:15 UTC</createdTime>
+<generatorID>DB7A2370-E1EE-FC24-7494-9583716DCBF1</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8C441BD-BD12-9007-CA5E-204B5A4F8E5D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

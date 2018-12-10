@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AADE3EDE-F6AA-697E-1FB8-77DF0C6750F3" name="SITE_SALES_RECORD_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SITE_SITE_ID" id="55BB6B4E-3C19-C035-F7A7-D2B50E5A59B7">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E2D28C49-641D-84F1-2608-3B821F6A4846" referredColumn="90FDCD4E-F054-1DCF-0A59-16A6749926BD"/>
+</associations>
+</Column>
+<Column name="SALES_RECORD_SALES_RECORD_ID" id="D5C2AC8B-1E2B-5623-3B08-0634877D7BD4">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9CE17CE3-1D56-4742-FC91-E4EDACE93A43" referredColumn="EACC8892-F8C6-8580-B945-86680E797869"/>
+</associations>
+</Column>
+<Column name="SALES_RECORD_SALES_ID" id="A5D20124-60E7-9299-5AFC-41EEA5C82E81">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:50:15 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="056186F0-8D30-A34F-9A8B-B76428DA36AE" referredColumn="F996CD81-45F3-DB1C-6171-449CE092FF02"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ADAFD410-D0EB-DB43-BA93-2273945438D6" name="Relation_20_PK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55BB6B4E-3C19-C035-F7A7-D2B50E5A59B7"/>
+<colUsage columnID="D5C2AC8B-1E2B-5623-3B08-0634877D7BD4"/>
+<colUsage columnID="A5D20124-60E7-9299-5AFC-41EEA5C82E81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1C8FBB6F-779C-1F43-F599-2B46407B08F5" name="Relation_20_SITE_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>ADB6014F-FA2B-F60C-2105-D65235246B77</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55BB6B4E-3C19-C035-F7A7-D2B50E5A59B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="58434BDE-6AC7-3BD9-3931-A8E6B0AECC06" name="Relation_20_SALES_RECORD_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>ADB6014F-FA2B-F60C-2105-D65235246B77</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5C2AC8B-1E2B-5623-3B08-0634877D7BD4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="510058D3-1151-3A87-76F2-1D1A0EA2EDE6" name="Relation_20_SALES_RECORD_FKv1">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:50:15 UTC</createdTime>
+<generatorID>ADB6014F-FA2B-F60C-2105-D65235246B77</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5D20124-60E7-9299-5AFC-41EEA5C82E81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

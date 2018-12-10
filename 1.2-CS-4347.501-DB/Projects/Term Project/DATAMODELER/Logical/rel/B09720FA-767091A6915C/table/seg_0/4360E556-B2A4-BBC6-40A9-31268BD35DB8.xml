@@ -30,14 +30,138 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="INTERVIEWEE_INTERVIEWEE_ID" id="E543C3CD-DD48-02F5-4E37-733F333E12A5">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>649DE18A-7491-DDD8-F76E-CA75B3BB63CC</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A5E2F51F-EAE6-A4C0-3E3F-4748E7EB8511" referredColumn="E424D84A-5C65-B8C1-6297-11DA21C80907"/>
+</associations>
+</Column>
+<Column name="JOB_POSITION_JOB_ID" id="5B65671A-D6B1-3A6B-5C21-2E5C9A3EA365">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>8FB27197-6E0B-5104-0D8A-E58867408151</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="955D475A-91DE-59D1-44A5-2E247B5C30AF" referredColumn="1FDFF1E8-F743-C775-2EDC-7C16F149FB8F"/>
+</associations>
+</Column>
+<Column name="INTERVIEWER_INTERVIEWER_ID" id="EE619401-B68F-997D-92CC-E643E6142D7F">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>09264411-58A5-CDD1-014D-D3A38DE684A0</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D3098674-81E4-BDFF-ECE2-E18C11EC35C3" referredColumn="26A72963-2A0F-E7CC-10C0-DBAF64255A65"/>
+</associations>
+</Column>
+<Column name="INTERVIEWEE_POTENTIAL_EMPLOYEE_POTENTIAL_EMPLOYEE_ID" id="F03B0205-6B74-C817-D508-8E4AD4026F3F">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>3E747E85-F153-2DCE-65DD-7ECB6DD3913B</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A5E2F51F-EAE6-A4C0-3E3F-4748E7EB8511" referredColumn="26E292CB-25B1-3FD9-3729-7BB7720ACDD3"/>
+</associations>
+</Column>
+<Column name="INTERVIEWER_EMPLOYEE_EMPLOYEE_ID" id="CD9EFF76-A873-5986-1E47-13B5DDE4F8AA">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>D53218F7-D373-E26A-8381-CA214322855A</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D3098674-81E4-BDFF-ECE2-E18C11EC35C3" referredColumn="42F133B6-8FAD-F5BB-17CF-68452146308A"/>
+</associations>
+</Column>
+<Column name="INTERVIEWER_EMPLOYEE_PERSON_PERSONAL_ID" id="4564850C-2A4A-068C-673A-FBD024747D5A">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>BF3E912B-C20B-3C80-69D3-EF1E5B6CF5F7</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D3098674-81E4-BDFF-ECE2-E18C11EC35C3" referredColumn="C4E90BD7-9418-3ABF-C750-37F7EDE0F818"/>
+</associations>
+</Column>
+<Column name="JOB_POSITION_DEPARTMENT_DEPARTMENT_ID" id="360F4E88-FB80-EE63-C409-8B330E64ECA3">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>3C851761-9364-F467-A109-354D35DCF29F</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="955D475A-91DE-59D1-44A5-2E247B5C30AF" referredColumn="6837EE16-9590-EB58-976C-2E6570FD7ED9"/>
+</associations>
+</Column>
+<Column name="INTERVIEWEE_POTENTIAL_EMPLOYEE_PERSON_PERSONAL_ID" id="A4E3451C-6A16-644F-F8A8-3220BD7AAB53">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>1DA0D942-6652-1C52-8895-3B0832C6F405</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A5E2F51F-EAE6-A4C0-3E3F-4748E7EB8511" referredColumn="A54EFD47-5FA1-1F98-8794-6D053C63B892"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="ED22020F-49A5-4615-C6D6-206364C87F21" name="INTERVIEW_INTERVIEWEE_FKv2">
+<ind_PK_UK id="ED22020F-49A5-4615-C6D6-206364C87F21" name="INTERVIEW_JOB_POSITION_FK">
 <createdBy>Alex</createdBy>
 <createdTime>2018-11-04 23:30:59 UTC</createdTime>
 <ownerDesignName>Logical</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B65671A-D6B1-3A6B-5C21-2E5C9A3EA365"/>
+<colUsage columnID="360F4E88-FB80-EE63-C409-8B330E64ECA3"/>
+</indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="D89C3FB3-AAFA-5C8F-81E8-41E6D7FC0CA6" name="INTERVIEW_INTERVIEWEE_FK">
 <createdBy>Alex</createdBy>
@@ -45,6 +169,11 @@
 <ownerDesignName>Logical</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E543C3CD-DD48-02F5-4E37-733F333E12A5"/>
+<colUsage columnID="F03B0205-6B74-C817-D508-8E4AD4026F3F"/>
+<colUsage columnID="A4E3451C-6A16-644F-F8A8-3220BD7AAB53"/>
+</indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="67958B0D-2EB7-2E5E-E415-2297E3730576" name="INTERVIEW_INTERVIEWER_FK">
 <createdBy>Alex</createdBy>
@@ -52,6 +181,11 @@
 <ownerDesignName>Logical</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE619401-B68F-997D-92CC-E643E6142D7F"/>
+<colUsage columnID="CD9EFF76-A873-5986-1E47-13B5DDE4F8AA"/>
+<colUsage columnID="4564850C-2A4A-068C-673A-FBD024747D5A"/>
+</indexColumnUsage>
 </ind_PK_UK>
 </indexes>
 </Table>

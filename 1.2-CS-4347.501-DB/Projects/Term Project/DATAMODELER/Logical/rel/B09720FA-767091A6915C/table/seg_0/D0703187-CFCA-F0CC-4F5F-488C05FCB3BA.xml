@@ -30,14 +30,131 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="DEPARTMENT_ID" id="E496FEE2-EAC8-B465-25EC-D4A2E29451BF">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>BF016D44-ED28-B118-E742-54FB34BC76E6</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DB8C5CAD-3BC9-749B-778F-E5BAC1C34E8A" referredColumn="6ACB66F4-37EE-05D1-C965-83030D842500"/>
+</associations>
+</Column>
+<Column name="EMPLOYEE_ID" id="2E930443-866C-2B8B-E1FC-0A157F792183">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>000965B0-BB19-3EA9-4896-6017E0C02231</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B53D22BC-3014-EC88-7346-C72A6C216AB3" referredColumn="86724E0D-12BA-22D5-F698-3F61C51A86E4"/>
+</associations>
+</Column>
+<Column name="PERSONAL_ID" id="DA4C654C-DA81-A3A6-BEBC-AFACC859E32B">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>D29FB45A-4598-9378-2570-EE03F94DBF1B</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B53D22BC-3014-EC88-7346-C72A6C216AB3" referredColumn="DED78637-4CE8-854F-9DE2-3913D8187E8C"/>
+</associations>
+</Column>
+<Column name="SHIFT_ID" id="F62B826E-1C14-5023-1C4F-96680D6E2C90">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:18:22 UTC</createdTime>
+<generatorID>EA5B102B-AF9A-3528-F908-EEAB490C0DAE</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPARTMENT_DEPARTMENT_ID" id="1F36A104-82A1-202E-95A1-0B6D9235D3E2">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:18:22 UTC</createdTime>
+<generatorID>C9111E9D-93B0-D306-0C7A-BD57180CC6C3</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="75AD67A7-245E-B540-9C76-E5AA5C6541F0" referredColumn="6ACB66F4-37EE-05D1-C965-83030D842500"/>
+</associations>
+</Column>
+<Column name="EMPLOYEE_EMPLOYEE_ID" id="0A76A13F-A320-160C-B7A7-62ABEF6C1860">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:18:22 UTC</createdTime>
+<generatorID>AD30B2B3-93B7-B08C-9AD1-9DF43DEA1250</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="708EA42F-F890-85E9-F9F6-19E349B1D6FA" referredColumn="86724E0D-12BA-22D5-F698-3F61C51A86E4"/>
+</associations>
+</Column>
+<Column name="EMPLOYEE_PERSON_PERSONAL_ID" id="9C80F9F0-3B09-A4DF-F6A9-34AF97877981">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:18:22 UTC</createdTime>
+<generatorID>CDB95FC1-7C76-59C4-7327-2029E4113BC7</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="708EA42F-F890-85E9-F9F6-19E349B1D6FA" referredColumn="DED78637-4CE8-854F-9DE2-3913D8187E8C"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="375AF5F6-35B4-8DC4-E480-849680556249" name="SHIFT_PK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:18:22 UTC</createdTime>
+<generatorID>8B94C136-8290-6051-B27F-6D456B4679FC</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F62B826E-1C14-5023-1C4F-96680D6E2C90"/>
+<colUsage columnID="1F36A104-82A1-202E-95A1-0B6D9235D3E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="C900CB16-524B-082A-ABE3-F0ECEFA284ED" name="SHIFT_DEPARTMENT_FK">
 <createdBy>kim</createdBy>
 <createdTime>2018-10-29 23:46:01 UTC</createdTime>
 <ownerDesignName>Logical</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E496FEE2-EAC8-B465-25EC-D4A2E29451BF"/>
+</indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="C85CF4F1-8497-8CC5-6212-46AE0ECBABC7" name="SHIFT_EMPLOYEE_FK">
 <createdBy>Alex</createdBy>
@@ -45,6 +162,33 @@
 <ownerDesignName>Logical</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E930443-866C-2B8B-E1FC-0A157F792183"/>
+<colUsage columnID="DA4C654C-DA81-A3A6-BEBC-AFACC859E32B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="147B6BD3-393A-039E-FB89-01F436D27A10" name="SHIFT_DEPARTMENT_FKv2">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:18:22 UTC</createdTime>
+<generatorID>F957F789-76F1-2306-AD78-B19F2DAABC22</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F36A104-82A1-202E-95A1-0B6D9235D3E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BDA89648-6A44-37D6-E3B7-06B1D3AD6257" name="SHIFT_EMPLOYEE_FKv2">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:18:22 UTC</createdTime>
+<generatorID>43B36690-1F0C-4EEC-AF46-39B2A0977925</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A76A13F-A320-160C-B7A7-62ABEF6C1860"/>
+<colUsage columnID="9C80F9F0-3B09-A4DF-F6A9-34AF97877981"/>
+</indexColumnUsage>
 </ind_PK_UK>
 </indexes>
 </Table>

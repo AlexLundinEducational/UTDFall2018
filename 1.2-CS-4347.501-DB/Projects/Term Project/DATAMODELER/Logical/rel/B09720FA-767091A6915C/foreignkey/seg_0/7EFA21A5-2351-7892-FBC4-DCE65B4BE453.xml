@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7EFA21A5-2351-7892-FBC4-DCE65B4BE453" containerWithKeyObject="45E02A49-1F94-EBA0-56AF-70392D18DAFB" localFKIndex="2B73BCE5-535A-1780-042F-86506017F562" name="EMPLOYEE_MONTHLY_SALARY_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>DFFF5B4F-7B82-CDE9-EA88-25D6C37E528C</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<referredTableLongName>MONTHLY_SALARY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>28BEEF59-3A25-0A52-7CC4-70D02C6997F4</referredTableID>
+<keyObject>4B80567D-EE9C-1A8A-5C4A-210A805D2599</keyObject>
+<referredKeyID>4B80567D-EE9C-1A8A-5C4A-210A805D2599</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>MONTHLY_SALARY_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

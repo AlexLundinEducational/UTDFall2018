@@ -38,7 +38,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="ADDRESS" id="EA8CF1A4-80DF-4E7D-4AAB-F3642EE98393">
 <createdBy>Alex</createdBy>
@@ -51,7 +52,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="ACCOUNT NUMBER" id="F1B2234D-1BFE-8CE8-DEBE-437C80F95A78">
 <createdBy>Alex</createdBy>
@@ -90,7 +92,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -98,8 +101,9 @@
 <createdBy>Alex</createdBy>
 <createdTime>2018-12-01 21:42:25 UTC</createdTime>
 <ownerDesignName>Logical</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="29757D58-2FBE-F5B1-E40F-FC12B8D6520C" name="PART">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>5CC317EA-15E8-5661-79DA-0DCAD003A07E</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PRICE" id="7673DB8C-247B-9652-1C19-4A5AB17EF69C">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>2186346D-64E3-43DC-37CF-8F5E339065C2</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>00</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,00,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PART_ID" id="81D4B9AA-35EE-25D7-4202-213850741776">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="PART_ID2" id="8D8E2E11-BDBF-0657-15A2-36D5B1BE1A84">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:37:33 UTC</createdTime>
+<generatorID>DC798371-3135-1CFA-9555-B6EF86F39B90</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="48C3EC6D-F3EE-A939-E028-279445BD9131" name="PART_PKv2">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:37:33 UTC</createdTime>
+<generatorID>CCCE96B4-9A34-CD9C-0574-E52B9AF816D2</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D8E2E11-BDBF-0657-15A2-36D5B1BE1A84"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CE71EF7D-D8DF-1A90-6D89-AF6E91A1403E" name="PART_PK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="81D4B9AA-35EE-25D7-4202-213850741776"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

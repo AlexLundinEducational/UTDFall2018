@@ -41,6 +41,49 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="PERSON_PERSONAL_ID" id="DED78637-4CE8-854F-9DE2-3913D8187E8C">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>A3963EC3-BF54-EE1B-2B18-4A05B8C45A6A</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A06DC76C-01C6-D71A-0E5C-62ECE52C874D" referredColumn="E35455AB-FD18-8283-87EB-83E51DF2BA80"/>
+</associations>
+</Column>
+<Column name="MONTHLY_SALARY_MONTHLY_SALARY_ID" id="7C1D72D6-3BD6-FBD0-EB15-F2651A64AD85">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TRANSACTION_NUMER" id="B81F0E33-6078-4EE3-16D5-B2261F725DA8">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:37:33 UTC</createdTime>
+<generatorID>63662C76-0147-B08A-A855-7F35953F527B</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7EFA21A5-2351-7892-FBC4-DCE65B4BE453" referredColumn="5D842E65-7C1E-22B3-BE5A-E718F90FE765"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="B26BE8C8-39ED-5DD2-8ED5-DB0CA2B041B8" name="EMPLOYEE_PK">
@@ -52,6 +95,7 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="86724E0D-12BA-22D5-F698-3F61C51A86E4"/>
+<colUsage columnID="DED78637-4CE8-854F-9DE2-3913D8187E8C"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="C989F960-809D-F23A-AFE7-9871CA8F030A" name="EMPLOYEE_PERSON_FK">
@@ -60,6 +104,20 @@
 <ownerDesignName>Logical</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DED78637-4CE8-854F-9DE2-3913D8187E8C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B73BCE5-535A-1780-042F-86506017F562" name="EMPLOYEE_MONTHLY_SALARY_FK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-09 23:58:47 UTC</createdTime>
+<generatorID>DFFF5B4F-7B82-CDE9-EA88-25D6C37E528C</generatorID>
+<ownerDesignName>Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B81F0E33-6078-4EE3-16D5-B2261F725DA8"/>
+</indexColumnUsage>
 </ind_PK_UK>
 </indexes>
 </Table>

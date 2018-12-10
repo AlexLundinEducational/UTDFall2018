@@ -23,8 +23,38 @@
 <item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>00</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,00,1</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PART_ID" id="DC798371-3135-1CFA-9555-B6EF86F39B90">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:33:33 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CCCE96B4-9A34-CD9C-0574-E52B9AF816D2" name="PART PK">
+<createdBy>Alex</createdBy>
+<createdTime>2018-12-10 00:33:47 UTC</createdTime>
+<ownerDesignName>Logical</ownerDesignName>
+<engineerTo>
+<item key="B09720FA-6EC4-DAB6-BEAA-767091A6915C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DC798371-3135-1CFA-9555-B6EF86F39B90</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>
